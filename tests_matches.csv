@@ -1,0 +1,905 @@
+match_id,match_type,match_type_number,gender,season,date_start,date_end,venue,city,team1,team2,toss_winner,toss_decision,event_name,event_match_number,outcome_winner,outcome_by_runs,outcome_by_wickets,outcome_result,player_of_match,balls_per_over,umpire1,umpire2
+1000851,Test,2230,male,2016/17,2016-11-03,2016-11-07,Western Australia Cricket Association Ground,Perth,Australia,South Africa,South Africa,bat,South Africa in Australia Test Series,1,South Africa,177,,,K Rabada,6,Aleem Dar,NJ Llong
+1000853,Test,2233,male,2016/17,2016-11-12,2016-11-15,Bellerive Oval,Hobart,Australia,South Africa,South Africa,field,South Africa in Australia Test Series,2,South Africa,80,,,KJ Abbott,6,Aleem Dar,RA Kettleborough
+1000855,Test,2236,male,2016/17,2016-11-24,2016-11-27,Adelaide Oval,,Australia,South Africa,South Africa,bat,South Africa in Australia Test Series,3,Australia,,7,,UT Khawaja,6,RA Kettleborough,NJ Llong
+1000881,Test,2240,male,2016/17,2016-12-15,2016-12-19,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,Pakistan,Australia,bat,Pakistan in Australia Test Series,1,Australia,39,,,Asad Shafiq,6,IJ Gould,RK Illingworth
+1000883,Test,2242,male,2016/17,2016-12-26,2016-12-30,Melbourne Cricket Ground,,Australia,Pakistan,Pakistan,bat,Pakistan in Australia Test Series,2,Australia,18,,,SPD Smith,6,IJ Gould,S Ravi
+1000885,Test,2245,male,2016/17,2017-01-03,2017-01-07,Sydney Cricket Ground,,Australia,Pakistan,Australia,bat,Pakistan in Australia Test Series,3,Australia,220,,,DA Warner,6,RK Illingworth,S Ravi
+1019985,Test,2246,male,2016/17,2017-01-12,2017-01-16,Basin Reserve,Wellington,New Zealand,Bangladesh,New Zealand,field,Bangladesh in New Zealand Test Series,1,New Zealand,,7,,TWM Latham,6,M Erasmus,PR Reiffel
+1019987,Test,2248,male,2016/17,2017-01-20,2017-01-23,Hagley Oval,Christchurch,New Zealand,Bangladesh,New Zealand,field,Bangladesh in New Zealand Test Series,2,New Zealand,,9,,TG Southee,6,NJ Llong,PR Reiffel
+1019993,Test,2234,male,2016/17,2016-11-17,2016-11-20,Hagley Oval,Christchurch,New Zealand,Pakistan,New Zealand,field,Pakistan in New Zealand Test Series,1,New Zealand,,8,,C de Grandhomme,6,IJ Gould,S Ravi
+1019995,Test,2237,male,2016/17,2016-11-25,2016-11-29,Seddon Park,Hamilton,New Zealand,Pakistan,Pakistan,field,Pakistan in New Zealand Test Series,2,New Zealand,138,,,TG Southee,6,SD Fry,S Ravi
+1020041,Test,2253,male,2016/17,2017-03-08,2017-03-12,University Oval,Dunedin,New Zealand,South Africa,South Africa,bat,South Africa in New Zealand Test Series,1,,,,draw,D Elgar,6,HDPK Dharmasena,BNJ Oxenford
+1020043,Test,2255,male,2016/17,2017-03-16,2017-03-18,Basin Reserve,Wellington,New Zealand,South Africa,South Africa,field,South Africa in New Zealand Test Series,2,South Africa,,8,,KA Maharaj,6,HDPK Dharmasena,RJ Tucker
+1020045,Test,2257,male,2016/17,2017-03-25,2017-03-29,Seddon Park,Hamilton,New Zealand,South Africa,South Africa,bat,South Africa in New Zealand Test Series,3,,,,draw,KS Williamson,6,BNJ Oxenford,RJ Tucker
+1022593,Test,2207,male,2016,2016-07-21,2016-07-24,"Sir Vivian Richards Stadium, North Sound",Antigua,West Indies,India,India,bat,India in West Indies Test Series,1,India,92,,,R Ashwin,6,Aleem Dar,IJ Gould
+1022595,Test,2211,male,2016,2016-07-30,2016-08-03,"Sabina Park, Kingston",Jamaica,West Indies,India,West Indies,bat,India in West Indies Test Series,2,,,,draw,RL Chase,6,Aleem Dar,IJ Gould
+1022597,Test,2215,male,2016,2016-08-09,2016-08-13,"Darren Sammy National Cricket Stadium, Gros Islet",St Lucia,West Indies,India,West Indies,field,India in West Indies Test Series,3,India,237,,,R Ashwin,6,NJ Llong,RJ Tucker
+1022599,Test,2218,male,2016,2016-08-18,2016-08-22,"Queen's Park Oval, Port of Spain",Trinidad,West Indies,India,West Indies,bat,India in West Indies Test Series,4,,,,draw,,6,NJ Llong,RJ Tucker
+1024041,Test,2210,male,2016,2016-07-28,2016-07-31,Queens Sports Club,Bulawayo,Zimbabwe,New Zealand,Zimbabwe,bat,New Zealand in Zimbabwe Test Series,1,New Zealand,117,,,LRPL Taylor,6,MA Gough,PR Reiffel
+1024043,Test,2214,male,2016,2016-08-06,2016-08-10,Queens Sports Club,Bulawayo,Zimbabwe,New Zealand,New Zealand,bat,New Zealand in Zimbabwe Test Series,2,New Zealand,254,,,KS Williamson,6,MA Gough,PR Reiffel
+1029825,Test,2225,male,2016/17,2016-10-20,2016-10-24,Zahur Ahmed Chowdhury Stadium,Chittagong,Bangladesh,England,England,bat,England in Bangladesh Test Series,1,England,22,,,BA Stokes,6,HDPK Dharmasena,CB Gaffaney
+1029827,Test,2227,male,2016/17,2016-10-28,2016-10-30,Shere Bangla National Stadium,Mirpur,Bangladesh,England,Bangladesh,bat,England in Bangladesh Test Series,2,Bangladesh,108,,,Mehedi Hasan Miraz,6,HDPK Dharmasena,S Ravi
+1030213,Test,2221,male,2016/17,2016-09-22,2016-09-26,Green Park,Kanpur,India,New Zealand,India,bat,New Zealand in India Test Series,1,India,197,,,RA Jadeja,6,RA Kettleborough,RJ Tucker
+1030215,Test,2222,male,2016/17,2016-09-30,2016-10-03,Eden Gardens,Kolkata,India,New Zealand,India,bat,New Zealand in India Test Series,2,India,178,,,WP Saha,6,RA Kettleborough,RJ Tucker
+1030217,Test,2223,male,2016/17,2016-10-08,2016-10-11,Holkar Cricket Stadium,Indore,India,New Zealand,India,bat,New Zealand in India Test Series,3,India,321,,,R Ashwin,6,HDPK Dharmasena,BNJ Oxenford
+1031437,Test,2262,male,2017,2017-07-06,2017-07-09,Lord's,London,England,South Africa,England,bat,Basil D'Oliveira Trophy,1,England,211,,,MM Ali,6,S Ravi,PR Reiffel
+1031439,Test,2264,male,2017,2017-07-14,2017-07-17,Trent Bridge,Nottingham,South Africa,England,South Africa,bat,South Africa tour of England,2,South Africa,340,,,VD Philander,6,SD Fry,PR Reiffel
+1031441,Test,2266,male,2017,2017-07-27,2017-07-31,Kennington Oval,London,England,South Africa,England,bat,South Africa tour of England,3,England,239,,,BA Stokes,6,JS Wilson,Aleem Dar
+1031443,Test,2268,male,2017,2017-08-04,2017-08-07,Old Trafford,Manchester,England,South Africa,England,bat,South Africa tour of England,4,England,177,,,MM Ali,6,Aleem Dar,HDPK Dharmasena
+1031659,Test,2270,male,2017,2017-08-17,2017-08-19,Edgbaston,Birmingham,England,West Indies,England,bat,West Indies tour of England,1,England,209,,,AN Cook,6,M Erasmus,S Ravi
+1031661,Test,2271,male,2017,2017-08-25,2017-08-29,Headingley,Leeds,England,West Indies,England,bat,West Indies tour of England,2,West Indies,,5,,SD Hope,6,CB Gaffaney,S Ravi
+1031663,Test,2274,male,2017,2017-09-07,2017-09-09,Lord's,London,West Indies,England,West Indies,bat,West Indies tour of England,3,England,,9,,BA Stokes,6,CB Gaffaney,M Erasmus
+1034809,Test,2232,male,2016/17,2016-11-09,2016-11-13,Saurashtra Cricket Association Stadium,Rajkot,India,England,England,bat,England in India Test Series,1,,,,draw,MM Ali,6,HDPK Dharmasena,CB Gaffaney
+1034811,Test,2235,male,2016/17,2016-11-17,2016-11-21,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Visakhapatnam,India,England,India,bat,England in India Test Series,2,India,246,,,V Kohli,6,HDPK Dharmasena,RJ Tucker
+1034813,Test,2238,male,2016/17,2016-11-26,2016-11-29,"Punjab Cricket Association IS Bindra Stadium, Mohali",Chandigarh,India,England,England,bat,England in India Test Series,3,India,,8,,RA Jadeja,6,M Erasmus,CB Gaffaney
+1034815,Test,2239,male,2016/17,2016-12-08,2016-12-12,Wankhede Stadium,Mumbai,India,England,England,bat,England in India Test Series,4,India,36,,,V Kohli,6,M Erasmus,BNJ Oxenford
+1034817,Test,2241,male,2016/17,2016-12-16,2016-12-20,"MA Chidambaram Stadium, Chepauk",Chennai,India,England,England,bat,England in India Test Series,5,India,75,,,KK Nair,6,M Erasmus,SD Fry
+1041761,Test,2249,male,2016/17,2017-02-09,2017-02-13,"Rajiv Gandhi International Stadium, Uppal",Hyderabad,India,Bangladesh,India,bat,,,India,208,,,V Kohli,6,M Erasmus,JS Wilson
+1050229,Test,2224,male,2016/17,2016-10-13,2016-10-17,Dubai International Cricket Stadium,,Pakistan,West Indies,Pakistan,bat,Pakistan v West Indies Test Series,1,Pakistan,56,,,Azhar Ali,6,RK Illingworth,PR Reiffel
+1050231,Test,2226,male,2016/17,2016-10-21,2016-10-25,Sheikh Zayed Stadium,Abu Dhabi,Pakistan,West Indies,Pakistan,bat,Pakistan v West Indies Test Series,2,Pakistan,133,,,Yasir Shah,6,MA Gough,RK Illingworth
+1050233,Test,2229,male,2016/17,2016-10-30,2016-11-03,Sharjah Cricket Stadium,,Pakistan,West Indies,Pakistan,bat,Pakistan v West Indies Test Series,3,West Indies,,5,,KC Brathwaite,6,MA Gough,PR Reiffel
+1059702,Test,2228,male,2016/17,2016-10-29,2016-11-02,Harare Sports Club,,Zimbabwe,Sri Lanka,Sri Lanka,bat,Sri Lanka in Zimbabwe Test Series,1,Sri Lanka,225,,,AG Cremer,6,SD Fry,IJ Gould
+1059703,Test,2231,male,2016/17,2016-11-06,2016-11-10,Harare Sports Club,,Zimbabwe,Sri Lanka,Zimbabwe,field,Sri Lanka in Zimbabwe Test Series,2,Sri Lanka,257,,,HMRKB Herath,6,SD Fry,IJ Gould
+1062573,Test,2250,male,2016/17,2017-02-23,2017-02-25,Maharashtra Cricket Association Stadium,Pune,India,Australia,Australia,bat,Australia in India Test Series,1,Australia,333,,,SNJ O'Keefe,6,RA Kettleborough,NJ Llong
+1062574,Test,2251,male,2016/17,2017-03-04,2017-03-07,M Chinnaswamy Stadium,Bengaluru,India,Australia,India,bat,Border-Gavaskar Trophy,2,India,75,,,KL Rahul,6,RK Illingworth,NJ Llong
+1062575,Test,2256,male,2016/17,2017-03-16,2017-03-20,JSCA International Stadium Complex,Ranchi,India,Australia,Australia,bat,Border-Gavaskar Trophy,3,,,,draw,CA Pujara,6,CB Gaffaney,IJ Gould
+1062576,Test,2258,male,2016/17,2017-03-25,2017-03-28,Himachal Pradesh Cricket Association Stadium,Dharamsala,India,Australia,Australia,bat,Border-Gavaskar Trophy,4,India,,8,,RA Jadeja,6,M Erasmus,IJ Gould
+1072305,Test,2282,male,2017/18,2017-11-23,2017-11-27,"Brisbane Cricket Ground, Woolloongabba",Brisbane,England,Australia,England,bat,England tour of Australia and New Zealand,1,Australia,,10,,SPD Smith,6,Aleem Dar,M Erasmus
+1072306,Test,2285,male,2017/18,2017-12-02,2017-12-06,Adelaide Oval,,Australia,England,England,field,England tour of Australia and New Zealand,2,Australia,120,,,SE Marsh,6,Aleem Dar,CB Gaffaney
+1072307,Test,2288,male,2017/18,2017-12-14,2017-12-18,W.A.C.A. Ground,Perth,England,Australia,England,bat,England tour of Australia and New Zealand,3,Australia,41,,,SPD Smith,6,CB Gaffaney,M Erasmus
+1072308,Test,2289,male,2017/18,2017-12-26,2017-12-30,Melbourne Cricket Ground,,Australia,England,Australia,bat,England tour of Australia and New Zealand,4,,,,draw,AN Cook,6,HDPK Dharmasena,S Ravi
+1072309,Test,2291,male,2017/18,2018-01-04,2018-01-08,Sydney Cricket Ground,,England,Australia,England,bat,England tour of Australia and New Zealand,5,Australia,123,,,PJ Cummins,6,JS Wilson,HDPK Dharmasena
+1075502,Test,2276,male,2017/18,2017-09-28,2017-10-02,Senwes Park,Potchefstroom,South Africa,Bangladesh,Bangladesh,field,Bangladesh tour of South Africa,1,South Africa,333,,,D Elgar,6,BNJ Oxenford,CB Gaffaney
+1075503,Test,2277,male,2017/18,2017-10-06,2017-10-08,Mangaung Oval,Bloemfontein,South Africa,Bangladesh,Bangladesh,field,Bangladesh tour of South Africa,2,South Africa,254,,,K Rabada,6,BNJ Oxenford,HDPK Dharmasena
+1075982,Test,2297,male,2017/18,2018-03-01,2018-03-05,Kingsmead,Durban,Australia,South Africa,Australia,bat,Australia tour of South Africa,1,Australia,118,,,MA Starc,6,HDPK Dharmasena,S Ravi
+1075983,Test,2298,male,2017/18,2018-03-09,2018-03-12,St George's Park,Port Elizabeth,Australia,South Africa,Australia,bat,Australia tour of South Africa,2,South Africa,,6,,K Rabada,6,HDPK Dharmasena,CB Gaffaney
+1075984,Test,2300,male,2017/18,2018-03-22,2018-03-25,Newlands,Cape Town,South Africa,Australia,South Africa,bat,Australia tour of South Africa,3,South Africa,322,,,M Morkel,6,RK Illingworth,NJ Llong
+1075985,Test,2302,male,2017/18,2018-03-30,2018-04-03,The Wanderers Stadium,Johannesburg,South Africa,Australia,South Africa,bat,Australia tour of South Africa,4,South Africa,492,,,VD Philander,6,IJ Gould,NJ Llong
+1077953,Test,2259,male,2017,2017-04-21,2017-04-25,"Sabina Park, Kingston",Jamaica,West Indies,Pakistan,Pakistan,field,Pakistan in West Indies Test Series,1,Pakistan,,7,,Yasir Shah,6,RK Illingworth,RA Kettleborough
+1077954,Test,2260,male,2017,2017-04-30,2017-05-04,"Kensington Oval, Bridgetown",Barbados,West Indies,Pakistan,West Indies,bat,Pakistan in West Indies Test Series,2,West Indies,106,,,ST Gabriel,6,RA Kettleborough,BNJ Oxenford
+1077955,Test,2261,male,2017,2017-05-10,2017-05-14,"Windsor Park, Roseau",Dominica,West Indies,Pakistan,West Indies,field,Pakistan in West Indies Test Series,3,Pakistan,101,,,RL Chase,6,RK Illingworth,BNJ Oxenford
+1083444,Test,2252,male,2016/17,2017-03-07,2017-03-11,Galle International Stadium,,Sri Lanka,Bangladesh,Sri Lanka,bat,Bangladesh in Sri Lanka Test Series,1,Sri Lanka,259,,,BKG Mendis,6,Aleem Dar,M Erasmus
+1083445,Test,2254,male,2016/17,2017-03-15,2017-03-19,P Sara Oval,Colombo,Sri Lanka,Bangladesh,Sri Lanka,bat,Bangladesh in Sri Lanka Test Series,2,Bangladesh,,4,,Tamim Iqbal,6,Aleem Dar,S Ravi
+1086066,Test,139,female,2017/18,2017-11-09,2017-11-12,"North Sydney Oval, Sydney",Sydney,England,Australia,England,bat,Women's Ashes,,,,,draw,EA Perry,6,GC Joshua,GA Abood
+1104284,Test,2272,male,2017,2017-08-27,2017-08-30,"Shere Bangla National Stadium, Mirpur",Dhaka,Bangladesh,Australia,Bangladesh,bat,Australia tour of Bangladesh,1,Bangladesh,20,,,Shakib Al Hasan,6,Aleem Dar,NJ Llong
+1104285,Test,2273,male,2017,2017-09-04,2017-09-07,Zahur Ahmed Chowdhury Stadium,Chattogram,Bangladesh,Australia,Bangladesh,bat,Australia tour of Bangladesh,2,Australia,,7,,NM Lyon,6,IJ Gould,NJ Llong
+1104483,Test,2263,male,2017,2017-07-14,2017-07-18,"R.Premadasa Stadium, Khettarama",Colombo,Zimbabwe,Sri Lanka,Zimbabwe,bat,Zimbabwe tour of Sri Lanka,,Sri Lanka,,4,,DAS Gunaratne,6,IJ Gould,NJ Llong
+1109602,Test,2265,male,2017,2017-07-26,2017-07-29,Galle International Stadium,,India,Sri Lanka,India,bat,India tour of Sri Lanka,1,India,304,,,S Dhawan,6,BNJ Oxenford,RK Illingworth
+1109603,Test,2267,male,2017,2017-08-03,2017-08-06,Sinhalese Sports Club Ground,Colombo,India,Sri Lanka,India,bat,India tour of Sri Lanka,2,India,53,,,RA Jadeja,6,RJ Tucker,BNJ Oxenford
+1109604,Test,2269,male,2017,2017-08-12,2017-08-14,Pallekele International Cricket Stadium,,India,Sri Lanka,India,bat,India tour of Sri Lanka,3,India,171,,,HH Pandya,6,RJ Tucker,RK Illingworth
+1115780,Test,2299,male,2017/18,2018-03-22,2018-03-26,Eden Park,Auckland,England,New Zealand,New Zealand,field,England tour of Australia and New Zealand,1,New Zealand,49,,,TA Boult,6,BNJ Oxenford,PR Reiffel
+1115781,Test,2301,male,2017/18,2018-03-30,2018-04-03,Hagley Oval,Christchurch,England,New Zealand,New Zealand,field,England tour of Australia and New Zealand,2,,,,draw,TG Southee,6,BNJ Oxenford,M Erasmus
+1115793,Test,2284,male,2017/18,2017-12-01,2017-12-04,Basin Reserve,Wellington,West Indies,New Zealand,New Zealand,field,West Indies tour of New Zealand,1,New Zealand,67,,,N Wagner,6,RJ Tucker,IJ Gould
+1115794,Test,2287,male,2017/18,2017-12-09,2017-12-12,Seddon Park,Hamilton,New Zealand,West Indies,West Indies,field,West Indies tour of New Zealand,2,New Zealand,240,,,LRPL Taylor,6,RJ Tucker,BNJ Oxenford
+1119535,Test,2304,male,2018,2018-05-24,2018-05-27,Lord's,London,England,Pakistan,England,bat,"Pakistan tour of Ireland, England and Scotland",1,Pakistan,,9,,Mohammad Abbas,6,RJ Tucker,PR Reiffel
+1119536,Test,2305,male,2018,2018-06-01,2018-06-03,Headingley,Leeds,Pakistan,England,Pakistan,bat,"Pakistan tour of Ireland, England and Scotland",2,England,55,,,JC Buttler,6,RJ Tucker,BNJ Oxenford
+1119549,Test,2314,male,2018,2018-08-01,2018-08-04,Edgbaston,Birmingham,England,India,England,bat,India tour of Ireland and England,1,England,31,,,SM Curran,6,Aleem Dar,CB Gaffaney
+1119550,Test,2315,male,2018,2018-08-09,2018-08-12,Lord's,London,India,England,England,field,India tour of Ireland and England,2,England,159,,,CR Woakes,6,Aleem Dar,M Erasmus
+1119551,Test,2316,male,2018,2018-08-18,2018-08-22,Trent Bridge,Nottingham,India,England,England,field,India tour of Ireland and England,3,India,203,,,V Kohli,6,CB Gaffaney,M Erasmus
+1119552,Test,2317,male,2018,2018-08-30,2018-09-02,The Rose Bowl,Southampton,England,India,England,bat,India tour of Ireland and England,4,England,60,,,MM Ali,6,BNJ Oxenford,HDPK Dharmasena
+1119553,Test,2318,male,2018,2018-09-07,2018-09-11,Kennington Oval,London,England,India,England,bat,India tour of Ireland and England,5,England,118,,,AN Cook,6,JS Wilson,HDPK Dharmasena
+1120284,Test,2275,male,2017/18,2017-09-28,2017-10-02,Sheikh Zayed Stadium,Abu Dhabi,Sri Lanka,Pakistan,Sri Lanka,bat,Sri Lanka tour of United Arab Emirates and Pakistan,1,Sri Lanka,21,,,HMRKB Herath,6,RA Kettleborough,NJ Llong
+1120285,Test,2278,male,2017/18,2017-10-06,2017-10-10,Dubai International Cricket Stadium,,Sri Lanka,Pakistan,Sri Lanka,bat,Sri Lanka tour of United Arab Emirates and Pakistan,2,Sri Lanka,68,,,FDM Karunaratne,6,RA Kettleborough,NJ Llong
+1122276,Test,2292,male,2017/18,2018-01-05,2018-01-08,Newlands,Cape Town,South Africa,India,South Africa,bat,India tour of South Africa,1,South Africa,72,,,VD Philander,6,RA Kettleborough,MA Gough
+1122277,Test,2293,male,2017/18,2018-01-13,2018-01-17,SuperSport Park,Centurion,South Africa,India,South Africa,bat,India tour of South Africa,2,South Africa,135,,,L Ngidi,6,MA Gough,PR Reiffel
+1122278,Test,2294,male,2017/18,2018-01-24,2018-01-27,The Wanderers Stadium,Johannesburg,India,South Africa,India,bat,India tour of South Africa,3,India,63,,,B Kumar,6,Aleem Dar,IJ Gould
+1122310,Test,2290,male,2017/18,2017-12-26,2017-12-27,"St George's Park, Port Elizabeth",Port Elizabeth,South Africa,Zimbabwe,South Africa,bat,Zimbabwe tour of South Africa,,South Africa,120,,,AK Markram,6,PR Reiffel,RA Kettleborough
+1122723,Test,2281,male,2017/18,2017-11-16,2017-11-20,Eden Gardens,Kolkata,India,Sri Lanka,Sri Lanka,field,Sri Lanka tour of India,1,,,,draw,B Kumar,6,RA Kettleborough,JS Wilson
+1122724,Test,2283,male,2017/18,2017-11-24,2017-11-27,"Vidarbha Cricket Association Stadium, Jamtha",Nagpur,Sri Lanka,India,Sri Lanka,bat,Sri Lanka tour of India,2,India,239,,,V Kohli,6,RA Kettleborough,JS Wilson
+1122725,Test,2286,male,2017/18,2017-12-02,2017-12-06,Arun Jaitley Stadium,Delhi,India,Sri Lanka,India,bat,Sri Lanka tour of India,3,,,,draw,V Kohli,6,JS Wilson,NJ Llong
+1122886,Test,2279,male,2017/18,2017-10-21,2017-10-25,Queens Sports Club,Bulawayo,West Indies,Zimbabwe,West Indies,bat,West Indies tour of Zimbabwe,1,West Indies,117,,,D Bishoo,6,HDPK Dharmasena,PR Reiffel
+1122887,Test,2280,male,2017/18,2017-10-29,2017-11-02,Queens Sports Club,Bulawayo,Zimbabwe,West Indies,Zimbabwe,bat,West Indies tour of Zimbabwe,2,,,,draw,Sikandar Raza,6,HDPK Dharmasena,SD Fry
+1127284,Test,2303,male,2018,2018-05-11,2018-05-15,"The Village, Malahide",Dublin,Ireland,Pakistan,Ireland,field,"Pakistan tour of Ireland, England and Scotland",,Pakistan,,5,,KJ O'Brien,6,RK Illingworth,NJ Llong
+1130744,Test,2295,male,2017/18,2018-01-31,2018-02-04,Zahur Ahmed Chowdhury Stadium,Chattogram,Bangladesh,Sri Lanka,Bangladesh,bat,Sri Lanka tour of Bangladesh,1,,,,draw,Mominul Haque,6,RJ Tucker,M Erasmus
+1130745,Test,2296,male,2017/18,2018-02-08,2018-02-10,"Shere Bangla National Stadium, Mirpur",Dhaka,Sri Lanka,Bangladesh,Sri Lanka,bat,Sri Lanka tour of Bangladesh,2,Sri Lanka,215,,,ARS Silva,6,RJ Tucker,JS Wilson
+1135149,Test,2306,male,2018,2018-06-06,2018-06-10,"Queen's Park Oval, Port of Spain",Trinidad,West Indies,Sri Lanka,West Indies,bat,Sri Lanka tour of West Indies,1,West Indies,226,,,SO Dowrich,6,RA Kettleborough,Aleem Dar
+1135150,Test,2308,male,2018,2018-06-14,2018-06-18,"Daren Sammy National Cricket Stadium, Gros Islet",St Lucia,Sri Lanka,West Indies,Sri Lanka,bat,Sri Lanka tour of West Indies,2,,,,draw,ST Gabriel,6,Aleem Dar,IJ Gould
+1135151,Test,2309,male,2018,2018-06-23,2018-06-26,"Kensington Oval, Bridgetown",Barbados,West Indies,Sri Lanka,West Indies,bat,Sri Lanka tour of West Indies,3,Sri Lanka,,4,,JO Holder,6,RA Kettleborough,IJ Gould
+1140385,Test,2324,male,2018/19,2018-11-06,2018-11-09,Galle International Stadium,,England,Sri Lanka,England,bat,England tour of Sri Lanka,1,England,211,,,BT Foakes,6,CB Gaffaney,M Erasmus
+1140386,Test,2326,male,2018/19,2018-11-14,2018-11-18,Pallekele International Cricket Stadium,,England,Sri Lanka,England,bat,England tour of Sri Lanka,2,England,57,,,JE Root,6,M Erasmus,S Ravi
+1140387,Test,2329,male,2018/19,2018-11-23,2018-11-26,Sinhalese Sports Club Ground,Colombo,England,Sri Lanka,England,bat,England tour of Sri Lanka,3,England,42,,,JM Bairstow,6,CB Gaffaney,S Ravi
+1142581,Test,2311,male,2018,2018-07-12,2018-07-14,Galle International Stadium,,Sri Lanka,South Africa,Sri Lanka,bat,South Africa tour of Sri Lanka,1,Sri Lanka,278,,,FDM Karunaratne,6,RJ Tucker,PR Reiffel
+1142582,Test,2313,male,2018,2018-07-20,2018-07-23,Sinhalese Sports Club Ground,Colombo,Sri Lanka,South Africa,Sri Lanka,bat,South Africa tour of Sri Lanka,2,Sri Lanka,199,,,FDM Karunaratne,6,RJ Tucker,NJ Llong
+1144153,Test,2338,male,2018/19,2018-12-26,2018-12-28,SuperSport Park,Centurion,South Africa,Pakistan,Pakistan,bat,Pakistan tour of South Africa,1,South Africa,,6,,D Olivier,6,BNJ Oxenford,S Ravi
+1144154,Test,2340,male,2018/19,2019-01-03,2019-01-06,Newlands,Cape Town,South Africa,Pakistan,South Africa,field,Pakistan tour of South Africa,2,South Africa,,9,,F du Plessis,6,JS Wilson,BNJ Oxenford
+1144155,Test,2341,male,2018/19,2019-01-11,2019-01-14,The Wanderers Stadium,Johannesburg,South Africa,Pakistan,South Africa,bat,Pakistan tour of South Africa,3,South Africa,107,,,Q de Kock,6,JS Wilson,S Ravi
+1144164,Test,2347,male,2018/19,2019-02-13,2019-02-16,Kingsmead,Durban,South Africa,Sri Lanka,Sri Lanka,field,Sri Lanka tour of South Africa,1,Sri Lanka,,1,,MDKJ Perera,6,RA Kettleborough,Aleem Dar
+1144165,Test,2348,male,2018/19,2019-02-21,2019-02-23,St George's Park,Port Elizabeth,South Africa,Sri Lanka,South Africa,bat,Sri Lanka tour of South Africa,2,Sri Lanka,,8,,BKG Mendis,6,Aleem Dar,IJ Gould
+1144993,Test,2333,male,2018/19,2018-12-06,2018-12-10,Adelaide Oval,,India,Australia,India,bat,India tour of Australia,1,India,31,,,CA Pujara,6,HDPK Dharmasena,NJ Llong
+1144994,Test,2334,male,2018/19,2018-12-14,2018-12-18,Perth Stadium,,Australia,India,Australia,bat,India tour of Australia,2,Australia,146,,,NM Lyon,6,HDPK Dharmasena,CB Gaffaney
+1144995,Test,2337,male,2018/19,2018-12-26,2018-12-30,Melbourne Cricket Ground,Melbourne,Australia,India,India,bat,India tour of Australia,3,India,137,,,JJ Bumrah,6,IJ Gould,M Erasmus
+1144996,Test,2339,male,2018/19,2019-01-03,2019-01-07,Sydney Cricket Ground,Sydney,Australia,India,India,bat,India tour of Australia,4,,,,draw,CA Pujara,6,RA Kettleborough,IJ Gould
+1145000,Test,2343,male,2018/19,2019-01-24,2019-01-26,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,Sri Lanka,Sri Lanka,bat,Sri Lanka tour of Australia,1,Australia,40,,,PJ Cummins,6,RK Illingworth,M Erasmus
+1145001,Test,2345,male,2018/19,2019-02-01,2019-02-04,Manuka Oval,Canberra,Australia,Sri Lanka,Australia,bat,Sri Lanka tour of Australia,2,Australia,366,,,MA Starc,6,MA Gough,RK Illingworth
+1146717,Test,2310,male,2018,2018-07-04,2018-07-06,Sir Vivian Richards Stadium,North Sound,Bangladesh,West Indies,West Indies,field,Bangladesh tour of West Indies and United States of America,1,West Indies,219,,,KAJ Roach,6,RK Illingworth,RA Kettleborough
+1146718,Test,2312,male,2018,2018-07-12,2018-07-14,"Sabina Park, Kingston",Jamaica,West Indies,Bangladesh,Bangladesh,field,Bangladesh tour of West Indies and United States of America,2,West Indies,166,,,JO Holder,6,RK Illingworth,S Ravi
+1152839,Test,2352,male,2019,2019-07-24,2019-07-26,Lord's,London,England,Ireland,England,bat,Ireland tour of England,,England,143,,,MJ Leach,6,Aleem Dar,RSA Palliyaguruge
+1152846,Test,2353,male,2019,2019-08-01,2019-08-05,Edgbaston,Birmingham,England,Australia,Australia,bat,The Ashes,1,Australia,251,,,SPD Smith,6,Aleem Dar,JS Wilson
+1152847,Test,2355,male,2019,2019-08-14,2019-08-18,Lord's,London,England,Australia,Australia,field,The Ashes,2,,,,draw,BA Stokes,6,Aleem Dar,CB Gaffaney
+1152848,Test,2357,male,2019,2019-08-22,2019-08-25,Headingley,Leeds,England,Australia,England,field,The Ashes,3,England,,1,,BA Stokes,6,CB Gaffaney,JS Wilson
+1152849,Test,2360,male,2019,2019-09-04,2019-09-08,Old Trafford,Manchester,England,Australia,Australia,bat,The Ashes,4,Australia,185,,,SPD Smith,6,HDPK Dharmasena,M Erasmus
+1152850,Test,2362,male,2019,2019-09-12,2019-09-15,Kennington Oval,London,England,Australia,Australia,field,The Ashes,5,England,135,,,JC Archer,6,HDPK Dharmasena,M Erasmus
+1153311,Test,2328,male,2018/19,2018-11-22,2018-11-24,Zahur Ahmed Chowdhury Stadium,Chattogram,Bangladesh,West Indies,Bangladesh,bat,West Indies tour of Bangladesh,1,Bangladesh,64,,,Mominul Haque,6,Aleem Dar,RK Illingworth
+1153312,Test,2331,male,2018/19,2018-11-30,2018-12-02,"Shere Bangla National Stadium, Mirpur",Dhaka,Bangladesh,West Indies,Bangladesh,bat,West Indies tour of Bangladesh,2,Bangladesh,184,,,Mehedi Hasan Miraz,6,Aleem Dar,RSA Palliyaguruge
+1153639,Test,2323,male,2018/19,2018-11-03,2018-11-06,Sylhet International Cricket Stadium,,Zimbabwe,Bangladesh,Zimbabwe,bat,Zimbabwe tour of Bangladesh,1,Zimbabwe,151,,,SC Williams,6,RA Kettleborough,RJ Tucker
+1153640,Test,2325,male,2018/19,2018-11-11,2018-11-15,"Shere Bangla National Stadium, Mirpur",Dhaka,Bangladesh,Zimbabwe,Bangladesh,bat,Zimbabwe tour of Bangladesh,2,Bangladesh,218,,,Mushfiqur Rahim,6,RA Kettleborough,HDPK Dharmasena
+1153838,Test,2335,male,2018/19,2018-12-15,2018-12-19,"Basin Reserve, Wellington",Wellington,Sri Lanka,New Zealand,New Zealand,field,Sri Lanka tour of New Zealand,1,,,,draw,TWM Latham,6,MA Gough,RJ Tucker
+1153839,Test,2336,male,2018/19,2018-12-26,2018-12-30,Hagley Oval,Christchurch,New Zealand,Sri Lanka,Sri Lanka,field,Sri Lanka tour of New Zealand,2,New Zealand,423,,,TG Southee,6,MA Gough,RK Illingworth
+1153847,Test,2349,male,2018/19,2019-02-28,2019-03-03,Seddon Park,Hamilton,New Zealand,Bangladesh,New Zealand,field,Bangladesh tour of New Zealand,1,New Zealand,52,,,KS Williamson,6,NJ Llong,PR Reiffel
+1153848,Test,2350,male,2018/19,2019-03-08,2019-03-12,Basin Reserve,Wellington,New Zealand,Bangladesh,New Zealand,field,Bangladesh tour of New Zealand,2,New Zealand,12,,,LRPL Taylor,6,PR Reiffel,RSA Palliyaguruge
+1157370,Test,2320,male,2018/19,2018-10-07,2018-10-11,Dubai International Cricket Stadium,,Pakistan,Australia,Pakistan,bat,Australia tour of United Arab Emirates,1,,,,draw,UT Khawaja,6,RA Kettleborough,RK Illingworth
+1157371,Test,2322,male,2018/19,2018-10-16,2018-10-19,Sheikh Zayed Stadium,Abu Dhabi,Pakistan,Australia,Pakistan,bat,Australia tour of United Arab Emirates,2,Pakistan,373,,,Mohammad Abbas,6,RK Illingworth,S Ravi
+1157381,Test,2327,male,2018/19,2018-11-16,2018-11-19,Sheikh Zayed Stadium,Abu Dhabi,New Zealand,Pakistan,New Zealand,bat,New Zealand tour of United Arab Emirates,1,New Zealand,4,,,AY Patel,6,BNJ Oxenford,IJ Gould
+1157382,Test,2330,male,2018/19,2018-11-24,2018-11-27,Dubai International Cricket Stadium,,Pakistan,New Zealand,Pakistan,bat,New Zealand tour of United Arab Emirates,2,Pakistan,16,,,Yasir Shah,6,BNJ Oxenford,PR Reiffel
+1157383,Test,2332,male,2018/19,2018-12-03,2018-12-07,Sheikh Zayed Stadium,Abu Dhabi,New Zealand,Pakistan,New Zealand,bat,New Zealand tour of United Arab Emirates,3,New Zealand,123,,,KS Williamson,6,IJ Gould,PR Reiffel
+1157752,Test,2319,male,2018/19,2018-10-04,2018-10-06,Saurashtra Cricket Association Stadium,Rajkot,India,West Indies,India,bat,West Indies tour of India,1,India,272,,,PP Shaw,6,IJ Gould,NJ Llong
+1157753,Test,2321,male,2018/19,2018-10-12,2018-10-14,"Rajiv Gandhi International Stadium, Uppal",Hyderabad,West Indies,India,West Indies,bat,West Indies tour of India,2,India,,10,,UT Yadav,6,BNJ Oxenford,IJ Gould
+1158062,Test,2342,male,2018/19,2019-01-23,2019-01-26,"Kensington Oval, Barbados",Bridgetown,West Indies,England,West Indies,bat,England tour of West Indies,1,West Indies,381,,,JO Holder,6,RJ Tucker,CB Gaffaney
+1158063,Test,2344,male,2018/19,2019-01-31,2019-02-02,"Sir Vivian Richards Stadium, Antigua",North Sound,West Indies,England,West Indies,field,England tour of West Indies,2,West Indies,,10,,KAJ Roach,6,HDPK Dharmasena,CB Gaffaney
+1158064,Test,2346,male,2018/19,2019-02-09,2019-02-12,"Daren Sammy National Cricket Stadium, St Lucia",Gros Islet,West Indies,England,West Indies,field,England tour of West Indies,3,England,232,,,MA Wood,6,RJ Tucker,HDPK Dharmasena
+1168025,Test,140,female,2019,2019-07-18,2019-07-21,The Cooper Associates County Ground,Taunton,England,Australia,Australia,bat,Australia Women tour of England,,,,,draw,EA Perry,6,MJ Saggers,AG Wharf
+1183530,Test,2368,male,2019/20,2019-11-21,2019-11-24,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,Pakistan,Pakistan,bat,Pakistan in Australia Test Series,1,Australia,5,,,M Labuschagne,6,RA Kettleborough,RK Illingworth
+1183531,Test,2372,male,2019/20,2019-11-29,2019-12-02,Adelaide Oval,Adelaide,Australia,Pakistan,Australia,bat,Pakistan in Australia Test Series,2,Australia,48,,,DA Warner,6,MA Gough,RK Illingworth
+1183532,Test,2374,male,2019/20,2019-12-12,2019-12-15,Perth Stadium,Perth,Australia,New Zealand,Australia,bat,Trans-Tasman Trophy,1,Australia,296,,,MA Starc,6,Aleem Dar,NJ Llong
+1183533,Test,2376,male,2019/20,2019-12-26,2019-12-29,Melbourne Cricket Ground,Melbourne,Australia,New Zealand,New Zealand,field,Trans-Tasman Trophy,2,Australia,247,,,TM Head,6,NJ Llong,M Erasmus
+1183534,Test,2378,male,2019/20,2020-01-03,2020-01-06,Sydney Cricket Ground,Sydney,Australia,New Zealand,Australia,bat,Trans-Tasman Trophy,3,Australia,279,,,M Labuschagne,6,Aleem Dar,M Erasmus
+1185304,Test,2377,male,2019/20,2019-12-26,2019-12-29,SuperSport Park,Centurion,South Africa,England,England,field,Basil D'Oliveira Trophy,1,South Africa,107,,,Q de Kock,6,CB Gaffaney,PR Reiffel
+1185305,Test,2379,male,2019/20,2020-01-03,2020-01-07,Newlands,Cape Town,South Africa,England,England,bat,Basil D'Oliveira Trophy,2,England,189,,,BA Stokes,6,HDPK Dharmasena,PR Reiffel
+1185306,Test,2380,male,2019/20,2020-01-16,2020-01-20,St George's Park,Port Elizabeth,South Africa,England,England,bat,Basil D'Oliveira Trophy,3,England,53,,,OJ Pope,6,RJ Tucker,BNJ Oxenford
+1185307,Test,2382,male,2019/20,2020-01-24,2020-01-27,The Wanderers Stadium,Johannesburg,South Africa,England,England,bat,Basil D'Oliveira Trophy,4,England,191,,,MA Wood,6,RJ Tucker,JS Wilson
+1187007,Test,2363,male,2019/20,2019-10-02,2019-10-06,Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium,Visakhapatnam,India,South Africa,India,bat,South Africa in India Test Series,1,India,203,,,RG Sharma,6,RK Illingworth,CB Gaffaney
+1187008,Test,2364,male,2019/20,2019-10-10,2019-10-13,Maharashtra Cricket Association Stadium,Pune,India,South Africa,India,bat,South Africa in India Test Series,2,India,137,,,V Kohli,6,CB Gaffaney,NJ Llong
+1187009,Test,2365,male,2019/20,2019-10-19,2019-10-22,JSCA International Stadium Complex,Ranchi,India,South Africa,India,bat,South Africa in India Test Series,3,India,202,,,RG Sharma,6,RK Illingworth,NJ Llong
+1187016,Test,2366,male,2019/20,2019-11-14,2019-11-16,Holkar Cricket Stadium,Indore,India,Bangladesh,Bangladesh,bat,Bangladesh in India Test Series,1,India,130,,,MA Agarwal,6,RJ Tucker,M Erasmus
+1187017,Test,2369,male,2019/20,2019-11-22,2019-11-24,Eden Gardens,Kolkata,India,Bangladesh,Bangladesh,bat,Bangladesh in India Test Series,2,India,46,,,I Sharma,6,JS Wilson,M Erasmus
+1187671,Test,2367,male,2019/20,2019-11-21,2019-11-25,Bay Oval,Mount Maunganui,New Zealand,England,England,bat,England in New Zealand Test Series,1,New Zealand,65,,,BJ Watling,6,BNJ Oxenford,HDPK Dharmasena
+1187672,Test,2371,male,2019/20,2019-11-29,2019-12-03,Seddon Park,Hamilton,New Zealand,England,England,field,England in New Zealand Test Series,2,,,,draw,JE Root,6,P Wilson,HDPK Dharmasena
+1187685,Test,2385,male,2019/20,2020-02-21,2020-02-24,Basin Reserve,Wellington,New Zealand,India,New Zealand,field,India in New Zealand Test Series,1,New Zealand,,10,,TG Southee,6,RA Kettleborough,Aleem Dar
+1187686,Test,2387,male,2019/20,2020-02-29,2020-03-02,Hagley Oval,Christchurch,New Zealand,India,New Zealand,field,India in New Zealand Test Series,2,New Zealand,,7,,KA Jamieson,6,RA Kettleborough,MA Gough
+1188628,Test,2358,male,2019,2019-08-22,2019-08-25,"Sir Vivian Richards Stadium, Antigua",North Sound,West Indies,India,West Indies,field,India in West Indies Test Series,1,India,318,,,AM Rahane,6,RA Kettleborough,RJ Tucker
+1188629,Test,2359,male,2019,2019-08-30,2019-09-02,"Sabina Park, Jamaica",Kingston,West Indies,India,West Indies,field,India in West Indies Test Series,2,India,257,,,GH Vihari,6,RA Kettleborough,PR Reiffel
+1192873,Test,2354,male,2019,2019-08-14,2019-08-18,Galle International Stadium,Galle,Sri Lanka,New Zealand,New Zealand,bat,New Zealand in Sri Lanka Test Series,1,Sri Lanka,,6,,FDM Karunaratne,6,MA Gough,RK Illingworth
+1192874,Test,2356,male,2019,2019-08-22,2019-08-26,P Sara Oval,Colombo,Sri Lanka,New Zealand,Sri Lanka,bat,New Zealand in Sri Lanka Test Series,2,New Zealand,65,,,TWM Latham,6,MA Gough,BNJ Oxenford
+1198241,Test,2391,male,2020,2020-08-05,2020-08-09,Old Trafford,Manchester,Pakistan,England,Pakistan,bat,Pakistan tour of England,1,England,,3,,CR Woakes,6,RA Kettleborough,RK Illingworth
+1198242,Test,2392,male,2020,2020-08-13,2020-08-17,The Rose Bowl,Southampton,Pakistan,England,Pakistan,bat,Pakistan tour of England,2,,,,draw,Mohammad Rizwan,6,RA Kettleborough,MA Gough
+1198243,Test,2393,male,2020,2020-08-21,2020-08-25,The Rose Bowl,Southampton,England,Pakistan,England,bat,Pakistan tour of England,3,,,,draw,Z Crawley,6,MA Gough,RK Illingworth
+1206635,Test,2373,male,2019/20,2019-12-11,2019-12-15,Rawalpindi Cricket Stadium,Rawalpindi,Pakistan,Sri Lanka,Sri Lanka,bat,Sri Lanka in Pakistan Test Series,1,,,,draw,Abid Ali,6,RA Kettleborough,MA Gough
+1206636,Test,2375,male,2019/20,2019-12-19,2019-12-23,National Stadium,Karachi,Pakistan,Sri Lanka,Pakistan,bat,Sri Lanka in Pakistan Test Series,2,Pakistan,263,,,Abid Ali,6,JS Wilson,BNJ Oxenford
+1212541,Test,2381,male,2019/20,2020-01-19,2020-01-23,Harare Sports Club,Harare,Zimbabwe,Sri Lanka,Zimbabwe,bat,Sri Lanka tour of Zimbabwe,1,Sri Lanka,,10,,AD Mathews,6,M Erasmus,Nitin Menon
+1212542,Test,2383,male,2019/20,2020-01-27,2020-01-31,Harare Sports Club,Harare,Zimbabwe,Sri Lanka,Zimbabwe,bat,Sri Lanka tour of Zimbabwe,2,,,,draw,Sikandar Raza,6,Aleem Dar,Nitin Menon
+1213062,Test,2384,male,2019/20,2020-02-07,2020-02-10,Rawalpindi Cricket Stadium,Rawalpindi,Pakistan,Bangladesh,Pakistan,field,Bangladesh in Pakistan Test Series,1,Pakistan,44,,,Naseem Shah,6,CB Gaffaney,NJ Llong
+1214666,Test,2386,male,2019/20,2020-02-22,2020-02-25,"Shere Bangla National Stadium, Mirpur",Dhaka,Bangladesh,Zimbabwe,Zimbabwe,bat,Zimbabwe tour of Bangladesh,,Bangladesh,106,,,Mushfiqur Rahim,6,JS Wilson,PR Reiffel
+1223869,Test,2396,male,2020/21,2020-12-17,2020-12-19,Adelaide Oval,Adelaide,India,Australia,India,bat,India tour of Australia,1,Australia,,8,,TD Paine,6,BNJ Oxenford,PR Reiffel
+1223870,Test,2398,male,2020/21,2020-12-26,2020-12-29,Melbourne Cricket Ground,Melbourne,Australia,India,Australia,bat,India tour of Australia,2,India,,8,,AM Rahane,6,BNJ Oxenford,PR Reiffel
+1223871,Test,2402,male,2020/21,2021-01-07,2021-01-11,Sydney Cricket Ground,Sydney,Australia,India,Australia,bat,India tour of Australia,3,,,,draw,SPD Smith,6,PR Reiffel,P Wilson
+1223872,Test,2404,male,2020/21,2021-01-15,2021-01-19,Brisbane Cricket Ground,Brisbane,Australia,India,Australia,bat,India tour of Australia,4,India,,3,,RR Pant,6,BNJ Oxenford,P Wilson
+1225247,Test,2388,male,2020,2020-07-08,2020-07-12,The Rose Bowl,Southampton,England,West Indies,England,bat,West Indies tour of England,1,West Indies,,4,,ST Gabriel,6,RA Kettleborough,RK Illingworth
+1225248,Test,2389,male,2020,2020-07-16,2020-07-20,Old Trafford,Manchester,England,West Indies,West Indies,field,West Indies tour of England,2,England,113,,,BA Stokes,6,MA Gough,RK Illingworth
+1225249,Test,2390,male,2020,2020-07-24,2020-07-28,Old Trafford,Manchester,England,West Indies,West Indies,field,West Indies tour of England,3,England,269,,,SCJ Broad,6,RA Kettleborough,MA Gough
+1233957,Test,2394,male,2020/21,2020-12-03,2020-12-06,Seddon Park,Hamilton,New Zealand,West Indies,West Indies,field,West Indies tour of New Zealand,1,New Zealand,134,,,KS Williamson,6,CB Gaffaney,WR Knights
+1233958,Test,2395,male,2020/21,2020-12-11,2020-12-14,Basin Reserve,Wellington,New Zealand,West Indies,West Indies,field,West Indies tour of New Zealand,2,New Zealand,12,,,HM Nicholls,6,CM Brown,CB Gaffaney
+1233962,Test,2397,male,2020/21,2020-12-26,2020-12-30,Bay Oval,Mount Maunganui,New Zealand,Pakistan,Pakistan,field,Pakistan tour of New Zealand,1,New Zealand,101,,,KS Williamson,6,CB Gaffaney,WR Knights
+1233963,Test,2400,male,2020/21,2021-01-03,2021-01-06,Hagley Oval,Christchurch,Pakistan,New Zealand,New Zealand,field,Pakistan tour of New Zealand,2,New Zealand,176,,,KA Jamieson,6,CM Brown,CB Gaffaney
+1237356,Test,2399,male,2020/21,2020-12-26,2020-12-29,SuperSport Park,Centurion,Sri Lanka,South Africa,Sri Lanka,bat,Sri Lanka tour of South Africa,1,South Africa,45,,,F du Plessis,6,AT Holdstock,M Erasmus
+1237357,Test,2401,male,2020/21,2021-01-03,2021-01-05,The Wanderers Stadium,Johannesburg,Sri Lanka,South Africa,Sri Lanka,bat,Sri Lanka tour of South Africa,2,South Africa,,10,,D Elgar,6,AT Holdstock,M Erasmus
+1239543,Test,2428,male,2021,2021-08-04,2021-08-08,"Trent Bridge, Nottingham",Nottingham,England,India,England,bat,India tour of England,1,,,,draw,JE Root,6,MA Gough,RA Kettleborough
+1239544,Test,2429,male,2021,2021-08-12,2021-08-16,"Lord's, London",London,India,England,England,field,India tour of England,2,India,151,,,KL Rahul,6,MA Gough,RK Illingworth
+1239545,Test,2432,male,2021,2021-08-25,2021-08-28,"Headingley, Leeds",Leeds,India,England,India,bat,India tour of England,3,England,76,,,OE Robinson,6,AG Wharf,RA Kettleborough
+1239546,Test,2433,male,2021,2021-09-02,2021-09-06,"Kennington Oval, London",London,India,England,England,field,India tour of England,4,India,157,,,RG Sharma,6,AG Wharf,RK Illingworth
+1243015,Test,2403,male,2020/21,2021-01-14,2021-01-18,Galle International Stadium,Galle,Sri Lanka,England,Sri Lanka,bat,England tour of Sri Lanka,1,England,,7,,JE Root,6,HDPK Dharmasena,RSA Palliyaguruge
+1243016,Test,2405,male,2020/21,2021-01-22,2021-01-25,Galle International Stadium,Galle,Sri Lanka,England,Sri Lanka,bat,England tour of Sri Lanka,2,England,,6,,JE Root,6,HDPK Dharmasena,RSA Palliyaguruge
+1243017,Test,2406,male,2020/21,2021-01-26,2021-01-29,National Stadium,Karachi,South Africa,Pakistan,South Africa,bat,South Africa tour of Pakistan,1,Pakistan,,7,,Fawad Alam,6,Ahsan Raza,Aleem Dar
+1243018,Test,2408,male,2020/21,2021-02-04,2021-02-08,Rawalpindi Cricket Stadium,Rawalpindi,Pakistan,South Africa,Pakistan,bat,South Africa tour of Pakistan,2,Pakistan,95,,,Hasan Ali,6,Ahsan Raza,Aleem Dar
+1243384,Test,2409,male,2020/21,2021-02-05,2021-02-09,MA Chidambaram Stadium,Chennai,England,India,England,bat,England tour of India,1,England,227,,,JE Root,6,AK Chaudhary,Nitin Menon
+1243385,Test,2411,male,2020/21,2021-02-13,2021-02-17,MA Chidambaram Stadium,Chennai,India,England,India,bat,England tour of India,2,India,317,,,R Ashwin,6,Nitin Menon,VK Sharma
+1243386,Test,2412,male,2020/21,2021-02-24,2021-02-25,Narendra Modi Stadium,Ahmedabad,England,India,England,bat,England tour of India,3,India,,10,,AR Patel,6,AK Chaudhary,Nitin Menon
+1243387,Test,2414,male,2020/21,2021-03-04,2021-03-06,Narendra Modi Stadium,Ahmedabad,England,India,England,bat,England tour of India,4,India,25,,,RR Pant,6,Nitin Menon,VK Sharma
+1244025,Test,2407,male,2020/21,2021-02-03,2021-02-07,Zahur Ahmed Chowdhury Stadium,Chattogram,Bangladesh,West Indies,Bangladesh,bat,West Indies tour of Bangladesh,1,West Indies,,3,,KR Mayers,6,RK Illingworth,Sharfuddoula
+1244026,Test,2410,male,2020/21,2021-02-11,2021-02-14,Shere Bangla National Stadium,Dhaka,West Indies,Bangladesh,West Indies,bat,West Indies tour of Bangladesh,2,West Indies,17,,,RRS Cornwall,6,RK Illingworth,Sharfuddoula
+1249210,Test,2422,male,2021,2021-06-02,2021-06-06,"Lord's, London",London,New Zealand,England,New Zealand,bat,New Zealand tour of England,1,,,,draw,DP Conway,6,MA Gough,RA Kettleborough
+1249211,Test,2423,male,2021,2021-06-10,2021-06-13,"Edgbaston, Birmingham",Birmingham,England,New Zealand,England,bat,New Zealand tour of England,2,New Zealand,,8,,MJ Henry,6,RK Illingworth,RA Kettleborough
+1249875,Test,2425,male,2021,2021-06-18,2021-06-23,"The Rose Bowl, Southampton",Southampton,India,New Zealand,New Zealand,field,ICC World Test Championship,,New Zealand,,8,,KA Jamieson,6,MA Gough,RK Illingworth
+1252073,Test,2416,male,2020/21,2021-03-21,2021-03-25,Sir Vivian Richards Stadium,North Sound,Sri Lanka,West Indies,West Indies,field,Sri Lanka tour of West Indies,1,,,,draw,NE Bonner,6,GO Brathwaite,JS Wilson
+1252074,Test,2417,male,2020/21,2021-03-29,2021-04-02,Sir Vivian Richards Stadium,North Sound,West Indies,Sri Lanka,Sri Lanka,field,Sri Lanka tour of West Indies,2,,,,draw,KC Brathwaite,6,GO Brathwaite,JS Wilson
+1255828,Test,2418,male,2021,2021-04-21,2021-04-25,Pallekele International Cricket Stadium,Pallekele,Sri Lanka,Bangladesh,Bangladesh,bat,Sri Lanka v Bangladesh,1,,,,draw,FDM Karunaratne,6,HDPK Dharmasena,RSA Palliyaguruge
+1255829,Test,2419,male,2021,2021-04-29,2021-05-03,Pallekele International Cricket Stadium,Kandy,Sri Lanka,Bangladesh,Sri Lanka,bat,Bangladesh tour of Sri Lanka,2,Sri Lanka,209,,,P Jayawickrama,6,HDPK Dharmasena,RSA Palliyaguruge
+1256726,Test,2454,male,2021/22,2022-03-08,2022-03-12,"Sir Vivian Richards Stadium, North Sound, Antigua",North Sound,England,West Indies,England,bat,England tour of West Indies,1,,,,draw,NE Bonner,6,GO Brathwaite,JS Wilson
+1256727,Test,2457,male,2021/22,2022-03-16,2022-03-20,"Kensington Oval, Bridgetown, Barbados",Bridgetown,England,West Indies,England,bat,England tour of West Indies,2,,,,draw,KC Brathwaite,6,JS Wilson,N Duguid
+1256728,Test,2459,male,2021/22,2022-03-24,2022-03-27,"National Cricket Stadium, St George's, Grenada",St George's,England,West Indies,West Indies,field,England tour of West Indies,3,West Indies,,10,,J Da Silva,6,GO Brathwaite,JS Wilson
+1257186,Test,2420,male,2021,2021-04-29,2021-05-01,Harare Sports Club,Harare,Zimbabwe,Pakistan,Zimbabwe,bat,Pakistan tour of Zimbabwe,1,Pakistan,116,,,Hasan Ali,6,L Rusere,M Erasmus
+1257187,Test,2421,male,2021,2021-05-07,2021-05-10,Harare Sports Club,Harare,Pakistan,Zimbabwe,Pakistan,bat,Pakistan tour of Zimbabwe,2,Pakistan,147,,,Abid Ali,6,L Rusere,M Erasmus
+1260093,Test,141,female,2021,2021-06-16,2021-06-19,"County Ground, Bristol",Bristol,England,India,England,bat,India Women tour of England,,,,,draw,Shafali Verma,6,Chris Watts,S Redfern
+1263149,Test,2424,male,2021,2021-06-10,2021-06-12,"Daren Sammy National Cricket Stadium, Gros Islet, St Lucia",Gros Islet,West Indies,South Africa,West Indies,bat,South Africa tour of West Indies,1,South Africa,63,,,Q de Kock,6,GO Brathwaite,JS Wilson
+1263150,Test,2426,male,2021,2021-06-18,2021-06-21,"Daren Sammy National Cricket Stadium, Gros Islet, St Lucia",Gros Islet,South Africa,West Indies,West Indies,field,South Africa tour of West Indies,2,South Africa,158,,,K Rabada,6,GO Brathwaite,JS Wilson
+1263169,Test,2430,male,2021,2021-08-12,2021-08-15,"Sabina Park, Kingston, Jamaica",Kingston,Pakistan,West Indies,West Indies,field,Pakistan tour of West Indies,1,West Indies,,1,,JNT Seales,6,GO Brathwaite,JS Wilson
+1263170,Test,2431,male,2021,2021-08-20,2021-08-24,"Sabina Park, Kingston, Jamaica",Kingston,Pakistan,West Indies,West Indies,field,Pakistan tour of West Indies,2,Pakistan,109,,,Shaheen Shah Afridi,6,GO Brathwaite,JS Wilson
+1263462,Test,2440,male,2021/22,2021-12-08,2021-12-11,"Brisbane Cricket Ground, Woolloongabba, Brisbane",Brisbane,England,Australia,England,bat,The Ashes,1,Australia,,9,,TM Head,6,PR Reiffel,RJ Tucker
+1263463,Test,2441,male,2021/22,2021-12-16,2021-12-20,Adelaide Oval,Adelaide,Australia,England,Australia,bat,The Ashes,2,Australia,275,,,M Labuschagne,6,P Wilson,RJ Tucker
+1263464,Test,2442,male,2021/22,2021-12-26,2021-12-28,Melbourne Cricket Ground,Melbourne,England,Australia,Australia,field,The Ashes,3,Australia,14,,,SM Boland,6,PR Reiffel,P Wilson
+1263465,Test,2446,male,2021/22,2022-01-05,2022-01-09,Sydney Cricket Ground,Sydney,Australia,England,Australia,bat,The Ashes,4,,,,draw,UT Khawaja,6,PR Reiffel,RJ Tucker
+1263466,Test,2449,male,2021/22,2022-01-14,2022-01-16,"Bellerive Oval, Hobart",Hobart,Australia,England,England,field,The Ashes,5,Australia,146,,,TM Head,6,P Wilson,RJ Tucker
+1263571,Test,143,female,2021/22,2022-01-27,2022-01-30,"Manuka Oval, Canberra",Canberra,Australia,England,England,field,Women's Ashes,,,,,draw,HC Knight,6,Eloise Sheridan,MW Graham-Smith
+1263620,Test,142,female,2021/22,2021-09-30,2021-10-03,Carrara Oval,Carrara,India,Australia,Australia,field,India Women tour of Australia,,,,,draw,S Mandhana,6,CA Polosak,PJ Gillespie
+1267676,Test,2427,male,2021,2021-07-07,2021-07-11,Harare Sports Club,Harare,Bangladesh,Zimbabwe,Bangladesh,bat,Bangladesh tour of Zimbabwe,,Bangladesh,220,,,Mahmudullah,6,L Rusere,M Erasmus
+1276901,Test,2464,male,2022,2022-06-02,2022-06-05,"Lord's, London",London,New Zealand,England,New Zealand,bat,New Zealand tour of England,1,England,,5,,JE Root,6,MA Gough,RJ Tucker
+1276902,Test,2465,male,2022,2022-06-10,2022-06-14,"Trent Bridge, Nottingham",Nottingham,New Zealand,England,England,field,New Zealand tour of England,2,England,,5,,JM Bairstow,6,MA Gough,PR Reiffel
+1276903,Test,2467,male,2022,2022-06-23,2022-06-27,"Headingley, Leeds",Leeds,New Zealand,England,New Zealand,bat,New Zealand tour of England,3,England,,7,,MJ Leach,6,M Erasmus,RA Kettleborough
+1276916,Test,2474,male,2022,2022-08-17,2022-08-19,"Lord's, London",London,England,South Africa,South Africa,field,South Africa tour of England,1,South Africa,12,,,K Rabada,6,Nitin Menon,RK Illingworth
+1276917,Test,2475,male,2022,2022-08-25,2022-08-27,"Old Trafford, Manchester",Manchester,South Africa,England,South Africa,bat,South Africa tour of England,2,England,85,,,BA Stokes,6,CB Gaffaney,RK Illingworth
+1276918,Test,2476,male,2022,2022-09-08,2022-09-12,"Kennington Oval, London",London,South Africa,England,England,field,South Africa tour of England,3,England,,9,,OE Robinson,6,Nitin Menon,RA Kettleborough
+1277079,Test,2443,male,2021/22,2021-12-26,2021-12-30,"SuperSport Park, Centurion",Centurion,India,South Africa,India,bat,India tour of South Africa,1,India,113,,,KL Rahul,6,AT Holdstock,M Erasmus
+1277080,Test,2445,male,2021/22,2022-01-03,2022-01-06,"The Wanderers Stadium, Johannesburg",Johannesburg,India,South Africa,India,bat,India tour of South Africa,2,South Africa,,7,,D Elgar,6,A Paleker,M Erasmus
+1277081,Test,2448,male,2021/22,2022-01-11,2022-01-14,"Newlands, Cape Town",Cape Town,India,South Africa,India,bat,India tour of South Africa,3,South Africa,,7,,KD Petersen,6,AT Holdstock,M Erasmus
+1277100,Test,2460,male,2021/22,2022-03-31,2022-04-04,"Kingsmead, Durban",Durban,South Africa,Bangladesh,Bangladesh,field,Bangladesh tour of South Africa,1,South Africa,220,,,KA Maharaj,6,AT Holdstock,M Erasmus
+1277101,Test,2461,male,2021/22,2022-04-08,2022-04-11,"St George's Park, Port Elizabeth",Gqeberha,South Africa,Bangladesh,South Africa,bat,Bangladesh tour of South Africa,2,South Africa,332,,,KA Maharaj,6,A Paleker,M Erasmus
+1277977,Test,2436,male,2021/22,2021-11-26,2021-11-30,"Zahur Ahmed Chowdhury Stadium, Chattogram",Chattogram,Bangladesh,Pakistan,Bangladesh,bat,Pakistan tour of Bangladesh,1,Pakistan,,8,,Abid Ali,6,MA Gough,Sharfuddoula
+1277978,Test,2439,male,2021/22,2021-12-04,2021-12-08,"Shere Bangla National Stadium, Mirpur",Dhaka,Pakistan,Bangladesh,Pakistan,bat,Pakistan tour of Bangladesh,2,Pakistan,8,,,Sajid Khan,6,MA Gough,Sharfuddoula
+1278674,Test,2435,male,2021/22,2021-11-25,2021-11-29,"Green Park, Kanpur",Kanpur,India,New Zealand,India,bat,New Zealand tour of India,1,,,,draw,SS Iyer,6,Nitin Menon,VK Sharma
+1278675,Test,2438,male,2021/22,2021-12-03,2021-12-06,"Wankhede Stadium, Mumbai",Mumbai,India,New Zealand,India,bat,New Zealand tour of India,2,India,372,,,MA Agarwal,6,AK Chaudhary,Nitin Menon
+1278682,Test,2452,male,2021/22,2022-03-04,2022-03-06,"Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",Chandigarh,India,Sri Lanka,India,bat,Sri Lanka tour of India,1,India,222,,,RA Jadeja,6,Nitin Menon,VK Sharma
+1278683,Test,2456,male,2021/22,2022-03-12,2022-03-14,"M Chinnaswamy Stadium, Bengaluru",Bengaluru,India,Sri Lanka,India,bat,Sri Lanka tour of India,2,India,238,,,SS Iyer,6,AK Chaudhary,Nitin Menon
+1288310,Test,2453,male,2021/22,2022-03-04,2022-03-08,Rawalpindi Cricket Stadium,Rawalpindi,Pakistan,Australia,Pakistan,bat,Australia tour of Pakistan,1,,,,draw,Imam-ul-Haq,6,Ahsan Raza,Aleem Dar
+1288311,Test,2455,male,2021/22,2022-03-12,2022-03-16,"National Stadium, Karachi",Karachi,Australia,Pakistan,Australia,bat,Australia tour of Pakistan,2,,,,draw,Babar Azam,6,Ahsan Raza,Aleem Dar
+1288312,Test,2458,male,2021/22,2022-03-21,2022-03-25,"Gaddafi Stadium, Lahore",Lahore,Australia,Pakistan,Australia,bat,Australia tour of Pakistan,3,Australia,115,,,PJ Cummins,6,Ahsan Raza,Aleem Dar
+1288345,Test,2434,male,2021/22,2021-11-21,2021-11-25,Galle International Stadium,Galle,Sri Lanka,West Indies,Sri Lanka,bat,West Indies tour of Sri Lanka,1,Sri Lanka,187,,,FDM Karunaratne,6,HDPK Dharmasena,RSA Palliyaguruge
+1288346,Test,2437,male,2021/22,2021-11-29,2021-12-03,Galle International Stadium,Galle,Sri Lanka,West Indies,Sri Lanka,bat,West Indies tour of Sri Lanka,2,Sri Lanka,164,,,DM de Silva,6,HDPK Dharmasena,RSA Palliyaguruge
+1288979,Test,2444,male,2021/22,2022-01-01,2022-01-05,"Bay Oval, Mount Maunganui",Mount Maunganui,New Zealand,Bangladesh,Bangladesh,field,Bangladesh tour of New Zealand,1,Bangladesh,,8,,Ebadat Hossain,6,CM Brown,CB Gaffaney
+1288980,Test,2447,male,2021/22,2022-01-09,2022-01-11,"Hagley Oval, Christchurch",Christchurch,New Zealand,Bangladesh,Bangladesh,field,Bangladesh tour of New Zealand,2,New Zealand,117,,,TWM Latham,6,CB Gaffaney,WR Knights
+1288981,Test,2450,male,2021/22,2022-02-17,2022-02-19,"Hagley Oval, Christchurch",Christchurch,South Africa,New Zealand,New Zealand,field,South Africa tour of New Zealand,1,New Zealand,276,,,MJ Henry,6,CM Brown,CB Gaffaney
+1288982,Test,2451,male,2021/22,2022-02-25,2022-03-01,"Hagley Oval, Christchurch",Christchurch,South Africa,New Zealand,South Africa,bat,South Africa tour of New Zealand,2,South Africa,198,,,K Rabada,6,CM Brown,WR Knights
+1301327,Test,144,female,2022,2022-06-27,2022-06-30,"The Cooper Associates County Ground, Taunton",Taunton,South Africa,England,England,field,South Africa Women tour of England,,,,,draw,NR Sciver,6,AY Harris,S Redfern
+1307301,Test,2469,male,2022,2022-06-29,2022-07-01,Galle International Stadium,Galle,Sri Lanka,Australia,Sri Lanka,bat,Australia tour of Sri Lanka,1,Australia,,10,,C Green,6,HDPK Dharmasena,Nitin Menon
+1307302,Test,2471,male,2022,2022-07-08,2022-07-11,Galle International Stadium,Galle,Australia,Sri Lanka,Australia,bat,Australia tour of Sri Lanka,2,Sri Lanka,39,,,NGRP Jayasuriya,6,HDPK Dharmasena,MA Gough
+1308488,Test,2462,male,2022,2022-05-15,2022-05-19,"Zahur Ahmed Chowdhury Stadium, Chattogram",Chattogram,Sri Lanka,Bangladesh,Sri Lanka,bat,Sri Lanka tour of Bangladesh,1,,,,draw,AD Mathews,6,RA Kettleborough,Sharfuddoula
+1308489,Test,2463,male,2022,2022-05-23,2022-05-27,"Shere Bangla National Stadium, Mirpur",Dhaka,Bangladesh,Sri Lanka,Bangladesh,bat,Sri Lanka tour of Bangladesh,2,Sri Lanka,,10,,AM Fernando,6,JS Wilson,Sharfuddoula
+1317147,Test,2466,male,2022,2022-06-16,2022-06-19,"Sir Vivian Richards Stadium, North Sound, Antigua",North Sound,Bangladesh,West Indies,West Indies,field,Bangladesh tour of West Indies,1,West Indies,,7,,KAJ Roach,6,CB Gaffaney,JS Wilson
+1317148,Test,2468,male,2022,2022-06-24,2022-06-27,"Daren Sammy National Cricket Stadium, Gros Islet, St Lucia",Gros Islet,Bangladesh,West Indies,West Indies,field,Bangladesh tour of West Indies,2,West Indies,,10,,KR Mayers,6,JS Wilson,RK Illingworth
+1317484,Test,2477,male,2022/23,2022-11-30,2022-12-04,Perth Stadium,Perth,Australia,West Indies,Australia,bat,West Indies tour of Australia,1,Australia,164,,,M Labuschagne,6,RK Illingworth,RJ Tucker
+1317485,Test,2479,male,2022/23,2022-12-08,2022-12-11,Adelaide Oval,Adelaide,Australia,West Indies,Australia,bat,West Indies tour of Australia,2,Australia,419,,,TM Head,6,HDPK Dharmasena,RJ Tucker
+1317492,Test,2482,male,2022/23,2022-12-17,2022-12-18,"Brisbane Cricket Ground, Woolloongabba, Brisbane",Brisbane,South Africa,Australia,Australia,field,South Africa tour of Australia,1,Australia,,6,,TM Head,6,CB Gaffaney,RJ Tucker
+1317493,Test,2485,male,2022/23,2022-12-26,2022-12-29,Melbourne Cricket Ground,Melbourne,South Africa,Australia,Australia,field,South Africa tour of Australia,2,Australia,182,,,DA Warner,6,PR Reiffel,RA Kettleborough
+1317494,Test,2488,male,2022/23,2023-01-04,2023-01-08,Sydney Cricket Ground,Sydney,Australia,South Africa,Australia,bat,South Africa tour of Australia,3,,,,draw,UT Khawaja,6,CB Gaffaney,PR Reiffel
+1320741,Test,2470,male,2022,2022-07-01,2022-07-05,"Edgbaston, Birmingham",Birmingham,India,England,England,field,India tour of England,5,England,,7,,JM Bairstow,6,Aleem Dar,RA Kettleborough
+1320953,Test,2472,male,2022,2022-07-16,2022-07-20,Galle International Stadium,Galle,Sri Lanka,Pakistan,Sri Lanka,bat,Pakistan tour of Sri Lanka,1,Pakistan,,4,,Abdullah Shafique,6,HDPK Dharmasena,M Erasmus
+1320954,Test,2473,male,2022,2022-07-24,2022-07-28,Galle International Stadium,Galle,Sri Lanka,Pakistan,Sri Lanka,bat,Pakistan tour of Sri Lanka,2,Sri Lanka,246,,,DM de Silva,6,HDPK Dharmasena,RJ Tucker
+1322355,Test,2492,male,2022/23,2023-02-16,2023-02-19,"Bay Oval, Mount Maunganui",Mount Maunganui,England,New Zealand,New Zealand,field,England tour of New Zealand,1,England,267,,,HC Brook,6,Aleem Dar,CB Gaffaney
+1322356,Test,2494,male,2022/23,2023-02-24,2023-02-28,"Basin Reserve, Wellington",Wellington,England,New Zealand,New Zealand,field,England tour of New Zealand,2,New Zealand,1,,,KS Williamson,6,CB Gaffaney,RJ Tucker
+1322357,Test,2498,male,2022/23,2023-03-09,2023-03-13,"Hagley Oval, Christchurch",Christchurch,Sri Lanka,New Zealand,New Zealand,field,Sri Lanka tour of New Zealand,1,New Zealand,,2,,DJ Mitchell,6,CB Gaffaney,MA Gough
+1322358,Test,2500,male,2022/23,2023-03-17,2023-03-20,"Basin Reserve, Wellington",Wellington,New Zealand,Sri Lanka,Sri Lanka,field,Sri Lanka tour of New Zealand,2,New Zealand,58,,,HM Nicholls,6,CB Gaffaney,RK Illingworth
+1330871,Test,2478,male,2022/23,2022-12-01,2022-12-05,Rawalpindi Cricket Stadium,Rawalpindi,England,Pakistan,England,bat,England tour of Pakistan,1,England,74,,,OE Robinson,6,Ahsan Raza,JS Wilson
+1330872,Test,2480,male,2022/23,2022-12-09,2022-12-12,Multan Cricket Stadium,Multan,England,Pakistan,England,bat,England tour of Pakistan,2,England,26,,,HC Brook,6,Aleem Dar,M Erasmus
+1330873,Test,2483,male,2022/23,2022-12-17,2022-12-20,"National Stadium, Karachi",Karachi,Pakistan,England,Pakistan,bat,England tour of Pakistan,3,England,,8,,HC Brook,6,Ahsan Raza,JS Wilson
+1336043,Test,2507,male,2023,2023-06-16,2023-06-20,"Edgbaston, Birmingham",Birmingham,England,Australia,England,bat,The Ashes,1,Australia,,2,,UT Khawaja,6,Ahsan Raza,M Erasmus
+1336044,Test,2508,male,2023,2023-06-28,2023-07-02,"Lord's, London",London,Australia,England,England,field,The Ashes,2,Australia,43,,,SPD Smith,6,Ahsan Raza,CB Gaffaney
+1336045,Test,2509,male,2023,2023-07-06,2023-07-09,"Headingley, Leeds",Leeds,Australia,England,England,field,The Ashes,3,England,,3,,MA Wood,6,HDPK Dharmasena,Nitin Menon
+1336046,Test,2512,male,2023,2023-07-19,2023-07-23,"Old Trafford, Manchester",Manchester,Australia,England,England,field,The Ashes,4,,,,draw,Z Crawley,6,JS Wilson,Nitin Menon
+1336047,Test,2515,male,2023,2023-07-27,2023-07-31,"Kennington Oval, London",London,England,Australia,Australia,field,The Ashes,5,England,49,,,CR Woakes,6,JS Wilson,HDPK Dharmasena
+1336073,Test,145,female,2023,2023-06-22,2023-06-26,"Trent Bridge, Nottingham",Nottingham,Australia,England,Australia,bat,Women's Ashes,,Australia,89,,,A Gardner,6,AY Harris,S McLelland
+1336127,Test,2504,male,2023,2023-06-01,2023-06-03,"Lord's, London",London,Ireland,England,England,field,Ireland tour of England,,England,,10,,OJ Pope,6,AT Holdstock,P Wilson
+1339599,Test,2495,male,2022/23,2023-02-28,2023-03-02,"SuperSport Park, Centurion",Centurion,South Africa,West Indies,South Africa,bat,West Indies tour of South Africa,1,South Africa,87,,,AK Markram,6,HDPK Dharmasena,M Erasmus
+1339600,Test,2497,male,2022/23,2023-03-08,2023-03-11,"The Wanderers Stadium, Johannesburg",Johannesburg,South Africa,West Indies,South Africa,bat,West Indies tour of South Africa,2,South Africa,284,,,T Bavuma,6,M Erasmus,PR Reiffel
+1339609,Test,2486,male,2022/23,2022-12-26,2022-12-30,"National Stadium, Karachi",Karachi,Pakistan,New Zealand,Pakistan,bat,New Zealand tour of Pakistan,1,,,,draw,KS Williamson,6,Aleem Dar,AG Wharf
+1339610,Test,2487,male,2022/23,2023-01-02,2023-01-06,"National Stadium, Karachi",Karachi,New Zealand,Pakistan,New Zealand,bat,New Zealand tour of Pakistan,2,,,,draw,Sarfraz Ahmed,6,Aleem Dar,AG Wharf
+1340848,Test,2481,male,2022/23,2022-12-14,2022-12-18,"Zahur Ahmed Chowdhury Stadium, Chattogram",Chattogram,India,Bangladesh,India,bat,India tour of Bangladesh,1,India,188,,,Kuldeep Yadav,6,MA Gough,Sharfuddoula
+1340849,Test,2484,male,2022/23,2022-12-22,2022-12-25,"Shere Bangla National Stadium, Mirpur",Dhaka,Bangladesh,India,Bangladesh,bat,India tour of Bangladesh,2,India,,3,,R Ashwin,6,CM Brown,Sharfuddoula
+1348652,Test,2490,male,2022/23,2023-02-09,2023-02-11,"Vidarbha Cricket Association Stadium, Jamtha, Nagpur",Nagpur,Australia,India,Australia,bat,Australia tour of India,1,India,132,,,RA Jadeja,6,Nitin Menon,RK Illingworth
+1348653,Test,2493,male,2022/23,2023-02-17,2023-02-19,"Arun Jaitley Stadium, Delhi",Delhi,Australia,India,Australia,bat,Australia tour of India,2,India,,6,,RA Jadeja,6,MA Gough,Nitin Menon
+1348654,Test,2496,male,2022/23,2023-03-01,2023-03-03,"Holkar Cricket Stadium, Indore",Indore,India,Australia,India,bat,Australia tour of India,3,Australia,,9,,NM Lyon,6,JS Wilson,Nitin Menon
+1348655,Test,2499,male,2022/23,2023-03-09,2023-03-13,"Narendra Modi Stadium, Ahmedabad",Ahmedabad,Australia,India,Australia,bat,Australia tour of India,4,,,,draw,V Kohli,6,Nitin Menon,RA Kettleborough
+1350681,Test,2489,male,2022/23,2023-02-04,2023-02-08,"Queens Sports Club, Bulawayo",Bulawayo,West Indies,Zimbabwe,West Indies,bat,West Indies tour of Zimbabwe,1,,,,draw,T Chanderpaul,6,L Rusere,PR Reiffel
+1350682,Test,2491,male,2022/23,2023-02-12,2023-02-14,"Queens Sports Club, Bulawayo",Bulawayo,Zimbabwe,West Indies,Zimbabwe,bat,West Indies tour of Zimbabwe,2,West Indies,4,,,G Motie,6,L Rusere,PR Reiffel
+1355723,Test,2501,male,2022/23,2023-04-04,2023-04-07,"Shere Bangla National Stadium, Mirpur",Dhaka,Ireland,Bangladesh,Ireland,bat,Ireland tour of Bangladesh,,Bangladesh,,7,,Mushfiqur Rahim,6,Aleem Dar,Sharfuddoula
+1358412,Test,2505,male,2023,2023-06-07,2023-06-11,"Kennington Oval, London",London,Australia,India,India,field,ICC World Test Championship,,Australia,209,,,TM Head,6,CB Gaffaney,RK Illingworth
+1363447,Test,2502,male,2023,2023-04-16,2023-04-18,Galle International Stadium,Galle,Sri Lanka,Ireland,Sri Lanka,bat,Ireland tour of Sri Lanka,1,Sri Lanka,280,,,NGRP Jayasuriya,6,AT Holdstock,HDPK Dharmasena
+1363448,Test,2503,male,2023,2023-04-24,2023-04-28,Galle International Stadium,Galle,Ireland,Sri Lanka,Ireland,bat,Ireland tour of Sri Lanka,2,Sri Lanka,10,,,NGRP Jayasuriya,6,HDPK Dharmasena,PR Reiffel
+1375842,Test,2518,male,2023/24,2023-12-14,2023-12-17,Perth Stadium,Perth,Australia,Pakistan,Australia,bat,Pakistan tour of Australia,1,Australia,360,,,MR Marsh,6,JS Wilson,RK Illingworth
+1375843,Test,2519,male,2023/24,2023-12-26,2023-12-29,Melbourne Cricket Ground,Melbourne,Australia,Pakistan,Pakistan,field,Pakistan tour of Australia,2,Australia,79,,,PJ Cummins,6,JS Wilson,MA Gough
+1375844,Test,2521,male,2023/24,2024-01-03,2024-01-06,Sydney Cricket Ground,Sydney,Pakistan,Australia,Pakistan,bat,Pakistan tour of Australia,3,Australia,,8,,Aamer Jamal,6,MA Gough,RK Illingworth
+1375845,Test,2523,male,2023/24,2024-01-17,2024-01-19,Adelaide Oval,Adelaide,West Indies,Australia,Australia,field,West Indies tour of Australia,1,Australia,,10,,TM Head,6,AT Holdstock,Nitin Menon
+1375846,Test,2524,male,2023/24,2024-01-25,2024-01-28,"Brisbane Cricket Ground, Woolloongabba, Brisbane",Brisbane,West Indies,Australia,West Indies,bat,West Indies tour of Australia,2,West Indies,8,,,S Joseph,6,Nitin Menon,Sharfuddoula
+1375875,Test,148,female,2023/24,2024-02-15,2024-02-17,"Western Australia Cricket Association Ground, Perth",Perth,South Africa,Australia,Australia,field,South Africa Women tour of Australia,,Australia,284,,,A Sutherland,6,CA Polosak,Eloise Sheridan
+1381212,Test,2510,male,2023,2023-07-12,2023-07-14,"Windsor Park, Roseau, Dominica",Roseau,West Indies,India,West Indies,bat,India tour of West Indies,1,India,141,,,YBK Jaiswal,6,MA Gough,RA Kettleborough
+1381213,Test,2513,male,2023,2023-07-20,2023-07-24,"Queen's Park Oval, Port of Spain, Trinidad",Port of Spain,India,West Indies,West Indies,field,India tour of West Indies,2,,,,draw,Mohammed Siraj,6,M Erasmus,RA Kettleborough
+1385685,Test,2511,male,2023,2023-07-16,2023-07-20,Galle International Stadium,Galle,Sri Lanka,Pakistan,Sri Lanka,bat,Pakistan tour of Sri Lanka,1,Pakistan,,4,,Saud Shakeel,6,AG Wharf,RJ Tucker
+1385686,Test,2514,male,2023,2023-07-24,2023-07-27,"Sinhalese Sports Club Ground, Colombo",Colombo,Sri Lanka,Pakistan,Sri Lanka,bat,Pakistan tour of Sri Lanka,2,Pakistan,222,,,Abdullah Shafique,6,AG Wharf,CB Gaffaney
+1385691,Test,2538,male,2024,2024-07-10,2024-07-12,"Lord's, London",London,West Indies,England,England,field,West Indies tour of England,1,England,114,,,AAP Atkinson,6,Nitin Menon,RJ Tucker
+1385692,Test,2539,male,2024,2024-07-18,2024-07-21,"Trent Bridge, Nottingham",Nottingham,England,West Indies,West Indies,field,West Indies tour of England,2,England,241,,,OJ Pope,6,AT Holdstock,RJ Tucker
+1385693,Test,2541,male,2024,2024-07-26,2024-07-28,"Edgbaston, Birmingham",Birmingham,West Indies,England,West Indies,bat,West Indies tour of England,3,England,,10,,MA Wood,6,AT Holdstock,Nitin Menon
+1385694,Test,2545,male,2024,2024-08-21,2024-08-24,"Old Trafford, Manchester",Manchester,Sri Lanka,England,Sri Lanka,bat,Sri Lanka tour of England,1,England,,5,,JL Smith,6,CB Gaffaney,PR Reiffel
+1385695,Test,2546,male,2024,2024-08-29,2024-09-01,"Lord's, London",London,England,Sri Lanka,Sri Lanka,field,Sri Lanka tour of England,2,England,190,,,AAP Atkinson,6,JS Wilson,PR Reiffel
+1385696,Test,2548,male,2024,2024-09-06,2024-09-09,"Kennington Oval, London",London,England,Sri Lanka,Sri Lanka,field,Sri Lanka tour of England,3,Sri Lanka,,8,,P Nissanka,6,CB Gaffaney,JS Wilson
+1387603,Test,2520,male,2023/24,2023-12-26,2023-12-28,"SuperSport Park, Centurion",Centurion,India,South Africa,South Africa,field,India tour of South Africa,1,South Africa,32,,,D Elgar,6,L Rusere,PR Reiffel
+1387604,Test,2522,male,2023/24,2024-01-03,2024-01-04,"Newlands, Cape Town",Cape Town,South Africa,India,South Africa,bat,India tour of South Africa,2,India,,7,,Mohammed Siraj,6,Ahsan Raza,L Rusere
+1388221,Test,2528,male,2023/24,2024-02-04,2024-02-07,"Bay Oval, Mount Maunganui",Mount Maunganui,New Zealand,South Africa,South Africa,field,South Africa tour of New Zealand,1,New Zealand,281,,,R Ravindra,6,Ahsan Raza,RA Kettleborough
+1388222,Test,2529,male,2023/24,2024-02-13,2024-02-16,"Seddon Park, Hamilton",Hamilton,South Africa,New Zealand,South Africa,bat,South Africa tour of New Zealand,2,New Zealand,,7,,W O'Rourke,6,Ahsan Raza,RK Illingworth
+1388226,Test,2533,male,2023/24,2024-02-29,2024-03-03,"Basin Reserve, Wellington",Wellington,Australia,New Zealand,New Zealand,field,Australia tour of New Zealand,1,Australia,172,,,C Green,6,M Erasmus,MA Gough
+1388227,Test,2535,male,2023/24,2024-03-08,2024-03-11,"Hagley Oval, Christchurch",Christchurch,New Zealand,Australia,Australia,field,Australia tour of New Zealand,2,Australia,,3,,AT Carey,6,M Erasmus,Nitin Menon
+1389399,Test,2525,male,2023/24,2024-01-25,2024-01-28,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",Hyderabad,England,India,England,bat,England tour of India,1,England,28,,,OJ Pope,6,CB Gaffaney,PR Reiffel
+1389400,Test,2526,male,2023/24,2024-02-02,2024-02-05,"Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",Visakhapatnam,India,England,India,bat,England tour of India,2,India,106,,,JJ Bumrah,6,CB Gaffaney,M Erasmus
+1389401,Test,2530,male,2023/24,2024-02-15,2024-02-18,"Saurashtra Cricket Association Stadium, Rajkot",Rajkot,India,England,India,bat,England tour of India,3,India,434,,,RA Jadeja,6,JS Wilson,HDPK Dharmasena
+1389402,Test,2531,male,2023/24,2024-02-23,2024-02-26,"JSCA International Stadium Complex, Ranchi",Ranchi,England,India,England,bat,England tour of India,4,India,,5,,Dhruv Jurel,6,HDPK Dharmasena,RJ Tucker
+1389403,Test,2534,male,2023/24,2024-03-07,2024-03-09,"Himachal Pradesh Cricket Association Stadium, Dharamsala",Dharamsala,England,India,England,bat,England tour of India,5,India,64,,,Kuldeep Yadav,6,JS Wilson,RJ Tucker
+1392691,Test,2584,male,2025,2025-05-22,2025-05-24,"Trent Bridge, Nottingham",Nottingham,England,Zimbabwe,Zimbabwe,field,Zimbabwe tour of England,,England,45,,,Shoaib Bashir,6,A Paleker,HDPK Dharmasena
+1395703,Test,2516,male,2023/24,2023-11-28,2023-12-02,Sylhet International Cricket Stadium,Sylhet,Bangladesh,New Zealand,Bangladesh,bat,New Zealand tour of Bangladesh,1,Bangladesh,150,,,Taijul Islam,6,Ahsan Raza,PR Reiffel
+1395704,Test,2517,male,2023/24,2023-12-06,2023-12-09,"Shere Bangla National Stadium, Mirpur",Dhaka,Bangladesh,New Zealand,Bangladesh,bat,New Zealand tour of Bangladesh,2,New Zealand,,4,,GD Phillips,6,PR Reiffel,RJ Tucker
+1406076,Test,146,female,2023/24,2023-12-14,2023-12-16,"Dr DY Patil Sports Academy, Mumbai",Navi Mumbai,India,England,India,bat,England Women tour of India,,India,347,,,DB Sharma,6,KN Ananthapadmanabhan,VG Rathi
+1406077,Test,147,female,2023/24,2023-12-21,2023-12-24,"Wankhede Stadium, Mumbai",Mumbai,Australia,India,Australia,bat,Australia Women tour of India,,India,,8,,S Rana,6,AK Chaudhary,N Janani
+1419830,Test,2536,male,2023/24,2024-03-22,2024-03-25,Sylhet International Cricket Stadium,Sylhet,Sri Lanka,Bangladesh,Bangladesh,field,Sri Lanka tour of Bangladesh,1,Sri Lanka,328,,,DM de Silva,6,CB Gaffaney,RK Illingworth
+1419831,Test,2537,male,2023/24,2024-03-30,2024-04-03,"Zahur Ahmed Chowdhury Stadium, Chattogram",Chattogram,Sri Lanka,Bangladesh,Sri Lanka,bat,Sri Lanka tour of Bangladesh,2,Sri Lanka,192,,,PHKD Mendis,6,RK Illingworth,RJ Tucker
+1426555,Test,2561,male,2024/25,2024-11-22,2024-11-25,Perth Stadium,Perth,India,Australia,India,bat,India tour of Australia,1,India,295,,,JJ Bumrah,6,CB Gaffaney,RA Kettleborough
+1426556,Test,2568,male,2024/25,2024-12-06,2024-12-08,Adelaide Oval,Adelaide,India,Australia,India,bat,India tour of Australia,2,Australia,,10,,TM Head,6,CB Gaffaney,RK Illingworth
+1426557,Test,2570,male,2024/25,2024-12-14,2024-12-18,"Brisbane Cricket Ground, Woolloongabba, Brisbane",Brisbane,Australia,India,India,field,India tour of Australia,3,,,,draw,TM Head,6,RK Illingworth,RA Kettleborough
+1426558,Test,2571,male,2024/25,2024-12-26,2024-12-30,Melbourne Cricket Ground,Melbourne,Australia,India,Australia,bat,India tour of Australia,4,Australia,184,,,PJ Cummins,6,JS Wilson,MA Gough
+1426559,Test,2575,male,2024/25,2025-01-03,2025-01-05,Sydney Cricket Ground,Sydney,India,Australia,India,bat,India tour of Australia,5,Australia,,6,,SM Boland,6,MA Gough,Sharfuddoula
+1426629,Test,151,female,2024/25,2025-01-30,2025-02-01,Melbourne Cricket Ground,Melbourne,England,Australia,Australia,field,Women's Ashes,,Australia,122,,,A Sutherland,6,CA Polosak,Eloise Sheridan
+1428554,Test,2564,male,2024/25,2024-11-28,2024-12-01,"Hagley Oval, Christchurch",Christchurch,New Zealand,England,England,field,England tour of New Zealand,1,England,,8,,BA Carse,6,Ahsan Raza,RJ Tucker
+1428555,Test,2567,male,2024/25,2024-12-06,2024-12-08,"Basin Reserve, Wellington",Wellington,England,New Zealand,New Zealand,field,England tour of New Zealand,2,England,323,,,HC Brook,6,AT Holdstock,RJ Tucker
+1428556,Test,2569,male,2024/25,2024-12-14,2024-12-17,"Seddon Park, Hamilton",Hamilton,New Zealand,England,England,field,England tour of New Zealand,3,New Zealand,423,,,MJ Santner,6,AT Holdstock,Ahsan Raza
+1431085,Test,2540,male,2024,2024-07-25,2024-07-28,"Civil Service Cricket Club, Stormont, Belfast",Belfast,Zimbabwe,Ireland,Ireland,field,Zimbabwe tour of Ireland,,Ireland,,4,,AR McBrine,6,RA Kettleborough,Sharfuddoula
+1432209,Test,2563,male,2024/25,2024-11-27,2024-11-30,"Kingsmead, Durban",Durban,South Africa,Sri Lanka,Sri Lanka,field,Sri Lanka tour of South Africa,1,South Africa,233,,,M Jansen,6,PR Reiffel,Sharfuddoula
+1432210,Test,2566,male,2024/25,2024-12-05,2024-12-09,"St George's Park, Gqeberha",Gqeberha,South Africa,Sri Lanka,South Africa,bat,Sri Lanka tour of South Africa,2,South Africa,109,,,D Paterson,6,JS Wilson,PR Reiffel
+1432217,Test,2572,male,2024/25,2024-12-26,2024-12-29,"SuperSport Park, Centurion",Centurion,Pakistan,South Africa,South Africa,field,Pakistan tour of South Africa,1,South Africa,,2,,AK Markram,6,AG Wharf,Nitin Menon
+1432218,Test,2576,male,2024/25,2025-01-03,2025-01-06,"Newlands, Cape Town",Cape Town,South Africa,Pakistan,South Africa,bat,Pakistan tour of South Africa,2,South Africa,,10,,RD Rickelton,6,HDPK Dharmasena,Nitin Menon
+1432231,Test,150,female,2024/25,2024-12-15,2024-12-17,"Mangaung Oval, Bloemfontein",Bloemfontein,England,South Africa,England,bat,England Women tour of South Africa,,England,286,,,LK Bell,6,K Klaaste,Lauren Agenbag
+1433365,Test,2542,male,2024,2024-08-07,2024-08-11,"Queen's Park Oval, Port of Spain, Trinidad",Port of Spain,South Africa,West Indies,South Africa,bat,South Africa tour of West Indies,1,,,,draw,KA Maharaj,6,Ahsan Raza,RK Illingworth
+1433366,Test,2543,male,2024,2024-08-15,2024-08-17,"Providence Stadium, Guyana",Providence,South Africa,West Indies,South Africa,bat,South Africa tour of West Indies,2,South Africa,40,,,PWA Mulder,6,Ahsan Raza,Sharfuddoula
+1433378,Test,2562,male,2024/25,2024-11-22,2024-11-26,"Sir Vivian Richards Stadium, North Sound, Antigua",North Sound,West Indies,Bangladesh,Bangladesh,field,Bangladesh tour of West Indies,1,West Indies,201,,,JP Greaves,6,HDPK Dharmasena,Nitin Menon
+1433379,Test,2565,male,2024/25,2024-11-30,2024-12-03,"Sabina Park, Kingston, Jamaica",Kingston,Bangladesh,West Indies,Bangladesh,bat,Bangladesh tour of West Indies,2,Bangladesh,101,,,Taijul Islam,6,Asif Yaqoob,HDPK Dharmasena
+1434290,Test,149,female,2024,2024-06-28,2024-07-01,"MA Chidambaram Stadium, Chepauk, Chennai",Chennai,India,South Africa,India,bat,South Africa Women tour of India,,India,,10,,S Rana,6,Gayathri Venugopal,VK Sharma
+1439891,Test,2550,male,2024/25,2024-09-19,2024-09-22,"MA Chidambaram Stadium, Chepauk, Chennai",Chennai,India,Bangladesh,Bangladesh,field,Bangladesh tour of India,1,India,280,,,R Ashwin,6,RA Kettleborough,RJ Tucker
+1439892,Test,2552,male,2024/25,2024-09-27,2024-10-01,"Green Park, Kanpur",Kanpur,Bangladesh,India,India,field,Bangladesh tour of India,2,India,,7,,YBK Jaiswal,6,CM Brown,RA Kettleborough
+1439896,Test,2555,male,2024/25,2024-10-16,2024-10-20,"M Chinnaswamy Stadium, Bengaluru",Bengaluru,India,New Zealand,India,bat,New Zealand tour of India,1,New Zealand,,8,,R Ravindra,6,MA Gough,PR Reiffel
+1439897,Test,2557,male,2024/25,2024-10-24,2024-10-26,"Maharashtra Cricket Association Stadium, Pune",Pune,New Zealand,India,New Zealand,bat,New Zealand tour of India,2,New Zealand,113,,,MJ Santner,6,PR Reiffel,RK Illingworth
+1439898,Test,2560,male,2024/25,2024-11-01,2024-11-03,"Wankhede Stadium, Mumbai",Mumbai,New Zealand,India,New Zealand,bat,New Zealand tour of India,3,New Zealand,25,,,AY Patel,6,MA Gough,RK Illingworth
+1442213,Test,2544,male,2024,2024-08-21,2024-08-25,Rawalpindi Cricket Stadium,Rawalpindi,Pakistan,Bangladesh,Bangladesh,field,Bangladesh tour of Pakistan,1,Bangladesh,,10,,Mushfiqur Rahim,6,AT Holdstock,RA Kettleborough
+1442214,Test,2547,male,2024,2024-08-30,2024-09-03,Rawalpindi Cricket Stadium,Rawalpindi,Pakistan,Bangladesh,Bangladesh,field,Bangladesh tour of Pakistan,2,Bangladesh,,6,,Liton Das,6,MA Gough,RA Kettleborough
+1442215,Test,2553,male,2024/25,2024-10-07,2024-10-11,Multan Cricket Stadium,Multan,Pakistan,England,Pakistan,bat,England tour of Pakistan,1,England,47,,,HC Brook,6,HDPK Dharmasena,Sharfuddoula
+1442216,Test,2554,male,2024/25,2024-10-15,2024-10-19,Multan Cricket Stadium,Multan,Pakistan,England,Pakistan,bat,England tour of Pakistan,2,Pakistan,152,,,Sajid Khan,6,CB Gaffaney,HDPK Dharmasena
+1442217,Test,2558,male,2024/25,2024-10-24,2024-10-26,Rawalpindi Cricket Stadium,Rawalpindi,England,Pakistan,England,bat,England tour of Pakistan,3,Pakistan,,9,,Saud Shakeel,6,CB Gaffaney,Sharfuddoula
+1442218,Test,2577,male,2024/25,2025-01-17,2025-01-19,Multan Cricket Stadium,Multan,Pakistan,West Indies,Pakistan,bat,West Indies tour of Pakistan,1,Pakistan,127,,,Sajid Khan,6,RA Kettleborough,RJ Tucker
+1442219,Test,2578,male,2024/25,2025-01-25,2025-01-27,Multan Cricket Stadium,Multan,West Indies,Pakistan,West Indies,bat,West Indies tour of Pakistan,2,West Indies,120,,,JA Warrican,6,PR Reiffel,RJ Tucker
+1447096,Test,2549,male,2024,2024-09-18,2024-09-23,Galle International Stadium,Galle,Sri Lanka,New Zealand,Sri Lanka,bat,New Zealand tour of Sri Lanka,1,Sri Lanka,63,,,NGRP Jayasuriya,6,Ahsan Raza,MA Gough
+1447097,Test,2551,male,2024,2024-09-26,2024-09-29,Galle International Stadium,Galle,Sri Lanka,New Zealand,Sri Lanka,bat,New Zealand tour of Sri Lanka,2,Sri Lanka,154,,,PHKD Mendis,6,MA Gough,Nitin Menon
+1448349,Test,2587,male,2025,2025-06-20,2025-06-24,"Headingley, Leeds",Leeds,India,England,England,field,India tour of England,1,England,,5,,BM Duckett,6,CB Gaffaney,PR Reiffel
+1448350,Test,2591,male,2025,2025-07-02,2025-07-06,"Edgbaston, Birmingham",Birmingham,India,England,England,field,India tour of England,2,India,336,,,Shubman Gill,6,CB Gaffaney,Sharfuddoula
+1448351,Test,2594,male,2025,2025-07-10,2025-07-14,"Lord's, London",London,England,India,England,bat,India tour of England,3,England,22,,,BA Stokes,6,PR Reiffel,Sharfuddoula
+1448352,Test,2596,male,2025,2025-07-23,2025-07-27,"Old Trafford, Manchester",Manchester,India,England,England,field,India tour of England,4,,,,draw,BA Stokes,6,Ahsan Raza,RJ Tucker
+1448353,Test,2598,male,2025,2025-07-31,2025-08-04,"Kennington Oval, London",London,India,England,England,field,India tour of England,5,India,6,,,Mohammed Siraj,6,Ahsan Raza,HDPK Dharmasena
+1449769,Test,2585,male,2025,2025-06-11,2025-06-14,"Lord's, London",London,Australia,South Africa,South Africa,field,ICC World Test Championship,,South Africa,,5,,AK Markram,6,CB Gaffaney,RK Illingworth
+1453293,Test,2556,male,2024/25,2024-10-21,2024-10-24,"Shere Bangla National Stadium, Mirpur",Dhaka,Bangladesh,South Africa,Bangladesh,bat,South Africa tour of Bangladesh,1,South Africa,,7,,K Verreynne,6,JS Wilson,Nitin Menon
+1453294,Test,2559,male,2024/25,2024-10-29,2024-10-31,"Zahur Ahmed Chowdhury Stadium, Chattogram",Chattogram,South Africa,Bangladesh,South Africa,bat,South Africa tour of Bangladesh,2,South Africa,273,,,T de Zorzi,6,JS Wilson,L Rusere
+1455611,Test,2608,male,2025/26,2025-11-21,2025-11-22,Perth Stadium,Perth,England,Australia,England,bat,The Ashes,1,Australia,,8,,MA Starc,6,AT Holdstock,Nitin Menon
+1455612,Test,2611,male,2025/26,2025-12-04,2025-12-07,"Brisbane Cricket Ground, Woolloongabba, Brisbane",Brisbane,England,Australia,England,bat,The Ashes,2,Australia,,8,,MA Starc,6,AT Holdstock,Sharfuddoula
+1455613,Test,2613,male,2025/26,2025-12-17,2025-12-21,Adelaide Oval,Adelaide,Australia,England,Australia,bat,The Ashes,3,Australia,82,,,AT Carey,6,Ahsan Raza,Nitin Menon
+1455614,Test,2615,male,2025/26,2025-12-26,2025-12-27,Melbourne Cricket Ground,Melbourne,Australia,England,England,field,The Ashes,4,England,,4,,JC Tongue,6,CB Gaffaney,HDPK Dharmasena
+1455615,Test,2616,male,2025/26,2026-01-04,2026-01-08,Sydney Cricket Ground,Sydney,England,Australia,England,bat,The Ashes,5,Australia,,5,,TM Head,6,Ahsan Raza,CB Gaffaney
+1459906,Test,2579,male,2024/25,2025-01-29,2025-02-01,Galle International Stadium,Galle,Australia,Sri Lanka,Australia,bat,Australia tour of Sri Lanka,1,Australia,242,,,UT Khawaja,6,AT Holdstock,CB Gaffaney
+1459907,Test,2580,male,2024/25,2025-02-06,2025-02-09,Galle International Stadium,Galle,Sri Lanka,Australia,Sri Lanka,bat,Australia tour of Sri Lanka,2,Australia,,9,,AT Carey,6,AT Holdstock,JS Wilson
+1467700,Test,2581,male,2024/25,2025-02-06,2025-02-10,"Queens Sports Club, Bulawayo",Bulawayo,Ireland,Zimbabwe,Ireland,bat,Ireland tour of Zimbabwe,,Ireland,63,,,AR McBrine,6,Ahsan Raza,HDPK Dharmasena
+1472517,Test,2589,male,2025,2025-06-25,2025-06-27,"Kensington Oval, Bridgetown, Barbados",Bridgetown,Australia,West Indies,Australia,bat,Australia tour of West Indies,1,Australia,159,,,TM Head,6,Nitin Menon,RA Kettleborough
+1472518,Test,2592,male,2025,2025-07-03,2025-07-06,"National Cricket Stadium, St George's, Grenada",St George's,Australia,West Indies,Australia,bat,Australia tour of West Indies,2,Australia,133,,,AT Carey,6,AT Holdstock,RA Kettleborough
+1472519,Test,2595,male,2025,2025-07-12,2025-07-14,"Sabina Park, Kingston, Jamaica",Kingston,Australia,West Indies,Australia,bat,Australia tour of West Indies,3,Australia,176,,,MA Starc,6,AT Holdstock,Nitin Menon
+1476409,Test,2582,male,2025,2025-04-20,2025-04-23,Sylhet International Cricket Stadium,Sylhet,Bangladesh,Zimbabwe,Bangladesh,bat,Zimbabwe tour of Bangladesh,1,Zimbabwe,,3,,B Muzarabani,6,RK Illingworth,RA Kettleborough
+1476410,Test,2583,male,2025,2025-04-28,2025-04-30,"Zahur Ahmed Chowdhury Stadium, Chattogram",Chattogram,Zimbabwe,Bangladesh,Zimbabwe,bat,Zimbabwe tour of Bangladesh,2,Bangladesh,106,,,Mehedi Hasan Miraz,6,HDPK Dharmasena,RK Illingworth
+1478863,Test,2590,male,2025,2025-06-28,2025-07-01,"Queens Sports Club, Bulawayo",Bulawayo,South Africa,Zimbabwe,South Africa,bat,South Africa tour of Zimbabwe,1,South Africa,328,,,LG Pretorius,6,J Madanagopal,RK Illingworth
+1478864,Test,2593,male,2025,2025-07-06,2025-07-08,"Queens Sports Club, Bulawayo",Bulawayo,South Africa,Zimbabwe,Zimbabwe,field,South Africa tour of Zimbabwe,2,South Africa,236,,,PWA Mulder,6,J Madanagopal,RK Illingworth
+1478872,Test,2597,male,2025,2025-07-30,2025-08-01,"Queens Sports Club, Bulawayo",Bulawayo,Zimbabwe,New Zealand,Zimbabwe,bat,New Zealand tour of Zimbabwe,1,New Zealand,,9,,MJ Henry,6,AG Wharf,Asif Yaqoob
+1478873,Test,2599,male,2025,2025-08-07,2025-08-09,"Queens Sports Club, Bulawayo",Bulawayo,Zimbabwe,New Zealand,Zimbabwe,bat,New Zealand tour of Zimbabwe,2,New Zealand,359,,,DP Conway,6,AG Wharf,Asif Yaqoob
+1478918,Test,152,female,2025/26,2026-03-06,2026-03-08,"Western Australia Cricket Association Ground, Perth",Perth,India,Australia,Australia,field,India Women tour of Australia,,Australia,,10,,A Sutherland,6,DM Koch,Eloise Sheridan
+1479569,Test,2600,male,2025/26,2025-10-02,2025-10-04,"Narendra Modi Stadium, Ahmedabad",Ahmedabad,West Indies,India,West Indies,bat,West Indies tour of India,1,India,140,,,RA Jadeja,6,AG Wharf,RK Illingworth
+1479570,Test,2601,male,2025/26,2025-10-10,2025-10-14,"Arun Jaitley Stadium, Delhi",Delhi,India,West Indies,India,bat,West Indies tour of India,2,India,,7,,Kuldeep Yadav,6,PR Reiffel,RK Illingworth
+1479571,Test,2606,male,2025/26,2025-11-14,2025-11-16,"Eden Gardens, Kolkata",Kolkata,South Africa,India,South Africa,bat,South Africa tour of India,1,South Africa,30,,,SR Harmer,6,CB Gaffaney,RJ Tucker
+1479572,Test,2609,male,2025/26,2025-11-22,2025-11-26,"Barsapara Cricket Stadium, Guwahati",Guwahati,South Africa,India,South Africa,bat,South Africa tour of India,2,South Africa,408,,,M Jansen,6,RA Kettleborough,RJ Tucker
+1485503,Test,2586,male,2025,2025-06-17,2025-06-21,Galle International Stadium,Galle,Bangladesh,Sri Lanka,Bangladesh,bat,Bangladesh tour of Sri Lanka,1,,,,draw,Nazmul Hossain Shanto,6,AG Wharf,RJ Tucker
+1485504,Test,2588,male,2025,2025-06-25,2025-06-28,"Sinhalese Sports Club Ground, Colombo",Colombo,Bangladesh,Sri Lanka,Bangladesh,bat,Bangladesh tour of Sri Lanka,2,Sri Lanka,78,,,P Nissanka,6,AG Wharf,A Paleker
+1491732,Test,2610,male,2025/26,2025-12-02,2025-12-06,"Hagley Oval, Christchurch",Christchurch,New Zealand,West Indies,West Indies,field,West Indies tour of New Zealand,1,,,,draw,JP Greaves,6,AG Wharf,PR Reiffel
+1491733,Test,2612,male,2025/26,2025-12-10,2025-12-12,"Basin Reserve, Wellington",Wellington,West Indies,New Zealand,New Zealand,field,West Indies tour of New Zealand,2,New Zealand,,9,,JA Duffy,6,A Paleker,PR Reiffel
+1491734,Test,2614,male,2025/26,2025-12-18,2025-12-22,"Bay Oval, Mount Maunganui",Mount Maunganui,New Zealand,West Indies,New Zealand,bat,West Indies tour of New Zealand,3,New Zealand,323,,,DP Conway,6,AG Wharf,A Paleker
+1496571,Test,2620,male,2026,2026-06-04,2026-06-07,"Lord's, London",London,England,New Zealand,New Zealand,field,New Zealand tour of England,1,England,115,,,OE Robinson,6,AT Holdstock,RJ Tucker
+1501893,Test,2602,male,2025/26,2025-10-12,2025-10-15,"Gaddafi Stadium, Lahore",Lahore,Pakistan,South Africa,Pakistan,bat,South Africa tour of Pakistan,1,Pakistan,93,,,Nauman Ali,6,CM Brown,RJ Tucker
+1501894,Test,2603,male,2025/26,2025-10-20,2025-10-23,Rawalpindi Cricket Stadium,Rawalpindi,Pakistan,South Africa,Pakistan,bat,South Africa tour of Pakistan,2,South Africa,,8,,KA Maharaj,6,CM Brown,Sharfuddoula
+1506012,Test,2605,male,2025/26,2025-11-11,2025-11-14,Sylhet International Cricket Stadium,Sylhet,Ireland,Bangladesh,Ireland,bat,Ireland tour of Bangladesh,1,Bangladesh,47,,,Mahmudul Hasan Joy,6,Ahsan Raza,SJ Nogajski
+1506013,Test,2607,male,2025/26,2025-11-19,2025-11-23,"Shere Bangla National Stadium, Mirpur",Dhaka,Bangladesh,Ireland,Bangladesh,bat,Ireland tour of Bangladesh,2,Bangladesh,217,,,Mushfiqur Rahim,6,RK Illingworth,SJ Nogajski
+1528547,Test,2619,male,2026,2026-05-27,2026-05-29,"Civil Service Cricket Club, Stormont, Belfast",Belfast,New Zealand,Ireland,Ireland,field,New Zealand tour of Ireland,,New Zealand,79,,,TA Blundell,6,AG Wharf,RJ Tucker
+1532486,Test,2617,male,2026,2026-05-08,2026-05-12,"Shere Bangla National Stadium, Mirpur",Dhaka,Bangladesh,Pakistan,Pakistan,field,Pakistan tour of Bangladesh,1,Bangladesh,104,,,Nazmul Hossain Shanto,6,HDPK Dharmasena,RA Kettleborough
+1532487,Test,2618,male,2026,2026-05-16,2026-05-20,Sylhet International Cricket Stadium,Sylhet,Bangladesh,Pakistan,Pakistan,field,Pakistan tour of Bangladesh,2,Bangladesh,78,,,Liton Das,6,A Paleker,HDPK Dharmasena
+207334,Test,1749,male,2005,2005-04-21,2005-04-24,Kensington Oval,Bridgetown,West Indies,South Africa,West Indies,bat,South Africa tour of West Indies,3,South Africa,86,,,A Nel,6,BF Bowden,SJA Taufel
+208321,Test,1750,male,2005,2005-04-29,2005-05-03,Antigua Recreation Ground,St John's,South Africa,West Indies,South Africa,bat,South Africa tour of West Indies,4,,,,draw,CH Gayle,6,BF Bowden,SJA Taufel
+210366,Test,1753,male,2005,2005-06-03,2005-06-05,Riverside Ground,Chester-le-Street,Bangladesh,England,England,field,Bangladesh tour of England,2,England,27,,,MJ Hoggard,6,DJ Harper,AL Hill
+213856,Test,1756,male,2005,2005-07-21,2005-07-24,"Lord's, London",London,Australia,England,Australia,bat,Australia tour of England and Scotland,1,Australia,239,,,GD McGrath,6,Aleem Dar,RE Koertzen
+215010,Test,1758,male,2005,2005-08-04,2005-08-07,"Edgbaston, Birmingham",Birmingham,England,Australia,Australia,field,Australia tour of England and Scotland,2,England,2,,,A Flintoff,6,BF Bowden,RE Koertzen
+215253,Test,1759,male,2005,2005-08-07,2005-08-08,Harare Sports Club,Harare,New Zealand,Zimbabwe,Zimbabwe,field,New Zealand tour of Zimbabwe,1,New Zealand,294,,,DL Vettori,6,DB Hair,MR Benson
+216055,Test,1761,male,2005,2005-08-15,2005-08-17,Queens Sports Club,Bulawayo,Zimbabwe,New Zealand,Zimbabwe,bat,New Zealand tour of Zimbabwe,2,New Zealand,46,,,SE Bond,6,DB Hair,MR Benson
+216932,Test,125,female,2005,2005-08-24,2005-08-27,"County Ground, New Road, Worcester",Worcester,Australia,England,England,field,Australia Women tour of England,2,England,,6,,KH Brunt,6,J Hayes,RK Illingworth
+216994,Test,1762,male,2005,2005-08-25,2005-08-28,"Trent Bridge, Nottingham",Nottingham,England,Australia,England,bat,Australia tour of England and Scotland,4,England,,3,,A Flintoff,6,Aleem Dar,SA Bucknor
+218383,Test,1763,male,2005,2005-09-08,2005-09-12,"Kennington Oval, London",London,England,Australia,England,bat,Australia tour of England and Scotland,5,,,,draw,KP Pietersen,6,BF Bowden,RE Koertzen
+218813,Test,1764,male,2005,2005-09-12,2005-09-14,R.Premadasa Stadium,Colombo,Bangladesh,Sri Lanka,Sri Lanka,field,Bangladesh tour of Sri Lanka,1,Sri Lanka,96,,,M Muralitharan,6,Asad Rauf,SA Bucknor
+219062,Test,1765,male,2005,2005-09-13,2005-09-16,Queens Sports Club,Bulawayo,Zimbabwe,India,Zimbabwe,bat,India tour of Zimbabwe,1,India,90,,,IK Pathan,6,Aleem Dar,DJ Harper
+219612,Test,1766,male,2005,2005-09-20,2005-09-22,P Sara Oval,Colombo,Sri Lanka,Bangladesh,Sri Lanka,bat,Bangladesh tour of Sri Lanka,2,Sri Lanka,69,,,TT Samaraweera,6,BF Bowden,SA Bucknor
+221840,Test,1768,male,2005/06,2005-10-14,2005-10-17,Sydney Cricket Ground,Sydney,Australia,ICC World XI,Australia,bat,ICC World XI tour of Australia,,Australia,210,,,ML Hayden,6,RE Koertzen,SJA Taufel
+225164,Test,128,female,2006,2006-08-08,2006-08-11,"Grace Road, Leicester",Leicester,England,India,England,bat,India Women tour of Ireland and England,1,,,,draw,,6,JW Lloyds,TE Jesty
+225255,Test,1809,male,2006,2006-07-13,2006-07-17,Lord's,London,England,Pakistan,England,bat,Pakistan tour of England and Scotland,1,,,,draw,Mohammad Yousuf,6,SA Bucknor,SJA Taufel
+225256,Test,1811,male,2006,2006-07-27,2006-07-29,Old Trafford,Manchester,Pakistan,England,Pakistan,bat,Pakistan tour of England and Scotland,2,England,120,,,SJ Harmison,6,SA Bucknor,SJA Taufel
+225257,Test,1813,male,2006,2006-08-04,2006-08-08,Headingley,Leeds,England,Pakistan,England,bat,Pakistan tour of England and Scotland,3,England,167,,,Younis Khan,6,DB Hair,BR Doctrove
+225258,Test,1814,male,2006,2006-08-17,2006-08-21,Kennington Oval,London,England,Pakistan,Pakistan,field,Pakistan tour of England and Scotland,4,England,,,,,6,DB Hair,BR Doctrove
+225264,Test,1802,male,2006,2006-05-11,2006-05-15,Lord's,London,England,Sri Lanka,England,bat,Sri Lanka tour of England,1,,,,draw,DPMD Jayawardene,6,Aleem Dar,RE Koertzen
+225265,Test,1803,male,2006,2006-05-25,2006-05-28,Edgbaston,Birmingham,Sri Lanka,England,Sri Lanka,bat,Sri Lanka tour of England,2,England,,6,,KP Pietersen,6,Aleem Dar,DB Hair
+225266,Test,1804,male,2006,2006-06-02,2006-06-05,Trent Bridge,Nottingham,Sri Lanka,England,Sri Lanka,bat,Sri Lanka tour of England,3,Sri Lanka,134,,,M Muralitharan,6,RE Koertzen,DB Hair
+225443,Test,1770,male,2005/06,2005-11-12,2005-11-16,Multan Cricket Stadium,Multan,Pakistan,England,Pakistan,bat,England tour of Pakistan,1,Pakistan,22,,,Salman Butt,6,BF Bowden,SJA Taufel
+226120,Test,1771,male,2005/06,2005-11-17,2005-11-21,Bellerive Oval,Hobart,West Indies,Australia,West Indies,bat,West Indies tour of Australia,2,Australia,,9,,MEK Hussey,6,Aleem Dar,RE Koertzen
+226350,Test,1772,male,2005/06,2005-11-20,2005-11-24,Iqbal Stadium,Faisalabad,Pakistan,England,Pakistan,bat,England tour of Pakistan,2,,,,draw,Inzamam-ul-Haq,6,DB Hair,SJA Taufel
+226363,Test,1778,male,2005/06,2005-12-18,2005-12-22,Sardar Patel Stadium,Ahmedabad,India,Sri Lanka,India,bat,Sri Lanka tour of India,3,India,259,,,Harbhajan Singh,6,BF Bowden,Nadeem Ghauri
+226372,Test,1779,male,2005/06,2005-12-26,2005-12-30,Melbourne Cricket Ground,,Australia,South Africa,Australia,bat,South Africa tour of Australia,2,Australia,184,,,MEK Hussey,6,Asad Rauf,SA Bucknor
+226373,Test,1780,male,2005/06,2006-01-02,2006-01-06,Sydney Cricket Ground,,South Africa,Australia,South Africa,bat,South Africa tour of Australia,3,Australia,,8,,RT Ponting,6,BF Bowden,Aleem Dar
+233797,Test,1782,male,2005/06,2006-01-21,2006-01-25,Iqbal Stadium,Faisalabad,Pakistan,India,Pakistan,bat,India tour of Pakistan,2,,,,draw,RP Singh,6,RE Koertzen,SJA Taufel
+234783,Test,1783,male,2005/06,2006-01-29,2006-02-01,National Stadium,Karachi,Pakistan,India,India,field,India tour of Pakistan,3,Pakistan,341,,,Kamran Akmal,6,DJ Harper,SJA Taufel
+238167,Test,1784,male,2005/06,2006-02-28,2006-03-03,Zahur Ahmed Chowdhury Stadium,Chattogram,Bangladesh,Sri Lanka,Bangladesh,bat,Sri Lanka tour of Bangladesh,1,Sri Lanka,,8,,Mohammad Ashraful,6,Asad Rauf,SA Bucknor
+238168,Test,1786,male,2005/06,2006-03-08,2006-03-11,Shaheed Chandu Stadium,Bogra,Bangladesh,Sri Lanka,Bangladesh,bat,Sri Lanka tour of Bangladesh,2,Sri Lanka,,10,,WU Tharanga,6,Asad Rauf,K Hariharan
+238171,Test,1797,male,2005/06,2006-04-09,2006-04-13,Khan Shaheb Osman Ali Stadium,Fatullah,Bangladesh,Australia,Bangladesh,bat,Australia tour of Bangladesh,1,Australia,,3,,AC Gilchrist,6,Aleem Dar,Nadeem Ghauri
+238180,Test,1787,male,2005/06,2006-03-09,2006-03-13,Eden Park,Auckland,New Zealand,West Indies,West Indies,field,West Indies tour of New Zealand,1,New Zealand,27,,,SE Bond,6,RE Koertzen,DJ Harper
+238186,Test,1788,male,2005/06,2006-03-09,2006-03-13,"Punjab Cricket Association IS Bindra Stadium, Mohali",Chandigarh,England,India,England,bat,England tour of India,2,India,,9,,A Kumble,6,DB Hair,SJA Taufel
+238201,Test,1789,male,2005/06,2006-03-16,2006-03-18,Newlands,Cape Town,South Africa,Australia,South Africa,bat,Australia tour of South Africa,1,Australia,,7,,SR Clark,6,Aleem Dar,BR Doctrove
+238202,Test,1792,male,2005/06,2006-03-24,2006-03-28,Kingsmead,Durban,Australia,South Africa,Australia,bat,Australia tour of South Africa,2,Australia,112,,,SK Warne,6,SA Bucknor,BR Doctrove
+238203,Test,1795,male,2005/06,2006-03-31,2006-04-04,The Wanderers Stadium,Johannesburg,South Africa,Australia,South Africa,bat,Australia tour of South Africa,3,Australia,,2,,B Lee,6,SA Bucknor,AL Hill
+238205,Test,1798,male,2005/06,2006-04-15,2006-04-19,SuperSport Park,Centurion,South Africa,New Zealand,South Africa,bat,New Zealand tour of South Africa,1,South Africa,128,,,M Ntini,6,MR Benson,DJ Harper
+238206,Test,1800,male,2005/06,2006-04-27,2006-05-01,Newlands,Cape Town,New Zealand,South Africa,South Africa,field,New Zealand tour of South Africa,2,,,,draw,SP Fleming,6,MR Benson,EAR de Silva
+238207,Test,1801,male,2005/06,2006-05-05,2006-05-07,The Wanderers Stadium,Johannesburg,New Zealand,South Africa,South Africa,field,New Zealand tour of South Africa,3,South Africa,,4,,GC Smith,6,EAR de Silva,DB Hair
+238217,Test,1796,male,2005/06,2006-04-03,2006-04-05,Asgiriya Stadium,Kandy,Sri Lanka,Pakistan,Pakistan,field,Pakistan tour of Sri Lanka,2,Pakistan,,8,,Mohammad Asif,6,SJ Davis,DJ Harper
+239025,Test,1785,male,2005/06,2006-03-01,2006-03-05,Vidarbha C.A. Ground,Nagpur,England,India,England,bat,England tour of India,1,,,,draw,MJ Hoggard,6,Aleem Dar,IL Howell
+239920,Test,1805,male,2006,2006-06-02,2006-06-06,"Antigua Recreation Ground, St John's",Antigua,India,West Indies,India,bat,India tour of West Indies,1,,,,draw,W Jaffer,6,Asad Rauf,SJA Taufel
+239921,Test,1806,male,2006,2006-06-10,2006-06-14,"Daren Sammy National Cricket Stadium, Gros Islet",St Lucia,India,West Indies,India,bat,India tour of West Indies,2,,,,draw,V Sehwag,6,Asad Rauf,SJA Taufel
+239922,Test,1807,male,2006,2006-06-22,2006-06-26,"Warner Park, Basseterre",St Kitts,West Indies,India,West Indies,bat,India tour of West Indies,3,,,,draw,D Ganga,6,RE Koertzen,BG Jerling
+239923,Test,1808,male,2006,2006-06-30,2006-07-02,"Sabina Park, Kingston",Jamaica,India,West Indies,India,bat,India tour of West Indies,4,India,49,,,R Dravid,6,RE Koertzen,BG Jerling
+249193,Test,1810,male,2006,2006-07-27,2006-07-31,Sinhalese Sports Club Ground,Colombo,South Africa,Sri Lanka,South Africa,bat,South Africa tour of Sri Lanka,1,Sri Lanka,153,,,DPMD Jayawardene,6,MR Benson,BF Bowden
+249194,Test,1812,male,2006,2006-08-04,2006-08-08,P Sara Oval,Colombo,South Africa,Sri Lanka,South Africa,bat,South Africa tour of Sri Lanka,2,Sri Lanka,,1,,DPMD Jayawardene,6,BF Bowden,Aleem Dar
+249215,Test,1823,male,2006/07,2006-12-15,2006-12-18,The Wanderers Stadium,Johannesburg,India,South Africa,India,bat,India tour of South Africa,1,India,123,,,S Sreesanth,6,MR Benson,DJ Harper
+249216,Test,1825,male,2006/07,2006-12-26,2006-12-30,Kingsmead,Durban,South Africa,India,South Africa,bat,India tour of South Africa,2,South Africa,174,,,M Ntini,6,MR Benson,Asad Rauf
+249217,Test,1827,male,2006/07,2007-01-02,2007-01-06,Newlands,Cape Town,India,South Africa,India,bat,India tour of South Africa,3,South Africa,,5,,GC Smith,6,Asad Rauf,DJ Harper
+249222,Test,1817,male,2006/07,2006-11-23,2006-11-27,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,England,Australia,bat,England tour of Australia,1,Australia,277,,,RT Ponting,6,BF Bowden,SA Bucknor
+249223,Test,1819,male,2006/07,2006-12-01,2006-12-05,Adelaide Oval,,England,Australia,England,bat,England tour of Australia,2,Australia,,6,,RT Ponting,6,SA Bucknor,RE Koertzen
+249224,Test,1821,male,2006/07,2006-12-14,2006-12-18,W.A.C.A. Ground,Perth,Australia,England,Australia,bat,England tour of Australia,3,Australia,206,,,MEK Hussey,6,Aleem Dar,RE Koertzen
+249225,Test,1824,male,2006/07,2006-12-26,2006-12-28,Melbourne Cricket Ground,,England,Australia,England,bat,England tour of Australia,4,Australia,99,,,SK Warne,6,Aleem Dar,RE Koertzen
+249226,Test,1826,male,2006/07,2007-01-02,2007-01-05,Sydney Cricket Ground,,England,Australia,England,bat,England tour of Australia,5,Australia,,10,,SR Clark,6,BF Bowden,Aleem Dar
+250666,Test,1829,male,2006/07,2007-01-19,2007-01-22,St George's Park,Port Elizabeth,South Africa,Pakistan,South Africa,bat,Pakistan tour of South Africa,2,Pakistan,,5,,Inzamam-ul-Haq,6,PD Parker,BR Doctrove
+250667,Test,1830,male,2006/07,2007-01-26,2007-01-28,Newlands,Cape Town,Pakistan,South Africa,South Africa,field,Pakistan tour of South Africa,3,South Africa,,5,,JH Kallis,6,PD Parker,SA Bucknor
+251485,Test,1820,male,2006/07,2006-12-07,2006-12-09,AMI Stadium,Christchurch,Sri Lanka,New Zealand,Sri Lanka,bat,Sri Lanka tour of New Zealand,1,New Zealand,,5,,SE Bond,6,SJA Taufel,BG Jerling
+251486,Test,1822,male,2006/07,2006-12-15,2006-12-18,Basin Reserve,Wellington,Sri Lanka,New Zealand,Sri Lanka,bat,Sri Lanka tour of New Zealand,2,Sri Lanka,217,,,LPC Silva,6,SJA Taufel,BG Jerling
+257765,Test,1815,male,2006/07,2006-11-11,2006-11-14,Gaddafi Stadium,Lahore,West Indies,Pakistan,West Indies,bat,West Indies tour of Pakistan,1,Pakistan,,9,,Umar Gul,6,EAR de Silva,SJA Taufel
+257766,Test,1816,male,2006/07,2006-11-19,2006-11-23,Multan Cricket Stadium,,Pakistan,West Indies,Pakistan,bat,West Indies tour of Pakistan,2,,,,draw,Mohammad Yousuf,6,MR Benson,DJ Harper
+258459,Test,1831,male,2007,2007-05-17,2007-05-21,Lord's,London,England,West Indies,West Indies,field,West Indies tour of England and Ireland,1,,,,draw,AN Cook,6,Asad Rauf,RE Koertzen
+258460,Test,1834,male,2007,2007-05-25,2007-05-28,Headingley,Leeds,England,West Indies,England,bat,West Indies tour of England and Ireland,2,England,283,,,KP Pietersen,6,Asad Rauf,RE Koertzen
+258461,Test,1835,male,2007,2007-06-07,2007-06-11,Old Trafford,Manchester,England,West Indies,England,bat,West Indies tour of England and Ireland,3,England,60,,,MS Panesar,6,BF Bowden,Aleem Dar
+258462,Test,1836,male,2007,2007-06-15,2007-06-19,Riverside Ground,Chester-le-Street,West Indies,England,England,field,West Indies tour of England and Ireland,4,England,,7,,S Chanderpaul,6,BF Bowden,Aleem Dar
+258468,Test,1840,male,2007,2007-07-19,2007-07-23,Lord's,London,England,India,England,bat,"India tour of Ireland, England and Scotland",1,,,,draw,KP Pietersen,6,SA Bucknor,SJA Taufel
+258469,Test,1841,male,2007,2007-07-27,2007-07-31,Trent Bridge,Nottingham,England,India,India,field,"India tour of Ireland, England and Scotland",2,India,,7,,Z Khan,6,SJA Taufel,IL Howell
+258470,Test,1842,male,2007,2007-08-09,2007-08-13,Kennington Oval,London,India,England,India,bat,"India tour of Ireland, England and Scotland",3,,,,draw,A Kumble,6,SA Bucknor,IL Howell
+282691,Test,1832,male,2007,2007-05-18,2007-05-22,Zahur Ahmed Chowdhury Stadium,Chattogram,India,Bangladesh,India,bat,India tour of Bangladesh,1,,,,draw,Mashrafe Mortaza,6,DJ Harper,BR Doctrove
+282692,Test,1833,male,2007,2007-05-25,2007-05-27,"Shere Bangla National Stadium, Mirpur",Dhaka,India,Bangladesh,Bangladesh,field,India tour of Bangladesh,2,India,239,,,Z Khan,6,DJ Harper,BR Doctrove
+291222,Test,1851,male,2007/08,2007-12-01,2007-12-05,Asgiriya Stadium,Kandy,Sri Lanka,England,Sri Lanka,bat,England tour of Sri Lanka,1,Sri Lanka,88,,,KC Sangakkara,6,Asad Rauf,Aleem Dar
+291223,Test,1853,male,2007/08,2007-12-09,2007-12-13,Sinhalese Sports Club Ground,Colombo,England,Sri Lanka,England,bat,England tour of Sri Lanka,2,,,,draw,DPMD Jayawardene,6,Aleem Dar,DJ Harper
+291224,Test,1854,male,2007/08,2007-12-18,2007-12-22,Galle International Stadium,,Sri Lanka,England,England,field,England tour of Sri Lanka,3,,,,draw,DPMD Jayawardene,6,Asad Rauf,DJ Harper
+291338,Test,1845,male,2007/08,2007-11-08,2007-11-12,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,Sri Lanka,Sri Lanka,field,Sri Lanka tour of Australia,1,Australia,40,,,B Lee,6,RE Koertzen,AL Hill
+291339,Test,1847,male,2007/08,2007-11-16,2007-11-20,Bellerive Oval,Hobart,Australia,Sri Lanka,Australia,bat,Sri Lanka tour of Australia,2,Australia,96,,,B Lee,6,Aleem Dar,RE Koertzen
+291351,Test,1855,male,2007/08,2007-12-26,2007-12-29,Melbourne Cricket Ground,,Australia,India,Australia,bat,India tour of Australia,1,Australia,337,,,ML Hayden,6,MR Benson,BF Bowden
+291352,Test,1857,male,2007/08,2008-01-02,2008-01-06,Sydney Cricket Ground,,Australia,India,Australia,bat,Border-Gavaskar Trophy,2,Australia,122,,,A Symonds,6,MR Benson,SA Bucknor
+291353,Test,1862,male,2007/08,2008-01-16,2008-01-19,Western Australia Cricket Association Ground,Perth,Australia,India,India,bat,Border-Gavaskar Trophy,3,India,72,,,IK Pathan,6,Asad Rauf,BF Bowden
+291354,Test,1863,male,2007/08,2008-01-24,2008-01-28,Adelaide Oval,,Australia,India,India,bat,Border-Gavaskar Trophy,4,,,,draw,SR Tendulkar,6,Asad Rauf,BF Bowden
+293478,Test,1837,male,2007,2007-06-25,2007-06-28,Sinhalese Sports Club Ground,Colombo,Bangladesh,Sri Lanka,Sri Lanka,field,Bangladesh tour of Sri Lanka,1,Sri Lanka,234,,,M Muralitharan,6,Asad Rauf,SL Shastri
+293479,Test,1838,male,2007,2007-07-03,2007-07-05,P Sara Oval,Colombo,Bangladesh,Sri Lanka,Sri Lanka,field,Bangladesh tour of Sri Lanka,2,Sri Lanka,90,,,KC Sangakkara,6,Asad Rauf,RE Koertzen
+293480,Test,1839,male,2007,2007-07-11,2007-07-14,Asgiriya Stadium,Kandy,Bangladesh,Sri Lanka,Sri Lanka,field,Bangladesh tour of Sri Lanka,3,Sri Lanka,193,,,M Muralitharan,6,RE Koertzen,SL Shastri
+296900,Test,1874,male,2008,2008-05-15,2008-05-19,Lord's,London,England,New Zealand,England,field,New Zealand in England Test Series,1,,,,draw,DL Vettori,6,SA Bucknor,SJA Taufel
+296901,Test,1876,male,2008,2008-05-23,2008-05-26,Old Trafford,Manchester,England,New Zealand,New Zealand,bat,New Zealand in England Test Series,2,England,,6,,MS Panesar,6,DB Hair,SJA Taufel
+296902,Test,1878,male,2008,2008-06-05,2008-06-08,Trent Bridge,Nottingham,England,New Zealand,New Zealand,field,New Zealand in England Test Series,3,England,9,,,JM Anderson,6,SA Bucknor,DB Hair
+296909,Test,1880,male,2008,2008-07-10,2008-07-14,Lord's,London,England,South Africa,South Africa,field,Basil D'Oliveira Trophy,1,,,,draw,IR Bell,6,BF Bowden,DJ Harper
+296910,Test,1881,male,2008,2008-07-18,2008-07-21,Headingley,Leeds,England,South Africa,South Africa,field,Basil D'Oliveira Trophy,2,South Africa,,10,,AG Prince,6,BF Bowden,DJ Harper
+296911,Test,1883,male,2008,2008-07-30,2008-08-02,Edgbaston,Birmingham,England,South Africa,England,bat,Basil D'Oliveira Trophy,3,South Africa,,5,,GC Smith,6,Aleem Dar,SJ Davis
+296912,Test,1885,male,2008,2008-08-07,2008-08-11,Kennington Oval,London,England,South Africa,South Africa,bat,Basil D'Oliveira Trophy,4,England,,6,,KP Pietersen,6,Aleem Dar,SJ Davis
+297806,Test,1849,male,2007/08,2007-11-22,2007-11-26,Arun Jaitley Stadium,Delhi,Pakistan,India,Pakistan,bat,Pakistan tour of India,1,India,,6,,A Kumble,6,SJA Taufel,BR Doctrove
+297807,Test,1850,male,2007/08,2007-11-30,2007-12-04,Eden Gardens,Kolkata,India,Pakistan,India,bat,Pakistan tour of India,2,,,,draw,W Jaffer,6,RE Koertzen,BR Doctrove
+297808,Test,1852,male,2007/08,2007-12-08,2007-12-12,M.Chinnaswamy Stadium,Bengaluru,India,Pakistan,India,bat,Pakistan tour of India,3,,,,draw,SC Ganguly,6,RE Koertzen,SJA Taufel
+298793,Test,1846,male,2007/08,2007-11-08,2007-11-11,The Wanderers Stadium,Johannesburg,South Africa,New Zealand,South Africa,bat,New Zealand tour of South Africa,1,South Africa,358,,,DW Steyn,6,MR Benson,DJ Harper
+298794,Test,1848,male,2007/08,2007-11-16,2007-11-18,SuperSport Park,Centurion,New Zealand,South Africa,New Zealand,bat,New Zealand tour of South Africa,2,South Africa,59,,,DW Steyn,6,MR Benson,DJ Harper
+298801,Test,1856,male,2007/08,2007-12-26,2007-12-29,St George's Park,Port Elizabeth,West Indies,South Africa,South Africa,field,West Indies tour of Zimbabwe and South Africa,1,West Indies,128,,,MN Samuels,6,RB Tiffin,Aleem Dar
+298802,Test,1858,male,2007/08,2008-01-02,2008-01-05,Newlands,Cape Town,South Africa,West Indies,West Indies,bat,Sir Vivian Richards Trophy,2,South Africa,,7,,AG Prince,6,SJA Taufel,RB Tiffin
+298803,Test,1860,male,2007/08,2008-01-10,2008-01-12,Kingsmead,Durban,South Africa,West Indies,South Africa,field,Sir Vivian Richards Trophy,3,South Africa,100,,,AG Prince,6,Aleem Dar,SJA Taufel
+299004,Test,1843,male,2007/08,2007-10-01,2007-10-05,National Stadium,Karachi,South Africa,Pakistan,South Africa,bat,South Africa tour of Pakistan,1,South Africa,160,,,JH Kallis,6,MR Benson,SJA Taufel
+299005,Test,1844,male,2007/08,2007-10-08,2007-10-12,Gaddafi Stadium,Lahore,South Africa,Pakistan,South Africa,bat,South Africa tour of Pakistan,2,,,,draw,JH Kallis,6,MR Benson,SJA Taufel
+300429,Test,1859,male,2007/08,2008-01-04,2008-01-06,University Oval,Dunedin,New Zealand,Bangladesh,New Zealand,field,Bangladesh in New Zealand Test Series,1,New Zealand,,9,,JDP Oram,6,NJ Llong,PD Parker
+300430,Test,1861,male,2007/08,2008-01-12,2008-01-14,Basin Reserve,Wellington,New Zealand,Bangladesh,New Zealand,field,Bangladesh in New Zealand Test Series,2,New Zealand,137,,,DL Vettori,6,NJ Llong,PD Parker
+300442,Test,1866,male,2007/08,2008-03-05,2008-03-09,Seddon Park,Hamilton,New Zealand,England,New Zealand,bat,England in New Zealand Test Series,1,New Zealand,189,,,DL Vettori,6,SJ Davis,DJ Harper
+300443,Test,1867,male,2007/08,2008-03-13,2008-03-17,Basin Reserve,Wellington,New Zealand,England,New Zealand,field,England in New Zealand Test Series,2,England,126,,,TR Ambrose,6,SJ Davis,RE Koertzen
+300444,Test,1868,male,2007/08,2008-03-22,2008-03-26,McLean Park,Napier,New Zealand,England,England,bat,England in New Zealand Test Series,3,England,121,,,RJ Sidebottom,6,DJ Harper,RE Koertzen
+312450,Test,131,female,2007/08,2008-02-15,2008-02-18,"Bradman Oval, Bowral",Bowral,Australia,England,England,field,England Women tour of Australia and New Zealand,,England,,6,,IT Guha,6,PR Reiffel,RJ Tucker
+319132,Test,1869,male,2007/08,2008-03-22,2008-03-26,Providence Stadium,Guyana,West Indies,Sri Lanka,Sri Lanka,bat,Sri Lanka in West Indies Test Series,1,Sri Lanka,121,,,WPUJC Vaas,6,BF Bowden,SJA Taufel
+319133,Test,1872,male,2007/08,2008-04-03,2008-04-06,"Queen's Park Oval, Port of Spain",Trinidad,West Indies,Sri Lanka,West Indies,field,Sri Lanka in West Indies Test Series,2,West Indies,,6,,RR Sarwan,6,BF Bowden,SJA Taufel
+319139,Test,1875,male,2008,2008-05-22,2008-05-26,"Sabina Park, Kingston",Jamaica,West Indies,Australia,Australia,bat,The Frank Worrell Trophy,1,Australia,95,,,SR Clark,6,Aleem Dar,RB Tiffin
+319140,Test,1877,male,2008,2008-05-30,2008-06-03,"Sir Vivian Richards Stadium, North Sound",Antigua,West Indies,Australia,Australia,bat,The Frank Worrell Trophy,2,,,,draw,S Chanderpaul,6,MR Benson,RB Tiffin
+319141,Test,1879,male,2008,2008-06-12,2008-06-16,"Kensington Oval, Bridgetown",Barbados,West Indies,Australia,West Indies,field,The Frank Worrell Trophy,3,Australia,87,,,SM Katich,6,Aleem Dar,MR Benson
+323947,Test,1864,male,2007/08,2008-02-22,2008-02-25,Shere Bangla National Stadium,Mirpur,Bangladesh,South Africa,Bangladesh,bat,South Africa in Bangladesh Test Series,1,South Africa,,5,,JH Kallis,6,Aleem Dar,SA Bucknor
+323948,Test,1865,male,2007/08,2008-02-29,2008-03-03,Chittagong Divisional Stadium,,Bangladesh,South Africa,South Africa,bat,South Africa in Bangladesh Test Series,2,South Africa,205,,,GC Smith,6,Aleem Dar,SA Bucknor
+332911,Test,1870,male,2007/08,2008-03-26,2008-03-30,"MA Chidambaram Stadium, Chepauk",Chennai,India,South Africa,South Africa,bat,South Africa in India Test Series,1,,,,draw,V Sehwag,6,Asad Rauf,AL Hill
+332912,Test,1871,male,2007/08,2008-04-03,2008-04-05,"Sardar Patel Stadium, Motera",Ahmedabad,India,South Africa,India,bat,South Africa in India Test Series,2,South Africa,90,,,AB de Villiers,6,BR Doctrove,AL Hill
+332913,Test,1873,male,2007/08,2008-04-11,2008-04-13,Green Park,Kanpur,India,South Africa,South Africa,bat,South Africa in India Test Series,3,India,,8,,SC Ganguly,6,Asad Rauf,BR Doctrove
+343729,Test,1882,male,2008,2008-07-23,2008-07-26,Sinhalese Sports Club Ground,Colombo,Sri Lanka,India,Sri Lanka,bat,India in Sri Lanka Test Series,1,Sri Lanka,239,,,M Muralitharan,6,MR Benson,BR Doctrove
+343730,Test,1884,male,2008,2008-07-31,2008-08-03,Galle International Stadium,,Sri Lanka,India,India,bat,India in Sri Lanka Test Series,2,India,170,,,V Sehwag,6,BR Doctrove,RE Koertzen
+343731,Test,1886,male,2008,2008-08-08,2008-08-11,P Saravanamuttu Stadium,Colombo,Sri Lanka,India,India,bat,India in Sri Lanka Test Series,3,Sri Lanka,,8,,KC Sangakkara,6,MR Benson,RE Koertzen
+345669,Test,1887,male,2008/09,2008-10-09,2008-10-13,M Chinnaswamy Stadium,Bangalore,India,Australia,Australia,bat,Border-Gavaskar Trophy,1,,,,draw,Z Khan,6,Asad Rauf,RE Koertzen
+345670,Test,1889,male,2008/09,2008-10-17,2008-10-21,"Punjab Cricket Association Stadium, Mohali",Chandigarh,India,Australia,India,bat,Border-Gavaskar Trophy,2,India,320,,,MS Dhoni,6,Asad Rauf,RE Koertzen
+345671,Test,1891,male,2008/09,2008-10-29,2008-11-02,Feroz Shah Kotla,Delhi,India,Australia,India,bat,Border-Gavaskar Trophy,3,,,,draw,VVS Laxman,6,Aleem Dar,BF Bowden
+345672,Test,1892,male,2008/09,2008-11-06,2008-11-10,"Vidarbha Cricket Association Stadium, Jamtha",Nagpur,India,Australia,India,bat,Border-Gavaskar Trophy,4,India,172,,,JJ Krejza,6,Aleem Dar,BF Bowden
+345970,Test,1922,male,2009,2009-07-08,2009-07-12,Sophia Gardens,Cardiff,England,Australia,England,bat,The Ashes,1,,,,draw,RT Ponting,6,Aleem Dar,BR Doctrove
+345971,Test,1925,male,2009,2009-07-16,2009-07-20,Lord's,London,England,Australia,England,bat,The Ashes,2,England,115,,,A Flintoff,6,BR Doctrove,RE Koertzen
+345972,Test,1928,male,2009,2009-07-30,2009-08-03,Edgbaston,Birmingham,England,Australia,Australia,bat,The Ashes,3,,,,draw,MJ Clarke,6,Aleem Dar,RE Koertzen
+345973,Test,1929,male,2009,2009-08-07,2009-08-09,Headingley,Leeds,England,Australia,England,bat,The Ashes,4,Australia,80,,,MJ North,6,Asad Rauf,BF Bowden
+345974,Test,1931,male,2009,2009-08-20,2009-08-23,Kennington Oval,London,England,Australia,England,bat,The Ashes,5,England,197,,,SCJ Broad,6,Asad Rauf,BF Bowden
+350345,Test,1893,male,2008/09,2008-11-19,2008-11-22,OUTsurance Oval,Bloemfontein,South Africa,Bangladesh,Bangladesh,field,Bangladesh in South Africa Test Series,1,South Africa,129,,,GC Smith,6,SJ Davis,IJ Gould
+350346,Test,1895,male,2008/09,2008-11-26,2008-11-28,SuperSport Park,Centurion,South Africa,Bangladesh,Bangladesh,bat,Bangladesh in South Africa Test Series,2,South Africa,48,,,AG Prince,6,SJ Davis,IJ Gould
+350472,Test,1910,male,2008/09,2009-02-26,2009-03-02,New Wanderers Stadium,Johannesburg,South Africa,Australia,Australia,bat,Australia in South Africa Test Series,1,Australia,162,,,MG Johnson,6,BF Bowden,SA Bucknor
+350473,Test,1913,male,2008/09,2009-03-06,2009-03-10,Kingsmead,Durban,South Africa,Australia,Australia,bat,Australia in South Africa Test Series,2,Australia,175,,,PJ Hughes,6,Asad Rauf,BF Bowden
+350474,Test,1916,male,2008/09,2009-03-19,2009-03-22,Newlands,Cape Town,South Africa,Australia,Australia,bat,Australia in South Africa Test Series,3,South Africa,20,,,PL Harris,6,Asad Rauf,SA Bucknor
+351679,Test,1894,male,2008/09,2008-11-20,2008-11-23,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,New Zealand,New Zealand,field,Trans-Tasman Trophy,1,Australia,149,,,MG Johnson,6,BR Doctrove,RE Koertzen
+351680,Test,1896,male,2008/09,2008-11-28,2008-12-01,Adelaide Oval,,Australia,New Zealand,New Zealand,bat,Trans-Tasman Trophy,2,Australia,62,,,BJ Haddin,6,BR Doctrove,RE Koertzen
+351681,Test,1899,male,2008/09,2008-12-17,2008-12-21,Western Australia Cricket Association Ground,Perth,Australia,South Africa,Australia,bat,South Africa in Australia Test Series,1,South Africa,,6,,AB de Villiers,6,Aleem Dar,EAR de Silva
+351682,Test,1902,male,2008/09,2008-12-26,2008-12-30,Melbourne Cricket Ground,,Australia,South Africa,Australia,bat,South Africa in Australia Test Series,2,South Africa,,9,,DW Steyn,6,Aleem Dar,BR Doctrove
+351683,Test,1904,male,2008/09,2009-01-03,2009-01-07,Sydney Cricket Ground,,Australia,South Africa,Australia,bat,South Africa in Australia Test Series,3,Australia,103,,,PM Siddle,6,BF Bowden,EAR de Silva
+352661,Test,1906,male,2008/09,2009-02-04,2009-02-07,"Sabina Park, Kingston",Jamaica,West Indies,England,England,bat,The Wisden Trophy,1,West Indies,23,,,JE Taylor,6,AL Hill,RE Koertzen
+352662,Test,1907,male,2008/09,2009-02-13,2009-02-17,"Sir Vivian Richards Stadium, North Sound",Antigua,West Indies,England,West Indies,field,The Wisden Trophy,2,,,,draw,,6,DJ Harper,AL Hill
+352663,Test,1911,male,2008/09,2009-02-26,2009-03-02,"Kensington Oval, Bridgetown",Barbados,West Indies,England,England,bat,The Wisden Trophy,4,,,,draw,RR Sarwan,6,Aleem Dar,RB Tiffin
+352664,Test,1914,male,2008/09,2009-03-06,2009-03-10,"Queen's Park Oval, Port of Spain",Trinidad,West Indies,England,England,bat,The Wisden Trophy,5,,,,draw,MJ Prior,6,DJ Harper,RB Tiffin
+361050,Test,1898,male,2008/09,2008-12-11,2008-12-15,"MA Chidambaram Stadium, Chepauk",Chennai,India,England,England,bat,England in India Test Series,1,India,,6,,V Sehwag,6,BF Bowden,DJ Harper
+361051,Test,1901,male,2008/09,2008-12-19,2008-12-23,"Punjab Cricket Association Stadium, Mohali",Chandigarh,India,England,India,bat,England in India Test Series,2,,,,draw,G Gambhir,6,Asad Rauf,DJ Harper
+361759,Test,1890,male,2008/09,2008-10-25,2008-10-29,Shere Bangla National Stadium,Mirpur,Bangladesh,New Zealand,Bangladesh,field,New Zealand in Bangladesh Test Series,2,,,,draw,DL Vettori,6,EAR de Silva,DJ Harper
+366628,Test,1915,male,2008/09,2009-03-18,2009-03-21,Seddon Park,Hamilton,New Zealand,India,India,field,India in New Zealand Test Series,1,India,,10,,SR Tendulkar,6,IJ Gould,SJA Taufel
+366629,Test,1918,male,2008/09,2009-04-03,2009-04-07,Basin Reserve,Wellington,New Zealand,India,New Zealand,field,India in New Zealand Test Series,3,,,,draw,G Gambhir,6,DJ Harper,SJA Taufel
+378751,Test,1905,male,2008/09,2009-01-03,2009-01-06,Chittagong Divisional Stadium,,Bangladesh,Sri Lanka,Sri Lanka,bat,Sri Lanka in Bangladesh Test Series,2,Sri Lanka,465,,,TM Dilshan,6,SA Bucknor,NJ Llong
+380712,Test,1919,male,2009,2009-05-06,2009-05-08,Lord's,London,England,West Indies,West Indies,field,The Wisden Trophy,1,England,,10,,GP Swann,6,SJ Davis,EAR de Silva
+380713,Test,1920,male,2009,2009-05-14,2009-05-18,Riverside Ground,Chester-le-Street,England,West Indies,England,bat,The Wisden Trophy,2,England,83,,,JM Anderson,6,SJ Davis,EAR de Silva
+383288,Test,132,female,2009,2009-07-10,2009-07-13,"County Ground, New Road, Worcester",Worcester,Australia,England,Australia,bat,Australia Women tour of England,,,,,draw,JM Fields,6,NGB Cook,TE Jesty
+386496,Test,1917,male,2008/09,2009-03-26,2009-03-30,McLean Park,Napier,New Zealand,India,New Zealand,bat,India in New Zealand Test Series,2,,,,draw,JD Ryder,6,BR Doctrove,IJ Gould
+387570,Test,1942,male,2009/10,2009-12-16,2009-12-20,SuperSport Park,Centurion,South Africa,England,England,field,Basil D'Oliveira Trophy,1,,,,draw,GP Swann,6,Aleem Dar,SJ Davis
+387571,Test,1944,male,2009/10,2009-12-26,2009-12-30,Kingsmead,Durban,South Africa,England,South Africa,bat,Basil D'Oliveira Trophy,2,England,98,,,GP Swann,6,Aleem Dar,AM Saheba
+387572,Test,1946,male,2009/10,2010-01-03,2010-01-07,Newlands,Cape Town,South Africa,England,England,field,Basil D'Oliveira Trophy,3,,,,draw,GC Smith,6,DJ Harper,AL Hill
+387573,Test,1948,male,2009/10,2010-01-14,2010-01-17,New Wanderers Stadium,Johannesburg,South Africa,England,England,bat,Basil D'Oliveira Trophy,4,South Africa,74,,,"M Morkel, DW Steyn",6,SJ Davis,AL Hill
+388993,Test,1909,male,2008/09,2009-02-21,2009-02-25,National Stadium,Karachi,Pakistan,Sri Lanka,Sri Lanka,bat,Sri Lanka in Pakistan Test Series,1,,,,draw,Younis Khan,6,SJ Davis,SJA Taufel
+388994,Test,1912,male,2008/09,2009-03-01,2009-03-05,Gaddafi Stadium,Lahore,Pakistan,Sri Lanka,Pakistan,field,Sri Lanka in Pakistan Test Series,2,,,,draw,,6,SJ Davis,SJA Taufel
+390680,Test,1908,male,2008/09,2009-02-15,2009-02-19,"Antigua Recreation Ground, St John's",Antigua,West Indies,England,West Indies,field,The Wisden Trophy,3,,,,draw,RR Sarwan,6,DJ Harper,RE Koertzen
+401071,Test,1923,male,2009,2009-07-09,2009-07-13,"Arnos Vale Ground, Kingstown",St Vincent,West Indies,Bangladesh,Bangladesh,bat,Bangladesh in West Indies Test Series,1,Bangladesh,95,,,Tamim Iqbal,6,EAR de Silva,AL Hill
+401072,Test,1926,male,2009,2009-07-17,2009-07-20,"National Cricket Stadium, St George's",Grenada,West Indies,Bangladesh,Bangladesh,field,Bangladesh in West Indies Test Series,2,Bangladesh,,4,,Shakib Al Hasan,6,EAR de Silva,AL Hill
+403367,Test,1921,male,2009,2009-07-04,2009-07-07,Galle International Stadium,,Sri Lanka,Pakistan,Pakistan,field,Pakistan in Sri Lanka Test Series,1,Sri Lanka,50,,,HMRKB Herath,6,IJ Gould,DJ Harper
+403368,Test,1924,male,2009,2009-07-12,2009-07-14,P Sara Oval,Colombo,Sri Lanka,Pakistan,Pakistan,bat,Pakistan in Sri Lanka Test Series,2,Sri Lanka,,7,,"Fawad Alam, KMDN Kulasekara",6,DJ Harper,SJA Taufel
+403369,Test,1927,male,2009,2009-07-20,2009-07-24,Sinhalese Sports Club Ground,Colombo,Sri Lanka,Pakistan,Sri Lanka,field,Pakistan in Sri Lanka Test Series,3,,,,draw,KC Sangakkara,6,IJ Gould,SJA Taufel
+403378,Test,1930,male,2009,2009-08-18,2009-08-22,Galle International Stadium,,Sri Lanka,New Zealand,New Zealand,field,New Zealand in Sri Lanka Test Series,1,Sri Lanka,202,,,TM Dilshan,6,DJ Harper,NJ Llong
+403379,Test,1932,male,2009,2009-08-26,2009-08-30,Sinhalese Sports Club Ground,Colombo,Sri Lanka,New Zealand,Sri Lanka,bat,New Zealand in Sri Lanka Test Series,2,Sri Lanka,96,,,DPMD Jayawardene,6,DJ Harper,NJ Llong
+406189,Test,1936,male,2009/10,2009-11-26,2009-11-28,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,West Indies,Australia,bat,The Frank Worrell Trophy,1,Australia,65,,,BW Hilfenhaus,6,Asad Rauf,IJ Gould
+406190,Test,1939,male,2009/10,2009-12-04,2009-12-08,Adelaide Oval,,Australia,West Indies,West Indies,bat,The Frank Worrell Trophy,2,,,,draw,CH Gayle,6,Asad Rauf,MR Benson
+406191,Test,1941,male,2009/10,2009-12-16,2009-12-20,Western Australia Cricket Association Ground,Perth,Australia,West Indies,Australia,bat,The Frank Worrell Trophy,3,Australia,35,,,CH Gayle,6,BF Bowden,IJ Gould
+406199,Test,1943,male,2009/10,2009-12-26,2009-12-30,Melbourne Cricket Ground,,Australia,Pakistan,Australia,bat,Pakistan in Australia Test Series,1,Australia,170,,,SR Watson,6,BR Doctrove,RE Koertzen
+406200,Test,1945,male,2009/10,2010-01-03,2010-01-06,Sydney Cricket Ground,,Australia,Pakistan,Australia,bat,Pakistan in Australia Test Series,2,Australia,36,,,MEK Hussey,6,EAR de Silva,BR Doctrove
+406201,Test,1947,male,2009/10,2010-01-14,2010-01-18,Bellerive Oval,Hobart,Australia,Pakistan,Australia,bat,Pakistan in Australia Test Series,3,Australia,231,,,RT Ponting,6,EAR de Silva,RE Koertzen
+423778,Test,1934,male,2009/10,2009-11-24,2009-11-28,University Oval,Dunedin,New Zealand,Pakistan,Pakistan,field,Pakistan in New Zealand Test Series,1,New Zealand,32,,,SE Bond,6,BR Doctrove,SJA Taufel
+423779,Test,1938,male,2009/10,2009-12-03,2009-12-06,Basin Reserve,Wellington,New Zealand,Pakistan,New Zealand,field,Pakistan in New Zealand Test Series,2,Pakistan,141,,,Mohammad Asif,6,RE Koertzen,SJA Taufel
+423780,Test,1940,male,2009/10,2009-12-11,2009-12-15,McLean Park,Napier,New Zealand,Pakistan,Pakistan,bat,Pakistan in New Zealand Test Series,3,,,,draw,DL Vettori,6,BR Doctrove,RE Koertzen
+423786,Test,1953,male,2009/10,2010-02-15,2010-02-19,Seddon Park,Hamilton,New Zealand,Bangladesh,Bangladesh,field,,,New Zealand,121,,,MJ Guptill,6,RE Koertzen,RJ Tucker
+423789,Test,1955,male,2009/10,2010-03-19,2010-03-23,Basin Reserve,Wellington,New Zealand,Australia,Australia,bat,Trans-Tasman Trophy,1,Australia,,10,,MJ Clarke,6,Asad Rauf,IJ Gould
+423790,Test,1957,male,2009/10,2010-03-27,2010-03-31,Seddon Park,Hamilton,New Zealand,Australia,Australia,bat,Trans-Tasman Trophy,2,Australia,176,,,MG Johnson,6,Aleem Dar,Asad Rauf
+426394,Test,1963,male,2010,2010-07-13,2010-07-16,Lord's,London,Australia,Pakistan,Pakistan,field,MCC Spirit of Cricket Test Series,1,Australia,150,,,"SM Katich, Salman Butt",6,IJ Gould,RE Koertzen
+426395,Test,1965,male,2010,2010-07-21,2010-07-24,Headingley,Leeds,Australia,Pakistan,Australia,bat,MCC Spirit of Cricket Test Series,2,Pakistan,,3,,"Mohammad Amir, SR Watson",6,IJ Gould,RE Koertzen
+426401,Test,1958,male,2010,2010-05-27,2010-05-31,Lord's,London,England,Bangladesh,Bangladesh,field,Bangladesh in England Test Series,1,England,,8,,ST Finn,6,BF Bowden,EAR de Silva
+426402,Test,1959,male,2010,2010-06-04,2010-06-06,Old Trafford,Manchester,England,Bangladesh,England,bat,Bangladesh in England Test Series,2,England,80,,,IR Bell,6,BF Bowden,EAR de Silva
+426413,Test,1967,male,2010,2010-07-29,2010-08-01,Trent Bridge,Nottingham,England,Pakistan,England,bat,Pakistan in England Test Series,1,England,354,,,JM Anderson,6,EAR de Silva,AL Hill
+426414,Test,1969,male,2010,2010-08-06,2010-08-09,Edgbaston,Birmingham,England,Pakistan,Pakistan,bat,Pakistan in England Test Series,2,England,,9,,GP Swann,6,SJ Davis,M Erasmus
+426415,Test,1970,male,2010,2010-08-18,2010-08-21,Kennington Oval,London,England,Pakistan,England,bat,Pakistan in England Test Series,3,Pakistan,,4,,Mohammad Amir,6,SJ Davis,AL Hill
+426416,Test,1971,male,2010,2010-08-26,2010-08-29,Lord's,London,England,Pakistan,Pakistan,field,Pakistan in England Test Series,4,England,225,,,SCJ Broad,6,BF Bowden,AL Hill
+426423,Test,1954,male,2009/10,2010-03-12,2010-03-16,Zohur Ahmed Chowdhury Stadium,Chittagong,Bangladesh,England,Bangladesh,field,England in Bangladesh Test Series,1,England,181,,,GP Swann,6,AL Hill,RJ Tucker
+426424,Test,1956,male,2009/10,2010-03-20,2010-03-24,Shere Bangla National Stadium,Mirpur,Bangladesh,England,Bangladesh,bat,England in Bangladesh Test Series,2,England,,9,,Shakib Al Hasan,6,AL Hill,RJ Tucker
+428749,Test,1981,male,2010/11,2010-11-25,2010-11-29,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,England,England,bat,The Ashes,1,,,,draw,AN Cook,6,Aleem Dar,BR Doctrove
+428750,Test,1983,male,2010/11,2010-12-03,2010-12-07,Adelaide Oval,,Australia,England,Australia,bat,The Ashes,2,England,71,,,KP Pietersen,6,M Erasmus,AL Hill
+428751,Test,1984,male,2010/11,2010-12-16,2010-12-19,Western Australia Cricket Association Ground,Perth,Australia,England,England,field,The Ashes,3,Australia,267,,,MG Johnson,6,BR Doctrove,M Erasmus
+428752,Test,1986,male,2010/11,2010-12-26,2010-12-29,Melbourne Cricket Ground,,Australia,England,England,field,The Ashes,4,England,157,,,IJL Trott,6,Aleem Dar,AL Hill
+428753,Test,1989,male,2010/11,2011-01-03,2011-01-07,Sydney Cricket Ground,,Australia,England,Australia,bat,The Ashes,5,England,83,,,AN Cook,6,Aleem Dar,BF Bowden
+430881,Test,1933,male,2009/10,2009-11-16,2009-11-20,"Sardar Patel Stadium, Motera",Ahmedabad,India,Sri Lanka,India,bat,Sri Lanka in India Test Series,1,,,,draw,DPMD Jayawardene,6,DJ Harper,AL Hill
+430882,Test,1935,male,2009/10,2009-11-24,2009-11-27,Green Park,Kanpur,India,Sri Lanka,India,bat,Sri Lanka in India Test Series,2,India,144,,,S Sreesanth,6,AL Hill,NJ Llong
+430883,Test,1937,male,2009/10,2009-12-02,2009-12-06,Brabourne Stadium,Mumbai,India,Sri Lanka,Sri Lanka,bat,Sri Lanka in India Test Series,3,India,24,,,V Sehwag,6,DJ Harper,NJ Llong
+434256,Test,1949,male,2009/10,2010-01-17,2010-01-21,Zahur Ahmed Chowdhury Stadium,Chittagong,Bangladesh,India,Bangladesh,field,India in Bangladesh Test Series,1,India,113,,,SR Tendulkar,6,BF Bowden,M Erasmus
+434257,Test,1950,male,2009/10,2010-01-24,2010-01-27,Shere Bangla National Stadium,Mirpur,Bangladesh,India,Bangladesh,bat,India in Bangladesh Test Series,2,India,,10,,Z Khan,6,BF Bowden,M Erasmus
+439152,Test,1960,male,2010,2010-06-10,2010-06-13,"Queen's Park Oval, Port of Spain",Trinidad,West Indies,South Africa,South Africa,bat,South Africa in West Indies Test Series,1,South Africa,163,,,DW Steyn,6,Asad Rauf,SJ Davis
+439153,Test,1961,male,2010,2010-06-18,2010-06-22,"Warner Park, Basseterre",St Kitts,West Indies,South Africa,South Africa,bat,South Africa in West Indies Test Series,2,,,,draw,S Chanderpaul,6,Asad Rauf,SJA Taufel
+439154,Test,1962,male,2010,2010-06-26,2010-06-29,"Kensington Oval, Bridgetown",Barbados,West Indies,South Africa,West Indies,bat,South Africa in West Indies Test Series,3,South Africa,,7,,J Botha,6,SJ Davis,SJA Taufel
+441825,Test,1951,male,2009/10,2010-02-06,2010-02-09,"Vidarbha Cricket Association Stadium, Jamtha",Nagpur,India,South Africa,South Africa,bat,South Africa in India Test Series,1,South Africa,6,,,HM Amla,6,SJ Davis,IJ Gould
+441826,Test,1952,male,2009/10,2010-02-14,2010-02-18,Eden Gardens,Kolkata,India,South Africa,South Africa,bat,South Africa in India Test Series,2,India,57,,,HM Amla,6,SJ Davis,IJ Gould
+456669,Test,1964,male,2010,2010-07-18,2010-07-22,Galle International Stadium,,Sri Lanka,India,Sri Lanka,bat,India in Sri Lanka Test Series,1,Sri Lanka,,10,,SL Malinga,6,DJ Harper,RJ Tucker
+456670,Test,1966,male,2010,2010-07-26,2010-07-30,Sinhalese Sports Club Ground,Colombo,Sri Lanka,India,Sri Lanka,bat,India in Sri Lanka Test Series,2,,,,draw,KC Sangakkara,6,DJ Harper,RJ Tucker
+456671,Test,1968,male,2010,2010-08-03,2010-08-07,P Sara Oval,Colombo,Sri Lanka,India,Sri Lanka,bat,India in Sri Lanka Test Series,3,India,,5,,VVS Laxman,6,SJA Taufel,RJ Tucker
+461571,Test,1976,male,2010/11,2010-11-12,2010-11-16,Dubai International Cricket Stadium,,Pakistan,South Africa,South Africa,bat,Pakistan v South Africa Test Series,1,,,,draw,Younis Khan,6,EAR de Silva,DJ Harper
+461572,Test,1979,male,2010/11,2010-11-20,2010-11-24,Sheikh Zayed Stadium,Abu Dhabi,Pakistan,South Africa,Pakistan,field,Pakistan v South Africa Test Series,2,,,,draw,AB de Villiers,6,EAR de Silva,DJ Harper
+463146,Test,1985,male,2010/11,2010-12-16,2010-12-20,SuperSport Park,Centurion,South Africa,India,South Africa,field,India in South Africa Test Series,1,South Africa,25,,,JH Kallis,6,SJ Davis,IJ Gould
+463147,Test,1987,male,2010/11,2010-12-26,2010-12-29,Kingsmead,Durban,South Africa,India,South Africa,field,India in South Africa Test Series,2,India,87,,,VVS Laxman,6,Asad Rauf,SJ Davis
+463148,Test,1988,male,2010/11,2011-01-02,2011-01-06,Newlands,Cape Town,South Africa,India,India,field,India in South Africa Test Series,3,,,,draw,JH Kallis,6,IJ Gould,SJA Taufel
+464526,Test,1972,male,2010/11,2010-10-01,2010-10-05,"Punjab Cricket Association Stadium, Mohali",Chandigarh,India,Australia,Australia,bat,Border-Gavaskar Trophy,1,India,,1,,Z Khan,6,BF Bowden,IJ Gould
+464527,Test,1973,male,2010/11,2010-10-09,2010-10-13,M Chinnaswamy Stadium,Bangalore,India,Australia,Australia,bat,Border-Gavaskar Trophy,2,India,,7,,SR Tendulkar,6,BF Bowden,IJ Gould
+464531,Test,1974,male,2010/11,2010-11-04,2010-11-08,"Sardar Patel Stadium, Motera",Ahmedabad,India,New Zealand,India,bat,New Zealand in India Test Series,1,,,,draw,Harbhajan Singh,6,SJ Davis,HDPK Dharmasena
+464532,Test,1975,male,2010/11,2010-11-12,2010-11-16,"Rajiv Gandhi International Stadium, Uppal",Hyderabad,India,New Zealand,New Zealand,bat,New Zealand in India Test Series,2,,,,draw,BB McCullum,6,HDPK Dharmasena,SJA Taufel
+464533,Test,1978,male,2010/11,2010-11-20,2010-11-23,"Vidarbha Cricket Association Stadium, Jamtha",Nagpur,India,New Zealand,New Zealand,bat,New Zealand in India Test Series,3,India,198,,,R Dravid,6,NJ Llong,SJA Taufel
+464987,Test,1977,male,2010/11,2010-11-15,2010-11-19,Galle International Stadium,,Sri Lanka,West Indies,West Indies,bat,West Indies in Sri Lanka Test Series,1,,,,draw,CH Gayle,6,SJ Davis,RA Kettleborough
+464988,Test,1980,male,2010/11,2010-11-23,2010-11-27,R Premadasa Stadium,Colombo,Sri Lanka,West Indies,Sri Lanka,bat,West Indies in Sri Lanka Test Series,2,,,,draw,KC Sangakkara,6,Asad Rauf,RA Kettleborough
+464989,Test,1982,male,2010/11,2010-12-01,2010-12-05,Pallekele International Cricket Stadium,,Sri Lanka,West Indies,Sri Lanka,field,West Indies in Sri Lanka Test Series,3,,,,draw,,6,Asad Rauf,BNJ Oxenford
+473921,Test,1990,male,2010/11,2011-01-07,2011-01-09,Seddon Park,Hamilton,New Zealand,Pakistan,Pakistan,field,Pakistan in New Zealand Test Series,1,Pakistan,,10,,Abdur Rehman,6,DJ Harper,RJ Tucker
+473922,Test,1991,male,2010/11,2011-01-15,2011-01-19,Basin Reserve,Wellington,New Zealand,Pakistan,New Zealand,bat,Pakistan in New Zealand Test Series,2,,,,draw,Misbah-ul-Haq,6,DJ Harper,RJ Tucker
+474463,Test,1994,male,2011,2011-05-26,2011-05-30,Sophia Gardens,Cardiff,England,Sri Lanka,Sri Lanka,bat,Sri Lanka in England Test Series,1,England,14,,,IJL Trott,6,Aleem Dar,BR Doctrove
+474464,Test,1995,male,2011,2011-06-03,2011-06-07,Lord's,London,England,Sri Lanka,Sri Lanka,field,Sri Lanka in England Test Series,2,,,,draw,TM Dilshan,6,BR Doctrove,RJ Tucker
+474465,Test,1996,male,2011,2011-06-16,2011-06-20,The Rose Bowl,Southampton,England,Sri Lanka,England,field,Sri Lanka in England Test Series,3,,,,draw,CT Tremlett,6,Aleem Dar,RJ Tucker
+474472,Test,2000,male,2011,2011-07-21,2011-07-25,Lord's,London,England,India,India,field,Pataudi Trophy,1,England,196,,,KP Pietersen,6,Asad Rauf,BF Bowden
+474473,Test,2001,male,2011,2011-07-29,2011-08-01,Trent Bridge,Nottingham,England,India,India,field,Pataudi Trophy,2,England,319,,,SCJ Broad,6,Asad Rauf,M Erasmus
+474474,Test,2003,male,2011,2011-08-10,2011-08-13,Edgbaston,Birmingham,England,India,England,field,Pataudi Trophy,3,England,242,,,AN Cook,6,SJ Davis,SJA Taufel
+474475,Test,2004,male,2011,2011-08-18,2011-08-22,Kennington Oval,London,England,India,England,bat,Pataudi Trophy,4,England,8,,,IR Bell,6,SJA Taufel,RJ Tucker
+474625,Test,133,female,2010/11,2011-01-22,2011-01-25,"Bankstown Oval, Sydney",Sydney,England,Australia,England,bat,England Women tour of Australia,,Australia,,7,,RM Farrell,6,AJ Barrow,P Wilson
+489218,Test,1992,male,2011,2011-05-12,2011-05-15,Providence Stadium,Guyana,West Indies,Pakistan,West Indies,bat,Pakistan in West Indies Test Series,1,West Indies,40,,,DJG Sammy,6,BF Bowden,AL Hill
+489219,Test,1993,male,2011,2011-05-20,2011-05-24,"Warner Park, Basseterre",St Kitts,West Indies,Pakistan,Pakistan,bat,Pakistan in West Indies Test Series,2,Pakistan,196,,,Taufeeq Umar,6,BF Bowden,EAR de Silva
+489226,Test,1997,male,2011,2011-06-20,2011-06-23,"Sabina Park, Kingston",Jamaica,West Indies,India,India,bat,India in West Indies Test Series,1,India,63,,,R Dravid,6,IJ Gould,DJ Harper
+489227,Test,1998,male,2011,2011-06-28,2011-07-02,"Kensington Oval, Bridgetown",Barbados,West Indies,India,West Indies,field,India in West Indies Test Series,2,,,,draw,I Sharma,6,Asad Rauf,IJ Gould
+489228,Test,1999,male,2011,2011-07-06,2011-07-10,"Windsor Park, Roseau",Dominica,West Indies,India,India,field,India in West Indies Test Series,3,,,,draw,S Chanderpaul,6,Asad Rauf,RA Kettleborough
+514029,Test,2016,male,2011/12,2011-11-09,2011-11-11,Newlands,Cape Town,South Africa,Australia,South Africa,field,Australia in South Africa Test Series,1,South Africa,,8,,VD Philander,6,BR Doctrove,IJ Gould
+514030,Test,2018,male,2011/12,2011-11-17,2011-11-21,New Wanderers Stadium,Johannesburg,South Africa,Australia,South Africa,bat,Australia in South Africa Test Series,2,Australia,,2,,PJ Cummins,6,BF Bowden,IJ Gould
+514032,Test,2023,male,2011/12,2011-12-15,2011-12-17,SuperSport Park,Centurion,South Africa,Sri Lanka,South Africa,field,Sri Lanka in South Africa Test Series,1,South Africa,81,,,VD Philander,6,SJ Davis,RJ Tucker
+514033,Test,2026,male,2011/12,2011-12-26,2011-12-29,Kingsmead,Durban,South Africa,Sri Lanka,Sri Lanka,bat,Sri Lanka in South Africa Test Series,2,Sri Lanka,208,,,HMRKB Herath,6,SJ Davis,RA Kettleborough
+514034,Test,2028,male,2011/12,2012-01-03,2012-01-06,Newlands,Cape Town,South Africa,Sri Lanka,Sri Lanka,field,Sri Lanka in South Africa Test Series,3,South Africa,,10,,JH Kallis,6,RA Kettleborough,RJ Tucker
+516212,Test,2005,male,2011,2011-08-31,2011-09-03,Galle International Stadium,,Sri Lanka,Australia,Australia,bat,Warne-Muralitharan Trophy,1,Australia,125,,,MEK Hussey,6,Aleem Dar,RA Kettleborough
+516213,Test,2007,male,2011,2011-09-08,2011-09-12,Pallekele International Cricket Stadium,,Sri Lanka,Australia,Sri Lanka,bat,Warne-Muralitharan Trophy,2,,,,draw,MEK Hussey,6,AL Hill,RA Kettleborough
+516214,Test,2008,male,2011,2011-09-16,2011-09-20,Sinhalese Sports Club Ground,Colombo,Sri Lanka,Australia,Sri Lanka,field,Warne-Muralitharan Trophy,3,,,,draw,MEK Hussey,6,Aleem Dar,AL Hill
+518947,Test,2020,male,2011/12,2011-12-01,2011-12-04,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,New Zealand,New Zealand,bat,Trans-Tasman Trophy,1,Australia,,9,,JL Pattinson,6,Aleem Dar,Asad Rauf
+518948,Test,2021,male,2011/12,2011-12-09,2011-12-12,Bellerive Oval,Hobart,Australia,New Zealand,Australia,field,Trans-Tasman Trophy,2,New Zealand,7,,,DA Warner,6,Asad Rauf,NJ Llong
+518950,Test,2025,male,2011/12,2011-12-26,2011-12-29,Melbourne Cricket Ground,,Australia,India,Australia,bat,Border-Gavaskar Trophy,1,Australia,122,,,JL Pattinson,6,M Erasmus,IJ Gould
+518951,Test,2027,male,2011/12,2012-01-03,2012-01-06,Sydney Cricket Ground,,Australia,India,India,bat,Border-Gavaskar Trophy,2,Australia,68,,,MJ Clarke,6,M Erasmus,IJ Gould
+518952,Test,2029,male,2011/12,2012-01-13,2012-01-15,Western Australia Cricket Association Ground,Perth,Australia,India,Australia,field,Border-Gavaskar Trophy,3,Australia,37,,,DA Warner,6,Aleem Dar,HDPK Dharmasena
+518953,Test,2031,male,2011/12,2012-01-24,2012-01-28,Adelaide Oval,,Australia,India,Australia,bat,Border-Gavaskar Trophy,4,Australia,298,,,PM Siddle,6,Aleem Dar,HDPK Dharmasena
+520591,Test,2033,male,2011/12,2012-01-26,2012-01-28,McLean Park,Napier,New Zealand,Zimbabwe,Zimbabwe,field,,,New Zealand,301,,,CS Martin,6,Enamul Haque,RJ Tucker
+520603,Test,2035,male,2011/12,2012-03-07,2012-03-11,University Oval,Dunedin,New Zealand,South Africa,New Zealand,field,South Africa in New Zealand Test Series,1,,,,draw,GC Smith,6,Aleem Dar,BR Doctrove
+520604,Test,2036,male,2011/12,2012-03-15,2012-03-17,Seddon Park,Hamilton,New Zealand,South Africa,South Africa,field,South Africa in New Zealand Test Series,2,South Africa,,9,,VD Philander,6,BR Doctrove,RA Kettleborough
+520605,Test,2037,male,2011/12,2012-03-23,2012-03-27,Basin Reserve,Wellington,New Zealand,South Africa,New Zealand,field,South Africa in New Zealand Test Series,3,,,,draw,M Morkel,6,Aleem Dar,RA Kettleborough
+521225,Test,2038,male,2011/12,2012-03-26,2012-03-29,Galle International Stadium,,Sri Lanka,England,Sri Lanka,bat,England in Sri Lanka Test Series,1,Sri Lanka,75,,,HMRKB Herath,6,Asad Rauf,RJ Tucker
+521226,Test,2039,male,2011/12,2012-04-03,2012-04-07,P Sara Oval,Colombo,Sri Lanka,England,Sri Lanka,bat,England in Sri Lanka Test Series,2,England,,8,,KP Pietersen,6,Asad Rauf,BNJ Oxenford
+522245,Test,2002,male,2011,2011-08-04,2011-08-08,Harare Sports Club,,Zimbabwe,Bangladesh,Bangladesh,field,,,Zimbabwe,130,,,BRM Taylor,6,HDPK Dharmasena,BNJ Oxenford
+523731,Test,2006,male,2011,2011-09-01,2011-09-05,Queens Sports Club,Bulawayo,Zimbabwe,Pakistan,Pakistan,field,,,Pakistan,,7,,Mohammad Hafeez,6,IJ Gould,RJ Tucker
+527017,Test,2013,male,2011/12,2011-11-01,2011-11-05,Queens Sports Club,Bulawayo,Zimbabwe,New Zealand,New Zealand,bat,,,New Zealand,34,,,DL Vettori,6,M Erasmus,BNJ Oxenford
+530424,Test,2009,male,2011/12,2011-10-18,2011-10-22,Sheikh Zayed Stadium,Abu Dhabi,Pakistan,Sri Lanka,Pakistan,field,Pakistan v Sri Lanka Test Series,1,,,,draw,KC Sangakkara,6,AL Hill,RJ Tucker
+530425,Test,2011,male,2011/12,2011-10-26,2011-10-29,Dubai International Cricket Stadium,,Pakistan,Sri Lanka,Sri Lanka,bat,Pakistan v Sri Lanka Test Series,2,Pakistan,,9,,Saeed Ajmal,6,AL Hill,SK Tarapore
+530426,Test,2014,male,2011/12,2011-11-03,2011-11-07,Sharjah Cricket Stadium,,Pakistan,Sri Lanka,Sri Lanka,bat,Pakistan v Sri Lanka Test Series,3,,,,draw,KC Sangakkara,6,SK Tarapore,SJA Taufel
+531628,Test,2030,male,2011/12,2012-01-17,2012-01-19,Dubai International Cricket Stadium,,England,Pakistan,England,bat,Pakistan v England Test Series,1,Pakistan,,10,,Saeed Ajmal,6,BF Bowden,BNJ Oxenford
+531629,Test,2032,male,2011/12,2012-01-25,2012-01-28,Sheikh Zayed Stadium,Abu Dhabi,England,Pakistan,Pakistan,bat,Pakistan v England Test Series,2,Pakistan,72,,,Abdur Rehman,6,SJ Davis,BNJ Oxenford
+531630,Test,2034,male,2011/12,2012-02-03,2012-02-06,Dubai International Cricket Stadium,,England,Pakistan,Pakistan,bat,Pakistan v England Test Series,3,Pakistan,71,,,Azhar Ali,6,SJ Davis,SJA Taufel
+531986,Test,2010,male,2011/12,2011-10-21,2011-10-25,Zahur Ahmed Chowdhury Stadium,Chittagong,Bangladesh,West Indies,Bangladesh,bat,West Indies in Bangladesh Test Series,1,,,,draw,Elias Sunny,6,HDPK Dharmasena,NJ Llong
+531987,Test,2012,male,2011/12,2011-10-29,2011-11-02,Shere Bangla National Stadium,Mirpur,Bangladesh,West Indies,West Indies,bat,West Indies in Bangladesh Test Series,2,West Indies,229,,,KA Edwards,6,HDPK Dharmasena,NJ Llong
+534205,Test,2043,male,2012,2012-05-17,2012-05-21,Lord's,London,England,West Indies,England,field,The Wisden Trophy,1,England,,5,,SCJ Broad,6,Aleem Dar,M Erasmus
+534206,Test,2044,male,2012,2012-05-25,2012-05-28,Trent Bridge,Nottingham,England,West Indies,West Indies,bat,The Wisden Trophy,2,England,,9,,TT Bresnan,6,Aleem Dar,Asad Rauf
+534207,Test,2045,male,2012,2012-06-07,2012-06-11,Edgbaston,Birmingham,England,West Indies,England,field,The Wisden Trophy,3,,,,draw,TL Best,6,HDPK Dharmasena,AL Hill
+534225,Test,2049,male,2012,2012-07-19,2012-07-23,Kennington Oval,London,England,South Africa,England,bat,Basil D'Oliveira Trophy,1,South Africa,12,,,HM Amla,6,Asad Rauf,SJ Davis
+534226,Test,2051,male,2012,2012-08-02,2012-08-06,Headingley,Leeds,England,South Africa,England,field,Basil D'Oliveira Trophy,2,,,,draw,KP Pietersen,6,SJ Davis,RJ Tucker
+534227,Test,2053,male,2012,2012-08-16,2012-08-20,Lord's,London,England,South Africa,South Africa,bat,Basil D'Oliveira Trophy,3,South Africa,51,,,VD Philander,6,HDPK Dharmasena,SJA Taufel
+535997,Test,2015,male,2011/12,2011-11-06,2011-11-09,Feroz Shah Kotla,Delhi,India,West Indies,West Indies,bat,West Indies in India Test Series,1,India,,5,,R Ashwin,6,HDPK Dharmasena,RJ Tucker
+535998,Test,2017,male,2011/12,2011-11-14,2011-11-17,Eden Gardens,Kolkata,India,West Indies,India,bat,West Indies in India Test Series,2,India,15,,,VVS Laxman,6,BNJ Oxenford,RJ Tucker
+535999,Test,2019,male,2011/12,2011-11-22,2011-11-26,Wankhede Stadium,Mumbai,India,West Indies,West Indies,bat,West Indies in India Test Series,3,,,,draw,R Ashwin,6,AL Hill,BNJ Oxenford
+538072,Test,2022,male,2011/12,2011-12-09,2011-12-12,Zahur Ahmed Chowdhury Stadium,Chittagong,Bangladesh,Pakistan,Pakistan,field,Pakistan in Bangladesh Test Series,1,Pakistan,184,,,Younis Khan,6,BR Doctrove,SK Tarapore
+538073,Test,2024,male,2011/12,2011-12-17,2011-12-21,Shere Bangla National Stadium,Mirpur,Bangladesh,Pakistan,Pakistan,field,Pakistan in Bangladesh Test Series,2,Pakistan,,7,,Shakib Al Hasan,6,BR Doctrove,SK Tarapore
+540176,Test,2040,male,2011/12,2012-04-07,2012-04-11,"Kensington Oval, Bridgetown",Barbados,West Indies,Australia,West Indies,bat,The Frank Worrell Trophy,1,Australia,,3,,RJ Harris,6,IJ Gould,AL Hill
+540177,Test,2041,male,2011/12,2012-04-15,2012-04-19,"Queen's Park Oval, Port of Spain",Trinidad,West Indies,Australia,Australia,bat,The Frank Worrell Trophy,2,,,,draw,KAJ Roach,6,M Erasmus,IJ Gould
+540178,Test,2042,male,2011/12,2012-04-23,2012-04-27,"Windsor Park, Roseau",Dominica,West Indies,Australia,Australia,bat,The Frank Worrell Trophy,3,Australia,75,,,MS Wade,6,M Erasmus,AL Hill
+560929,Test,2050,male,2012,2012-07-25,2012-07-29,"Sir Vivian Richards Stadium, North Sound",Antigua,West Indies,New Zealand,New Zealand,bat,New Zealand in West Indies Test Series,1,West Indies,,9,,SP Narine,6,RA Kettleborough,PR Reiffel
+560930,Test,2052,male,2012,2012-08-02,2012-08-05,"Sabina Park, Kingston",Jamaica,West Indies,New Zealand,West Indies,field,New Zealand in West Indies Test Series,2,West Indies,,5,,MN Samuels,6,M Erasmus,PR Reiffel
+562444,Test,2046,male,2012,2012-06-22,2012-06-25,Galle International Stadium,,Sri Lanka,Pakistan,Sri Lanka,bat,Pakistan in Sri Lanka Test Series,1,Sri Lanka,209,,,KC Sangakkara,6,SJ Davis,IJ Gould
+562445,Test,2047,male,2012,2012-06-30,2012-07-04,Sinhalese Sports Club Ground,Colombo,Sri Lanka,Pakistan,Sri Lanka,field,Pakistan in Sri Lanka Test Series,2,,,,draw,Junaid Khan,6,IJ Gould,SJA Taufel
+562446,Test,2048,male,2012,2012-07-08,2012-07-12,Pallekele International Cricket Stadium,,Sri Lanka,Pakistan,Sri Lanka,field,Pakistan in Sri Lanka Test Series,3,,,,draw,Asad Shafiq,6,SJ Davis,SJA Taufel
+565806,Test,2058,male,2012/13,2012-11-15,2012-11-19,"Sardar Patel Stadium, Motera",Ahmedabad,India,England,India,bat,England in India Test Series,1,India,,9,,CA Pujara,6,Aleem Dar,AL Hill
+565807,Test,2062,male,2012/13,2012-11-23,2012-11-26,Wankhede Stadium,Mumbai,India,England,India,bat,England in India Test Series,2,England,,10,,KP Pietersen,6,Aleem Dar,AL Hill
+565808,Test,2065,male,2012/13,2012-12-05,2012-12-09,Eden Gardens,Kolkata,India,England,India,bat,England in India Test Series,3,England,,7,,AN Cook,6,HDPK Dharmasena,RJ Tucker
+565809,Test,2066,male,2012/13,2012-12-13,2012-12-17,"Vidarbha Cricket Association Stadium, Jamtha",Nagpur,India,England,England,bat,England in India Test Series,4,,,,draw,JM Anderson,6,HDPK Dharmasena,RJ Tucker
+565817,Test,2054,male,2012,2012-08-23,2012-08-26,"Rajiv Gandhi International Stadium, Uppal",Hyderabad,India,New Zealand,India,bat,New Zealand in India Test Series,1,India,115,,,R Ashwin,6,SJ Davis,IJ Gould
+565818,Test,2055,male,2012,2012-08-31,2012-09-03,M Chinnaswamy Stadium,Bangalore,India,New Zealand,New Zealand,bat,New Zealand in India Test Series,2,India,,5,,V Kohli,6,SJ Davis,IJ Gould
+566921,Test,2088,male,2013,2013-05-16,2013-05-19,Lord's,London,England,New Zealand,England,bat,New Zealand in England Test Series,1,England,170,,,SCJ Broad,6,Aleem Dar,SJ Davis
+566922,Test,2089,male,2013,2013-05-24,2013-05-28,Headingley,Leeds,England,New Zealand,England,bat,New Zealand in England Test Series,2,England,247,,,GP Swann,6,SJ Davis,M Erasmus
+566932,Test,2090,male,2013,2013-07-10,2013-07-14,Trent Bridge,Nottingham,England,Australia,England,bat,The Ashes,1,England,14,,,JM Anderson,6,Aleem Dar,HDPK Dharmasena
+566933,Test,2091,male,2013,2013-07-18,2013-07-21,Lord's,London,England,Australia,England,bat,The Ashes,2,England,347,,,JE Root,6,HDPK Dharmasena,M Erasmus
+566934,Test,2092,male,2013,2013-08-01,2013-08-05,Old Trafford,Manchester,England,Australia,Australia,bat,The Ashes,3,,,,draw,MJ Clarke,6,M Erasmus,AL Hill
+566935,Test,2093,male,2013,2013-08-09,2013-08-12,Riverside Ground,Chester-le-Street,England,Australia,England,bat,The Ashes,4,England,74,,,SCJ Broad,6,Aleem Dar,AL Hill
+566936,Test,2094,male,2013,2013-08-21,2013-08-25,Kennington Oval,London,England,Australia,Australia,bat,The Ashes,5,,,,draw,SR Watson,6,Aleem Dar,HDPK Dharmasena
+567356,Test,2069,male,2012/13,2013-01-02,2013-01-04,Newlands,Cape Town,South Africa,New Zealand,New Zealand,bat,New Zealand in South Africa Test Series,1,South Africa,27,,,VD Philander,6,IJ Gould,RJ Tucker
+567357,Test,2071,male,2012/13,2013-01-11,2013-01-14,St George's Park,Port Elizabeth,South Africa,New Zealand,South Africa,bat,New Zealand in South Africa Test Series,2,South Africa,193,,,DW Steyn,6,HDPK Dharmasena,IJ Gould
+567363,Test,2072,male,2012/13,2013-02-01,2013-02-04,New Wanderers Stadium,Johannesburg,South Africa,Pakistan,South Africa,bat,Pakistan in South Africa Test Series,1,South Africa,211,,,DW Steyn,6,BF Bowden,BNJ Oxenford
+567364,Test,2073,male,2012/13,2013-02-14,2013-02-17,Newlands,Cape Town,South Africa,Pakistan,South Africa,field,Pakistan in South Africa Test Series,2,South Africa,,4,,RJ Peterson,6,SJ Davis,BNJ Oxenford
+567365,Test,2075,male,2012/13,2013-02-22,2013-02-24,SuperSport Park,Centurion,South Africa,Pakistan,South Africa,bat,Pakistan in South Africa Test Series,3,South Africa,18,,,KJ Abbott,6,BF Bowden,SJ Davis
+569243,Test,2077,male,2012/13,2013-03-06,2013-03-10,University Oval,Dunedin,New Zealand,England,New Zealand,field,England in New Zealand Test Series,1,,,,draw,,6,Asad Rauf,PR Reiffel
+569244,Test,2080,male,2012/13,2013-03-14,2013-03-18,Basin Reserve,Wellington,New Zealand,England,New Zealand,field,England in New Zealand Test Series,2,,,,draw,,6,Asad Rauf,RJ Tucker
+569245,Test,2084,male,2012/13,2013-03-22,2013-03-26,Eden Park,Auckland,New Zealand,England,England,field,England in New Zealand Test Series,3,,,,draw,,6,PR Reiffel,RJ Tucker
+573007,Test,2056,male,2012/13,2012-11-09,2012-11-13,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,South Africa,South Africa,bat,South Africa in Australia Test Series,1,,,,draw,MJ Clarke,6,Asad Rauf,BF Bowden
+573008,Test,2061,male,2012/13,2012-11-22,2012-11-26,Adelaide Oval,,Australia,South Africa,Australia,bat,South Africa in Australia Test Series,2,,,,draw,F du Plessis,6,BF Bowden,RA Kettleborough
+573009,Test,2064,male,2012/13,2012-11-30,2012-12-03,Western Australia Cricket Association Ground,Perth,Australia,South Africa,South Africa,bat,South Africa in Australia Test Series,3,South Africa,309,,,HM Amla,6,Asad Rauf,RA Kettleborough
+573011,Test,2067,male,2012/13,2012-12-14,2012-12-18,Bellerive Oval,Hobart,Australia,Sri Lanka,Australia,bat,Warne-Muralitharan Trophy,1,Australia,137,,,PM Siddle,6,AL Hill,NJ Llong
+573012,Test,2068,male,2012/13,2012-12-26,2012-12-28,Melbourne Cricket Ground,,Australia,Sri Lanka,Sri Lanka,bat,Warne-Muralitharan Trophy,2,Australia,201,,,MG Johnson,6,Aleem Dar,NJ Llong
+573013,Test,2070,male,2012/13,2013-01-03,2013-01-06,Sydney Cricket Ground,,Australia,Sri Lanka,Australia,field,Warne-Muralitharan Trophy,3,Australia,,5,,JM Bird,6,Aleem Dar,AL Hill
+582192,Test,2059,male,2012/13,2012-11-17,2012-11-19,Galle International Stadium,,Sri Lanka,New Zealand,New Zealand,bat,New Zealand in Sri Lanka Test Series,1,Sri Lanka,,10,,HMRKB Herath,6,M Erasmus,NJ Llong
+582193,Test,2063,male,2012/13,2012-11-25,2012-11-29,P Sara Oval,Colombo,Sri Lanka,New Zealand,New Zealand,bat,New Zealand in Sri Lanka Test Series,2,New Zealand,167,,,LRPL Taylor,6,M Erasmus,NJ Llong
+587469,Test,2057,male,2012/13,2012-11-13,2012-11-17,Shere Bangla National Stadium,Mirpur,Bangladesh,West Indies,West Indies,bat,West Indies in Bangladesh Test Series,1,West Indies,77,,,KOA Powell,6,RK Illingworth,BNJ Oxenford
+587470,Test,2060,male,2012/13,2012-11-21,2012-11-25,Sheikh Abu Naser Stadium,Khulna,Bangladesh,West Indies,Bangladesh,bat,West Indies in Bangladesh Test Series,2,West Indies,,10,,MN Samuels,6,RK Illingworth,BNJ Oxenford
+592397,Test,2103,male,2013/14,2013-11-21,2013-11-24,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,England,Australia,bat,The Ashes,1,Australia,381,,,MG Johnson,6,Aleem Dar,HDPK Dharmasena
+592398,Test,2105,male,2013/14,2013-12-05,2013-12-09,Adelaide Oval,,Australia,England,Australia,bat,The Ashes,2,Australia,218,,,MG Johnson,6,HDPK Dharmasena,M Erasmus
+592399,Test,2107,male,2013/14,2013-12-13,2013-12-17,Western Australia Cricket Association Ground,Perth,Australia,England,Australia,bat,The Ashes,3,Australia,150,,,SPD Smith,6,BF Bowden,M Erasmus
+592400,Test,2110,male,2013/14,2013-12-26,2013-12-29,Melbourne Cricket Ground,,Australia,England,Australia,field,The Ashes,4,Australia,,8,,MG Johnson,6,Aleem Dar,HDPK Dharmasena
+592401,Test,2113,male,2013/14,2014-01-03,2014-01-05,Sydney Cricket Ground,,Australia,England,England,field,The Ashes,5,Australia,281,,,RJ Harris,6,Aleem Dar,M Erasmus
+593722,Test,134,female,2013,2013-08-11,2013-08-14,Sir Paul Getty's Ground,Wormsley,England,Australia,Australia,bat,Women's Ashes,,,,,draw,HC Knight,6,MR Benson,M Burns
+593988,Test,2079,male,2012/13,2013-03-12,2013-03-14,"Kensington Oval, Bridgetown",Barbados,West Indies,Zimbabwe,Zimbabwe,bat,Clive Lloyd Trophy,1,West Indies,,9,,S Shillingford,6,REJ Martinesz,BNJ Oxenford
+593989,Test,2083,male,2012/13,2013-03-20,2013-03-22,"Windsor Park, Roseau",Dominica,West Indies,Zimbabwe,West Indies,field,Clive Lloyd Trophy,2,West Indies,65,,,S Shillingford,6,AL Hill,REJ Martinesz
+598812,Test,2074,male,2012/13,2013-02-22,2013-02-26,"MA Chidambaram Stadium, Chepauk",Chennai,India,Australia,Australia,bat,Border-Gavaskar Trophy,1,India,,8,,MS Dhoni,6,HDPK Dharmasena,M Erasmus
+598813,Test,2076,male,2012/13,2013-03-02,2013-03-05,"Rajiv Gandhi International Stadium, Uppal",Hyderabad,India,Australia,Australia,bat,Border-Gavaskar Trophy,2,India,135,,,CA Pujara,6,HDPK Dharmasena,M Erasmus
+598814,Test,2081,male,2012/13,2013-03-14,2013-03-18,"Punjab Cricket Association Stadium, Mohali",Chandigarh,India,Australia,Australia,bat,Border-Gavaskar Trophy,3,India,,6,,S Dhawan,6,Aleem Dar,RA Kettleborough
+598815,Test,2085,male,2012/13,2013-03-22,2013-03-24,Feroz Shah Kotla,Delhi,India,Australia,Australia,bat,Border-Gavaskar Trophy,4,India,,6,,RA Jadeja,6,Aleem Dar,RA Kettleborough
+602472,Test,2078,male,2012/13,2013-03-08,2013-03-12,Galle International Stadium,,Sri Lanka,Bangladesh,Sri Lanka,bat,Bangladesh in Sri Lanka Test Series,1,,,,draw,Mushfiqur Rahim,6,RK Illingworth,NJ Llong
+602473,Test,2082,male,2012/13,2013-03-16,2013-03-19,R Premadasa Stadium,Colombo,Sri Lanka,Bangladesh,Sri Lanka,field,Bangladesh in Sri Lanka Test Series,2,Sri Lanka,,7,,HMRKB Herath,6,RK Illingworth,NJ Llong
+623576,Test,2086,male,2013,2013-04-17,2013-04-20,Harare Sports Club,,Zimbabwe,Bangladesh,Bangladesh,field,Bangladesh in Zimbabwe Test Series,1,Zimbabwe,335,,,BRM Taylor,6,BF Bowden,AL Hill
+623577,Test,2087,male,2013,2013-04-25,2013-04-29,Harare Sports Club,,Zimbabwe,Bangladesh,Zimbabwe,field,Bangladesh in Zimbabwe Test Series,2,Bangladesh,143,,,Mushfiqur Rahim,6,IJ Gould,AL Hill
+63963,Test,1578,male,2001/02,2001-12-19,2001-12-23,"M Chinnaswamy Stadium, Bangalore",Bengaluru,England,India,England,bat,England tour of India,3,,,,draw,A Flintoff,6,AV Jayaprakash,EAR de Silva
+64012,Test,1634,male,2002/03,2002-12-26,2002-12-30,Melbourne Cricket Ground,Melbourne,Australia,England,Australia,bat,England tour of Australia,4,Australia,,5,,JL Langer,6,DL Orchard,RB Tiffin
+64013,Test,1636,male,2002/03,2003-01-02,2003-01-06,Sydney Cricket Ground,Sydney,England,Australia,England,bat,England tour of Australia,5,England,225,,,MP Vaughan,6,DL Orchard,RB Tiffin
+64022,Test,1635,male,2002/03,2002-12-26,2002-12-29,"Kingsmead, Durban",Durban,South Africa,Pakistan,Pakistan,field,Pakistan tour of South Africa,1,South Africa,,10,,JH Kallis,6,S Venkataraghavan,SA Bucknor
+64023,Test,1637,male,2002/03,2003-01-02,2003-01-05,"Newlands, Cape Town",Cape Town,South Africa,Pakistan,South Africa,bat,Pakistan tour of South Africa,2,South Africa,142,,,HH Gibbs,6,S Venkataraghavan,SA Bucknor
+64027,Test,1645,male,2003,2003-05-09,2003-05-13,"Antigua Recreation Ground, St John's, Antigua",St John's,Australia,West Indies,Australia,bat,Australia tour of West Indies,4,West Indies,,3,,S Chanderpaul,6,DR Shepherd,S Venkataraghavan
+64036,Test,1650,male,2003,2003-07-18,2003-07-20,"Marrara Cricket Ground, Darwin",Darwin,Bangladesh,Australia,Australia,field,Bangladesh tour of Australia,1,Australia,132,,,SR Waugh,6,DR Shepherd,RE Koertzen
+64038,Test,1651,male,2003,2003-07-24,2003-07-28,"Edgbaston, Birmingham",Birmingham,South Africa,England,South Africa,bat,South Africa tour of England and Ireland,1,,,,draw,GC Smith,6,DJ Harper,S Venkataraghavan
+64040,Test,1654,male,2003,2003-08-14,2003-08-18,"Trent Bridge, Nottingham",Nottingham,England,South Africa,England,bat,South Africa tour of England and Ireland,3,England,70,,,RJ Kirtley,6,DB Hair,DJ Harper
+64041,Test,1656,male,2003,2003-08-21,2003-08-25,"Headingley, Leeds",Leeds,South Africa,England,South Africa,bat,South Africa tour of England and Ireland,4,South Africa,191,,,G Kirsten,6,BF Bowden,SJA Taufel
+64042,Test,1659,male,2003,2003-09-04,2003-09-08,"Kennington Oval, London",London,South Africa,England,South Africa,bat,South Africa tour of England and Ireland,5,England,,9,,ME Trescothick,6,SJA Taufel,S Venkataraghavan
+64045,Test,1658,male,2003,2003-09-03,2003-09-06,Multan Cricket Stadium,Multan,Bangladesh,Pakistan,Bangladesh,bat,Bangladesh tour of Pakistan,3,Pakistan,,1,,Inzamam-ul-Haq,6,EAR de Silva,RB Tiffin
+64047,Test,1662,male,2003/04,2003-10-16,2003-10-20,"Punjab Cricket Association Stadium, Mohali, Chandigarh",Chandigarh,New Zealand,India,New Zealand,bat,New Zealand tour of India,2,,,,draw,DR Tuffey,6,DR Shepherd,RE Koertzen
+64048,Test,1661,male,2003/04,2003-10-09,2003-10-13,"Western Australia Cricket Association Ground, Perth",Perth,Australia,Zimbabwe,Zimbabwe,field,Zimbabwe tour of Australia,1,Australia,175,,,ML Hayden,6,P Willey,S Venkataraghavan
+64049,Test,1663,male,2003/04,2003-10-17,2003-10-20,Sydney Cricket Ground,Sydney,Zimbabwe,Australia,Zimbabwe,bat,Zimbabwe tour of Australia,2,Australia,,9,,RT Ponting,6,BF Bowden,S Venkataraghavan
+64050,Test,1664,male,2003/04,2003-10-17,2003-10-21,"Gaddafi Stadium, Lahore",Lahore,South Africa,Pakistan,South Africa,bat,South Africa tour of Pakistan,1,Pakistan,,8,,"Taufeeq Umar, Danish Kaneria",6,DB Hair,NA Mallender
+64051,Test,1666,male,2003/04,2003-10-24,2003-10-28,"Iqbal Stadium, Faisalabad",Faisalabad,South Africa,Pakistan,South Africa,bat,South Africa tour of Pakistan,2,,,,draw,"G Kirsten, Taufeeq Umar",6,DJ Harper,SJA Taufel
+64052,Test,1665,male,2003/04,2003-10-21,2003-10-25,"Bangabandhu National Stadium, Dhaka",Dhaka,Bangladesh,England,Bangladesh,bat,England tour of Bangladesh,1,England,,7,,SJ Harmison,6,Aleem Dar,EAR de Silva
+64053,Test,1667,male,2003/04,2003-10-29,2003-11-01,"MA Aziz Stadium, Chittagong",Chattogram,England,Bangladesh,Bangladesh,field,England tour of Bangladesh,2,England,329,,,RL Johnson,6,Aleem Dar,EAR de Silva
+64055,Test,1669,male,2003/04,2003-11-12,2003-11-16,"Queens Sports Club, Bulawayo",Bulawayo,West Indies,Zimbabwe,West Indies,bat,West Indies tour of Zimbabwe,2,West Indies,128,,,BC Lara,6,RE Koertzen,SJA Taufel
+64058,Test,1675,male,2003/04,2003-12-18,2003-12-21,"Sinhalese Sports Club Ground, Colombo",Colombo,England,Sri Lanka,England,bat,England tour of Sri Lanka,3,Sri Lanka,215,,,TT Samaraweera,6,Aleem Dar,SA Bucknor
+64059,Test,1671,male,2003/04,2003-12-04,2003-12-08,"Brisbane Cricket Ground, Woolloongabba, Brisbane",Brisbane,Australia,India,India,field,India tour of Australia,1,,,,draw,SC Ganguly,6,RE Koertzen,SA Bucknor
+64062,Test,1680,male,2003/04,2004-01-02,2004-01-06,Sydney Cricket Ground,Sydney,India,Australia,India,bat,India tour of Australia,4,,,,draw,SR Tendulkar,6,BF Bowden,SA Bucknor
+64063,Test,1674,male,2003/04,2003-12-12,2003-12-16,"New Wanderers Stadium, Johannesburg",Johannesburg,South Africa,West Indies,South Africa,bat,West Indies tour of South Africa,1,South Africa,189,,,M Ntini,6,DB Hair,SJA Taufel
+64071,Test,1685,male,2003/04,2004-03-08,2004-03-12,Galle International Stadium,Galle,Australia,Sri Lanka,Australia,bat,Australia tour of Sri Lanka,1,Australia,197,,,ML Hayden,6,DR Shepherd,RE Koertzen
+64075,Test,1689,male,2003/04,2004-03-18,2004-03-22,Eden Park,Auckland,South Africa,New Zealand,New Zealand,field,South Africa tour of New Zealand,2,New Zealand,,9,,CS Martin,6,Aleem Dar,EAR de Silva
+64076,Test,1692,male,2003/04,2004-03-26,2004-03-30,"Basin Reserve, Wellington",Wellington,New Zealand,South Africa,South Africa,field,South Africa tour of New Zealand,3,South Africa,,6,,GC Smith,6,Aleem Dar,EAR de Silva
+64080,Test,1696,male,2003/04,2004-04-10,2004-04-14,Antigua Recreation Ground,St John's,West Indies,England,West Indies,bat,England tour of West Indies,4,,,,draw,BC Lara,6,Aleem Dar,DB Hair
+64083,Test,1697,male,2003/04,2004-04-13,2004-04-16,Rawalpindi Cricket Stadium,Rawalpindi,Pakistan,India,India,field,India tour of Pakistan,3,India,131,,,R Dravid,6,DR Shepherd,RE Koertzen
+64094,Test,1708,male,2004,2004-07-29,2004-08-01,Edgbaston,Birmingham,England,West Indies,England,bat,West Indies tour of England,2,England,256,,,A Flintoff,6,DB Hair,SJA Taufel
+64096,Test,1712,male,2004,2004-08-19,2004-08-21,Kennington Oval,London,England,West Indies,England,bat,West Indies tour of England,4,England,,10,,SJ Harmison,6,DB Hair,RE Koertzen
+64100,Test,1714,male,2004/05,2004-10-14,2004-10-18,MA Chidambaram Stadium,Chennai,Australia,India,Australia,bat,Australia tour of India,2,,,,draw,A Kumble,6,DR Shepherd,RE Koertzen
+64102,Test,1720,male,2004/05,2004-11-03,2004-11-05,Wankhede Stadium,Mumbai,India,Australia,India,bat,Australia tour of India,4,India,13,,,M Kartik,6,Aleem Dar,RE Koertzen
+64104,Test,1717,male,2004/05,2004-10-26,2004-10-29,MA Aziz Stadium,Chattogram,New Zealand,Bangladesh,New Zealand,bat,New Zealand tour of Bangladesh,2,New Zealand,101,,,SP Fleming,6,DJ Harper,MR Benson
+64107,Test,1721,male,2004/05,2004-11-18,2004-11-21,Brisbane Cricket Ground,Brisbane,New Zealand,Australia,New Zealand,bat,New Zealand tour of Australia,1,Australia,156,,,MJ Clarke,6,Aleem Dar,SA Bucknor
+64108,Test,1723,male,2004/05,2004-11-26,2004-11-30,Adelaide Oval,Adelaide,Australia,New Zealand,Australia,bat,New Zealand tour of Australia,2,Australia,213,,,JL Langer,6,DR Shepherd,SA Bucknor
+64109,Test,1722,male,2004/05,2004-11-20,2004-11-24,Green Park,Kanpur,South Africa,India,South Africa,bat,South Africa tour of India,1,,,,draw,AJ Hall,6,DJ Harper,SJA Taufel
+64110,Test,1724,male,2004/05,2004-11-28,2004-12-02,Eden Gardens,Kolkata,South Africa,India,South Africa,bat,South Africa tour of India,2,India,,8,,Harbhajan Singh,6,DJ Harper,SJA Taufel
+64111,Test,1725,male,2004/05,2004-12-10,2004-12-13,Bangabandhu National Stadium,Dhaka,Bangladesh,India,India,field,India tour of Bangladesh,1,India,140,,,IK Pathan,6,Aleem Dar,JW Lloyds
+64113,Test,1726,male,2004/05,2004-12-16,2004-12-19,W.A.C.A. Ground,Perth,Australia,Pakistan,Pakistan,field,Pakistan tour of Australia,1,Australia,491,,,JL Langer,6,BF Bowden,RE Koertzen
+64118,Test,1732,male,2004/05,2005-01-02,2005-01-06,Newlands,Cape Town,South Africa,England,South Africa,bat,England tour of South Africa,3,South Africa,196,,,JH Kallis,6,DJ Harper,SA Bucknor
+64123,Test,1737,male,2004/05,2005-03-04,2005-03-05,Newlands,Cape Town,Zimbabwe,South Africa,Zimbabwe,bat,Zimbabwe tour of South Africa,1,South Africa,21,,,JH Kallis,6,BF Bowden,BR Doctrove
+64124,Test,1740,male,2004/05,2005-03-11,2005-03-13,SuperSport Park,Centurion,Zimbabwe,South Africa,South Africa,field,Zimbabwe tour of South Africa,2,South Africa,62,,,M Zondeki,6,BR Doctrove,DJ Harper
+64128,Test,1739,male,2004/05,2005-03-10,2005-03-13,AMI Stadium,Christchurch,New Zealand,Australia,Australia,field,Australia tour of New Zealand,1,Australia,,9,,AC Gilchrist,6,Aleem Dar,DR Shepherd
+64129,Test,1742,male,2004/05,2005-03-18,2005-03-22,Basin Reserve,Wellington,Australia,New Zealand,New Zealand,field,Australia tour of New Zealand,2,,,,draw,AC Gilchrist,6,DR Shepherd,RE Koertzen
+64134,Test,1748,male,2004/05,2005-04-11,2005-04-14,Basin Reserve,Wellington,Sri Lanka,New Zealand,New Zealand,field,Sri Lanka tour of New Zealand,2,New Zealand,38,,,L Vincent,6,DB Hair,SA Bucknor
+648665,Test,2108,male,2013/14,2013-12-18,2013-12-22,New Wanderers Stadium,Johannesburg,South Africa,India,India,bat,India in South Africa Test Series,1,,,,draw,V Kohli,6,SJ Davis,RJ Tucker
+648667,Test,2111,male,2013/14,2013-12-26,2013-12-30,Kingsmead,Durban,South Africa,India,India,bat,India in South Africa Test Series,2,South Africa,,10,,DW Steyn,6,SJ Davis,RJ Tucker
+648673,Test,2119,male,2013/14,2014-02-12,2014-02-15,SuperSport Park,Centurion,South Africa,Australia,South Africa,field,Australia in South Africa Test Series,1,Australia,281,,,MG Johnson,6,Aleem Dar,RK Illingworth
+648675,Test,2121,male,2013/14,2014-02-20,2014-02-23,St George's Park,Port Elizabeth,South Africa,Australia,South Africa,bat,Australia in South Africa Test Series,2,South Africa,231,,,JP Duminy,6,HDPK Dharmasena,RK Illingworth
+648677,Test,2122,male,2013/14,2014-03-01,2014-03-05,Newlands,Cape Town,South Africa,Australia,Australia,bat,Australia in South Africa Test Series,3,Australia,245,,,DA Warner,6,Aleem Dar,HDPK Dharmasena
+649087,Test,2098,male,2013/14,2013-10-14,2013-10-17,Sheikh Zayed Stadium,Abu Dhabi,Pakistan,South Africa,South Africa,bat,Pakistan v South Africa Test Series,1,Pakistan,,7,,Khurram Manzoor,6,PR Reiffel,RJ Tucker
+649089,Test,2100,male,2013/14,2013-10-23,2013-10-26,Dubai International Cricket Stadium,,Pakistan,South Africa,Pakistan,bat,Pakistan v South Africa Test Series,2,South Africa,92,,,GC Smith,6,IJ Gould,RJ Tucker
+657647,Test,2112,male,2013/14,2013-12-31,2014-01-04,Sheikh Zayed Stadium,Abu Dhabi,Pakistan,Sri Lanka,Pakistan,field,Pakistan v Sri Lanka Test Series,1,,,,draw,AD Mathews,6,RA Kettleborough,BNJ Oxenford
+657649,Test,2114,male,2013/14,2014-01-08,2014-01-12,Dubai International Cricket Stadium,,Pakistan,Sri Lanka,Sri Lanka,field,Pakistan v Sri Lanka Test Series,2,Sri Lanka,,9,,DPMD Jayawardene,6,BNJ Oxenford,S Ravi
+657651,Test,2115,male,2013/14,2014-01-16,2014-01-20,Sharjah Cricket Stadium,,Pakistan,Sri Lanka,Sri Lanka,bat,Pakistan v Sri Lanka Test Series,3,Pakistan,,5,,Azhar Ali,6,RA Kettleborough,S Ravi
+659555,Test,2095,male,2013,2013-09-03,2013-09-07,Harare Sports Club,,Zimbabwe,Pakistan,Zimbabwe,field,Pakistan in Zimbabwe Test Series,1,Pakistan,221,,,Younis Khan,6,SJ Davis,REJ Martinesz
+659557,Test,2096,male,2013,2013-09-10,2013-09-14,Harare Sports Club,,Zimbabwe,Pakistan,Zimbabwe,bat,Pakistan in Zimbabwe Test Series,2,Zimbabwe,24,,,TL Chatara,6,SJ Davis,REJ Martinesz
+661679,Test,2104,male,2013/14,2013-12-03,2013-12-07,University Oval,Dunedin,New Zealand,West Indies,West Indies,field,West Indies in New Zealand Test Series,1,,,,draw,LRPL Taylor,6,NJ Llong,PR Reiffel
+661681,Test,2106,male,2013/14,2013-12-11,2013-12-13,Basin Reserve,Wellington,New Zealand,West Indies,West Indies,field,West Indies in New Zealand Test Series,2,New Zealand,73,,,TA Boult,6,IJ Gould,PR Reiffel
+661683,Test,2109,male,2013/14,2013-12-19,2013-12-22,Seddon Park,Hamilton,New Zealand,West Indies,New Zealand,field,West Indies in New Zealand Test Series,3,New Zealand,,8,,LRPL Taylor,6,IJ Gould,NJ Llong
+667651,Test,2118,male,2013/14,2014-02-06,2014-02-09,Eden Park,Auckland,New Zealand,India,India,field,India in New Zealand Test Series,1,New Zealand,40,,,BB McCullum,6,SJ Davis,RA Kettleborough
+667653,Test,2120,male,2013/14,2014-02-14,2014-02-18,Basin Reserve,Wellington,New Zealand,India,India,field,India in New Zealand Test Series,2,,,,draw,BB McCullum,6,SJ Davis,RA Kettleborough
+667711,Test,2128,male,2014,2014-07-09,2014-07-13,Trent Bridge,Nottingham,England,India,India,bat,Pataudi Trophy,1,,,,draw,JM Anderson,6,HDPK Dharmasena,BNJ Oxenford
+667713,Test,2130,male,2014,2014-07-17,2014-07-21,Lord's,London,England,India,England,field,Pataudi Trophy,2,India,95,,,I Sharma,6,HDPK Dharmasena,BNJ Oxenford
+667715,Test,2132,male,2014,2014-07-27,2014-07-31,The Rose Bowl,Southampton,England,India,England,bat,Pataudi Trophy,3,England,266,,,JM Anderson,6,M Erasmus,RJ Tucker
+667717,Test,2134,male,2014,2014-08-07,2014-08-09,Old Trafford,Manchester,England,India,India,bat,Pataudi Trophy,4,England,54,,,SCJ Broad,6,M Erasmus,RJ Tucker
+667719,Test,2137,male,2014,2014-08-15,2014-08-17,Kennington Oval,London,England,India,England,field,Pataudi Trophy,5,England,244,,,JE Root,6,HDPK Dharmasena,PR Reiffel
+667899,Test,2124,male,2014,2014-06-12,2014-06-16,Lord's,London,England,Sri Lanka,Sri Lanka,field,Sri Lanka in England Test Series,1,,,,draw,JE Root,6,BF Bowden,PR Reiffel
+667901,Test,2126,male,2014,2014-06-20,2014-06-24,Headingley,Leeds,England,Sri Lanka,England,field,Sri Lanka in England Test Series,2,Sri Lanka,100,,,AD Mathews,6,BF Bowden,SJ Davis
+668949,Test,2097,male,2013/14,2013-10-09,2013-10-13,Zahur Ahmed Chowdhury Stadium,Chittagong,Bangladesh,New Zealand,New Zealand,bat,New Zealand in Bangladesh Test Series,1,,,,draw,Sohag Gazi,6,BNJ Oxenford,S Ravi
+668951,Test,2099,male,2013/14,2013-10-21,2013-10-25,Shere Bangla National Stadium,Mirpur,Bangladesh,New Zealand,Bangladesh,bat,New Zealand in Bangladesh Test Series,2,,,,draw,Mominul Haque,6,RK Illingworth,BNJ Oxenford
+67517,Test,118,female,2002/03,2003-02-22,2003-02-25,"Bankstown Oval, Sydney",Sydney,Australia,England,England,field,England Women tour of Australia,2,,,,draw,LC Pearson,6,NSD Fowler,SA Reed
+676525,Test,2101,male,2013/14,2013-11-06,2013-11-08,Eden Gardens,Kolkata,India,West Indies,West Indies,bat,West Indies in India Test Series,1,India,51,,,RG Sharma,6,RA Kettleborough,NJ Llong
+676527,Test,2102,male,2013/14,2013-11-14,2013-11-16,Wankhede Stadium,Mumbai,India,West Indies,India,field,West Indies in India Test Series,2,India,126,,,PP Ojha,6,RA Kettleborough,NJ Llong
+690347,Test,2116,male,2013/14,2014-01-27,2014-01-30,Shere Bangla National Stadium,Mirpur,Bangladesh,Sri Lanka,Sri Lanka,field,Sri Lanka in Bangladesh Test Series,1,Sri Lanka,248,,,DPMD Jayawardene,6,NJ Llong,PR Reiffel
+690349,Test,2117,male,2013/14,2014-02-04,2014-02-08,Zahur Ahmed Chowdhury Stadium,Chittagong,Bangladesh,Sri Lanka,Sri Lanka,bat,Sri Lanka in Bangladesh Test Series,2,,,,draw,KC Sangakkara,6,NJ Llong,PR Reiffel
+722329,Test,2150,male,2014/15,2014-12-17,2014-12-20,SuperSport Park,Centurion,South Africa,West Indies,West Indies,field,Sir Vivian Richards Trophy,1,South Africa,220,,,HM Amla,6,Aleem Dar,BF Bowden
+722331,Test,2153,male,2014/15,2014-12-26,2014-12-30,St George's Park,Port Elizabeth,South Africa,West Indies,West Indies,field,Sir Vivian Richards Trophy,2,,,,draw,KC Brathwaite,6,BF Bowden,PR Reiffel
+722333,Test,2154,male,2014/15,2015-01-02,2015-01-06,Newlands,Cape Town,South Africa,West Indies,West Indies,bat,Sir Vivian Richards Trophy,3,South Africa,,8,,AB de Villiers,6,Aleem Dar,PR Reiffel
+722387,Test,136,female,2014,2014-08-13,2014-08-16,Sir Paul Getty's Ground,Wormsley,England,India,India,field,,,India,,6,,JL Gunn,6,DJ Millns,BV Taylor
+727927,Test,2140,male,2014/15,2014-10-22,2014-10-26,Dubai International Cricket Stadium,,Australia,Pakistan,Pakistan,bat,Pakistan v Australia Test Series,1,Pakistan,221,,,Younis Khan,6,M Erasmus,RA Kettleborough
+727929,Test,2142,male,2014/15,2014-10-30,2014-11-03,Sheikh Zayed Stadium,Abu Dhabi,Australia,Pakistan,Pakistan,bat,Pakistan v Australia Test Series,2,Pakistan,356,,,Misbah-ul-Haq,6,RA Kettleborough,NJ Llong
+730089,Test,2129,male,2014,2014-07-16,2014-07-20,Galle International Stadium,,Sri Lanka,South Africa,South Africa,bat,South Africa in Sri Lanka Test Series,1,South Africa,153,,,DW Steyn,6,BF Bowden,RA Kettleborough
+730091,Test,2131,male,2014,2014-07-24,2014-07-28,Sinhalese Sports Club Ground,Colombo,Sri Lanka,South Africa,Sri Lanka,bat,South Africa in Sri Lanka Test Series,2,,,,draw,DPMD Jayawardene,6,RA Kettleborough,NJ Llong
+730277,Test,2123,male,2014,2014-06-08,2014-06-11,"Sabina Park, Kingston",Jamaica,West Indies,New Zealand,New Zealand,bat,New Zealand in West Indies Test Series,1,New Zealand,186,,,MD Craig,6,RK Illingworth,RJ Tucker
+730279,Test,2125,male,2014,2014-06-16,2014-06-20,"Queen's Park Oval, Port of Spain",Trinidad,West Indies,New Zealand,New Zealand,bat,New Zealand in West Indies Test Series,2,West Indies,,10,,KC Brathwaite,6,IJ Gould,RJ Tucker
+730281,Test,2127,male,2014,2014-06-26,2014-06-30,"Kensington Oval, Bridgetown",Barbados,West Indies,New Zealand,New Zealand,bat,New Zealand in West Indies Test Series,3,New Zealand,53,,,KS Williamson,6,IJ Gould,RK Illingworth
+730295,Test,2138,male,2014,2014-09-05,2014-09-09,"Arnos Vale Ground, Kingstown",St Vincent,West Indies,Bangladesh,Bangladesh,field,Bangladesh in West Indies Test Series,1,West Indies,,10,,KC Brathwaite,6,M Erasmus,RK Illingworth
+730297,Test,2139,male,2014,2014-09-13,2014-09-16,"Beausejour Stadium, Gros Islet",St Lucia,West Indies,Bangladesh,Bangladesh,field,Bangladesh in West Indies Test Series,2,West Indies,296,,,S Chanderpaul,6,SJ Davis,RK Illingworth
+736435,Test,2135,male,2014,2014-08-09,2014-08-12,Harare Sports Club,,Zimbabwe,South Africa,Zimbabwe,bat,,,South Africa,,9,,DL Piedt,6,Aleem Dar,CB Gaffaney
+742611,Test,2144,male,2014/15,2014-11-09,2014-11-13,Sheikh Zayed Stadium,Abu Dhabi,New Zealand,Pakistan,Pakistan,bat,Pakistan v New Zealand Test Series,1,Pakistan,248,,,Rahat Ali,6,REJ Martinesz,RJ Tucker
+742613,Test,2146,male,2014/15,2014-11-17,2014-11-21,Dubai International Cricket Stadium,,New Zealand,Pakistan,New Zealand,bat,Pakistan v New Zealand Test Series,2,,,,draw,LRPL Taylor,6,REJ Martinesz,PR Reiffel
+742615,Test,2147,male,2014/15,2014-11-26,2014-11-30,Sharjah Cricket Stadium,,New Zealand,Pakistan,Pakistan,bat,Pakistan v New Zealand Test Series,3,New Zealand,80,,,MD Craig,6,PR Reiffel,RJ Tucker
+743939,Test,2162,male,2015,2015-05-21,2015-05-25,Lord's,London,England,New Zealand,New Zealand,field,New Zealand in England Test Series,1,England,124,,,BA Stokes,6,M Erasmus,S Ravi
+743941,Test,2163,male,2015,2015-05-29,2015-06-02,Headingley,Leeds,England,New Zealand,England,field,New Zealand in England Test Series,2,New Zealand,199,,,BJ Watling,6,S Ravi,RJ Tucker
+743963,Test,2170,male,2015,2015-07-08,2015-07-11,Sophia Gardens,Cardiff,England,Australia,England,bat,The Ashes,1,England,169,,,JE Root,6,HDPK Dharmasena,M Erasmus
+743965,Test,2171,male,2015,2015-07-16,2015-07-19,Lord's,London,England,Australia,Australia,bat,The Ashes,2,Australia,405,,,SPD Smith,6,HDPK Dharmasena,M Erasmus
+743967,Test,2173,male,2015,2015-07-29,2015-07-31,Edgbaston,Birmingham,England,Australia,Australia,bat,The Ashes,3,England,,8,,ST Finn,6,Aleem Dar,CB Gaffaney
+743969,Test,2175,male,2015,2015-08-06,2015-08-08,Trent Bridge,Nottingham,England,Australia,England,field,The Ashes,4,England,78,,,SCJ Broad,6,Aleem Dar,S Ravi
+743971,Test,2178,male,2015,2015-08-20,2015-08-23,Kennington Oval,London,England,Australia,England,field,The Ashes,5,Australia,46,,,SPD Smith,6,Aleem Dar,HDPK Dharmasena
+745153,Test,2133,male,2014,2014-08-06,2014-08-10,Galle International Stadium,,Sri Lanka,Pakistan,Pakistan,bat,Pakistan in Sri Lanka Test Series,1,Sri Lanka,,7,,HMRKB Herath,6,IJ Gould,BNJ Oxenford
+745155,Test,2136,male,2014,2014-08-14,2014-08-18,Sinhalese Sports Club Ground,Colombo,Sri Lanka,Pakistan,Sri Lanka,bat,Pakistan in Sri Lanka Test Series,2,Sri Lanka,105,,,HMRKB Herath,6,IJ Gould,RK Illingworth
+749777,Test,2151,male,2014/15,2014-12-26,2014-12-29,Hagley Oval,Christchurch,New Zealand,Sri Lanka,Sri Lanka,field,Sri Lanka in New Zealand Test Series,1,New Zealand,,8,,BB McCullum,6,RK Illingworth,BNJ Oxenford
+749779,Test,2155,male,2014/15,2015-01-03,2015-01-07,Basin Reserve,Wellington,New Zealand,Sri Lanka,Sri Lanka,field,Sri Lanka in New Zealand Test Series,2,New Zealand,193,,,KS Williamson,6,SJ Davis,RK Illingworth
+754737,Test,2148,male,2014/15,2014-12-09,2014-12-13,Adelaide Oval,,Australia,India,Australia,bat,Border-Gavaskar Trophy,1,Australia,48,,,NM Lyon,6,M Erasmus,IJ Gould
+754739,Test,2149,male,2014/15,2014-12-17,2014-12-20,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,India,India,bat,Border-Gavaskar Trophy,2,Australia,,4,,SPD Smith,6,M Erasmus,IJ Gould
+754741,Test,2152,male,2014/15,2014-12-26,2014-12-30,Melbourne Cricket Ground,,Australia,India,Australia,bat,Border-Gavaskar Trophy,3,,,,draw,RJ Harris,6,HDPK Dharmasena,RA Kettleborough
+754743,Test,2156,male,2014/15,2015-01-06,2015-01-10,Sydney Cricket Ground,,Australia,India,Australia,bat,Border-Gavaskar Trophy,4,,,,draw,SPD Smith,6,HDPK Dharmasena,RA Kettleborough
+760781,Test,2141,male,2014/15,2014-10-25,2014-10-27,Shere Bangla National Stadium,Mirpur,Bangladesh,Zimbabwe,Zimbabwe,bat,Zimbabwe in Bangladesh Test Series,1,Bangladesh,,3,,Taijul Islam,6,HDPK Dharmasena,S Ravi
+760783,Test,2143,male,2014/15,2014-11-03,2014-11-07,Sheikh Abu Naser Stadium,Khulna,Bangladesh,Zimbabwe,Bangladesh,bat,Zimbabwe in Bangladesh Test Series,2,Bangladesh,162,,,Shakib Al Hasan,6,Aleem Dar,BF Bowden
+760785,Test,2145,male,2014/15,2014-11-12,2014-11-16,Zahur Ahmed Chowdhury Stadium,Chittagong,Bangladesh,Zimbabwe,Bangladesh,bat,Zimbabwe in Bangladesh Test Series,3,Bangladesh,186,,,Mominul Haque,6,Aleem Dar,CB Gaffaney
+766929,Test,2157,male,2015,2015-04-13,2015-04-17,"Sir Vivian Richards Stadium, North Sound",Antigua,West Indies,England,West Indies,field,The Wisden Trophy,1,,,,draw,JO Holder,6,BF Bowden,SJ Davis
+766931,Test,2158,male,2015,2015-04-21,2015-04-25,"National Cricket Stadium, St George's",Grenada,West Indies,England,England,field,The Wisden Trophy,2,England,,9,,JE Root,6,SJ Davis,BNJ Oxenford
+766933,Test,2160,male,2015,2015-05-01,2015-05-03,"Kensington Oval, Bridgetown",Barbados,West Indies,England,England,bat,The Wisden Trophy,3,West Indies,,5,,J Blackwood,6,BF Bowden,BNJ Oxenford
+798375,Test,138,female,2015,2015-08-11,2015-08-14,St Lawrence Ground,Canterbury,England,Australia,Australia,bat,Women's Ashes,,Australia,161,,,JL Jonassen,6,NA Mallender,AG Wharf
+800461,Test,2196,male,2015/16,2015-12-26,2015-12-30,Kingsmead,Durban,South Africa,England,South Africa,field,Basil D'Oliveira Trophy,1,England,241,,,MM Ali,6,Aleem Dar,RJ Tucker
+800463,Test,2197,male,2015/16,2016-01-02,2016-01-06,Newlands,Cape Town,South Africa,England,England,bat,Basil D'Oliveira Trophy,2,,,,draw,BA Stokes,6,Aleem Dar,BNJ Oxenford
+800465,Test,2199,male,2015/16,2016-01-14,2016-01-16,New Wanderers Stadium,Johannesburg,South Africa,England,South Africa,bat,Basil D'Oliveira Trophy,3,England,,7,,SCJ Broad,6,Aleem Dar,RJ Tucker
+800467,Test,2200,male,2015/16,2016-01-22,2016-01-26,SuperSport Park,Centurion,South Africa,England,South Africa,bat,Basil D'Oliveira Trophy,4,South Africa,280,,,K Rabada,6,HDPK Dharmasena,CB Gaffaney
+810423,Test,2164,male,2015,2015-06-03,2015-06-05,"Windsor Park, Roseau",Dominica,West Indies,Australia,West Indies,bat,The Frank Worrell Trophy,1,Australia,,9,,AC Voges,6,Aleem Dar,RA Kettleborough
+810425,Test,2166,male,2015,2015-06-11,2015-06-14,"Sabina Park, Kingston",Jamaica,West Indies,Australia,West Indies,field,The Frank Worrell Trophy,2,Australia,277,,,SPD Smith,6,IJ Gould,RA Kettleborough
+817213,Test,2172,male,2015,2015-07-21,2015-07-25,Zahur Ahmed Chowdhury Stadium,Chittagong,Bangladesh,South Africa,South Africa,bat,South Africa in Bangladesh Test Series,1,,,,draw,Mustafizur Rahman,6,RA Kettleborough,JS Wilson
+817215,Test,2174,male,2015,2015-07-30,2015-08-03,Shere Bangla National Stadium,Mirpur,Bangladesh,South Africa,Bangladesh,bat,South Africa in Bangladesh Test Series,2,,,,draw,Mushfiqur Rahim,6,RA Kettleborough,PR Reiffel
+858493,Test,2159,male,2015,2015-04-28,2015-05-02,Sheikh Abu Naser Stadium,Khulna,Bangladesh,Pakistan,Bangladesh,bat,Pakistan in Bangladesh Test Series,1,,,,draw,Tamim Iqbal,6,NJ Llong,REJ Martinesz
+858495,Test,2161,male,2015,2015-05-06,2015-05-09,Shere Bangla National Stadium,Mirpur,Bangladesh,Pakistan,Bangladesh,field,Pakistan in Bangladesh Test Series,2,Pakistan,328,,,Azhar Ali,6,NJ Llong,PR Reiffel
+860263,Test,2167,male,2015,2015-06-17,2015-06-21,Galle International Stadium,,Sri Lanka,Pakistan,Pakistan,field,Pakistan in Sri Lanka Test Series,1,Pakistan,,10,,Sarfraz Ahmed,6,RK Illingworth,PR Reiffel
+860265,Test,2168,male,2015,2015-06-25,2015-06-29,P Sara Oval,Colombo,Sri Lanka,Pakistan,Pakistan,bat,Pakistan in Sri Lanka Test Series,2,Sri Lanka,,7,,KTGD Prasad,6,RK Illingworth,S Ravi
+860267,Test,2169,male,2015,2015-07-03,2015-07-07,Pallekele International Cricket Stadium,,Sri Lanka,Pakistan,Pakistan,field,Pakistan in Sri Lanka Test Series,3,Pakistan,,7,,Younis Khan,6,IJ Gould,PR Reiffel
+870729,Test,2165,male,2015,2015-06-10,2015-06-14,Khan Shaheb Osman Ali Stadium,Fatullah,Bangladesh,India,India,bat,,,,,,draw,S Dhawan,6,HDPK Dharmasena,NJ Llong
+892509,Test,2185,male,2015/16,2015-11-05,2015-11-09,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,New Zealand,Australia,bat,Trans-Tasman Trophy,1,Australia,208,,,DA Warner,6,RK Illingworth,NJ Llong
+892511,Test,2187,male,2015/16,2015-11-13,2015-11-17,Western Australia Cricket Association Ground,Perth,Australia,New Zealand,Australia,bat,Trans-Tasman Trophy,2,,,,draw,LRPL Taylor,6,NJ Llong,S Ravi
+892513,Test,2190,male,2015/16,2015-11-27,2015-11-29,Adelaide Oval,,Australia,New Zealand,New Zealand,bat,Trans-Tasman Trophy,3,Australia,,3,,JR Hazlewood,6,RK Illingworth,S Ravi
+892515,Test,2193,male,2015/16,2015-12-10,2015-12-12,Bellerive Oval,Hobart,Australia,West Indies,Australia,bat,The Frank Worrell Trophy,1,Australia,212,,,AC Voges,6,M Erasmus,IJ Gould
+892517,Test,2195,male,2015/16,2015-12-26,2015-12-29,Melbourne Cricket Ground,,Australia,West Indies,West Indies,field,The Frank Worrell Trophy,2,Australia,177,,,NM Lyon,6,M Erasmus,CB Gaffaney
+892519,Test,2198,male,2015/16,2016-01-03,2016-01-07,Sydney Cricket Ground,,Australia,West Indies,West Indies,bat,The Frank Worrell Trophy,3,,,,draw,DA Warner,6,CB Gaffaney,IJ Gould
+895773,Test,2176,male,2015,2015-08-12,2015-08-15,Galle International Stadium,,Sri Lanka,India,Sri Lanka,bat,India in Sri Lanka Test Series,1,Sri Lanka,63,,,LD Chandimal,6,NJ Llong,BNJ Oxenford
+895775,Test,2177,male,2015,2015-08-20,2015-08-24,P Sara Oval,Colombo,Sri Lanka,India,India,bat,India in Sri Lanka Test Series,2,India,278,,,KL Rahul,6,BNJ Oxenford,RJ Tucker
+895777,Test,2179,male,2015,2015-08-28,2015-09-01,Sinhalese Sports Club Ground,Colombo,Sri Lanka,India,Sri Lanka,field,India in Sri Lanka Test Series,3,India,117,,,CA Pujara,6,NJ Llong,RJ Tucker
+902635,Test,2180,male,2015/16,2015-10-13,2015-10-17,Sheikh Zayed Stadium,Abu Dhabi,England,Pakistan,Pakistan,bat,Pakistan v England Test Series,1,,,,draw,AN Cook,6,BNJ Oxenford,PR Reiffel
+902637,Test,2183,male,2015/16,2015-10-22,2015-10-26,Dubai International Cricket Stadium,,England,Pakistan,Pakistan,bat,Pakistan v England Test Series,2,Pakistan,178,,,Wahab Riaz,6,BNJ Oxenford,PR Reiffel
+902639,Test,2184,male,2015/16,2015-11-01,2015-11-05,Sharjah Cricket Stadium,,England,Pakistan,Pakistan,bat,Pakistan v England Test Series,3,Pakistan,127,,,Mohammad Hafeez,6,CB Gaffaney,BNJ Oxenford
+903603,Test,2186,male,2015/16,2015-11-05,2015-11-07,"Punjab Cricket Association Stadium, Mohali",Chandigarh,India,South Africa,India,bat,Freedom Trophy,1,India,108,,,RA Jadeja,6,HDPK Dharmasena,RA Kettleborough
+903605,Test,2188,male,2015/16,2015-11-14,2015-11-18,M Chinnaswamy Stadium,Bangalore,India,South Africa,India,field,Freedom Trophy,2,,,,draw,,6,IJ Gould,RA Kettleborough
+903607,Test,2189,male,2015/16,2015-11-25,2015-11-27,"Vidarbha Cricket Association Stadium, Jamtha",Nagpur,India,South Africa,India,bat,Freedom Trophy,3,India,124,,,R Ashwin,6,IJ Gould,BNJ Oxenford
+903609,Test,2191,male,2015/16,2015-12-03,2015-12-07,Feroz Shah Kotla,Delhi,India,South Africa,India,bat,Freedom Trophy,4,India,337,,,AM Rahane,6,HDPK Dharmasena,BNJ Oxenford
+913613,Test,2203,male,2016,2016-05-19,2016-05-21,Headingley,Leeds,England,Sri Lanka,Sri Lanka,field,Sri Lanka in England Test Series,1,England,88,,,JM Bairstow,6,Aleem Dar,RJ Tucker
+913615,Test,2204,male,2016,2016-05-27,2016-05-30,Riverside Ground,Chester-le-Street,England,Sri Lanka,England,bat,Sri Lanka in England Test Series,2,England,,9,,JM Anderson,6,Aleem Dar,S Ravi
+913617,Test,2205,male,2016,2016-06-09,2016-06-13,Lord's,London,England,Sri Lanka,England,bat,Sri Lanka in England Test Series,3,,,,draw,JM Bairstow,6,S Ravi,RJ Tucker
+913641,Test,2206,male,2016,2016-07-14,2016-07-17,Lord's,London,England,Pakistan,Pakistan,bat,Pakistan in England Test Series,1,Pakistan,75,,,Yasir Shah,6,HDPK Dharmasena,JS Wilson
+913643,Test,2208,male,2016,2016-07-22,2016-07-25,Old Trafford,Manchester,England,Pakistan,England,bat,Pakistan in England Test Series,2,England,330,,,JE Root,6,HDPK Dharmasena,RJ Tucker
+913645,Test,2212,male,2016,2016-08-03,2016-08-07,Edgbaston,Birmingham,England,Pakistan,Pakistan,field,Pakistan in England Test Series,3,England,141,,,MM Ali,6,BNJ Oxenford,JS Wilson
+913647,Test,2216,male,2016,2016-08-11,2016-08-14,Kennington Oval,London,England,Pakistan,England,bat,Pakistan in England Test Series,4,Pakistan,,10,,Younis Khan,6,M Erasmus,BNJ Oxenford
+914203,Test,2192,male,2015/16,2015-12-10,2015-12-14,University Oval,Dunedin,New Zealand,Sri Lanka,Sri Lanka,field,Sri Lanka in New Zealand Test Series,1,New Zealand,122,,,MJ Guptill,6,RA Kettleborough,NJ Llong
+914205,Test,2194,male,2015/16,2015-12-18,2015-12-21,Seddon Park,Hamilton,New Zealand,Sri Lanka,New Zealand,field,Sri Lanka in New Zealand Test Series,2,New Zealand,,5,,KS Williamson,6,NJ Llong,PR Reiffel
+914237,Test,2201,male,2015/16,2016-02-12,2016-02-15,Basin Reserve,Wellington,New Zealand,Australia,Australia,field,Trans-Tasman Trophy,1,Australia,52,,,AC Voges,6,RK Illingworth,RA Kettleborough
+914239,Test,2202,male,2015/16,2016-02-20,2016-02-24,Hagley Oval,Christchurch,New Zealand,Australia,Australia,field,Trans-Tasman Trophy,2,Australia,,7,,JA Burns,6,RA Kettleborough,REJ Martinesz
+915773,Test,2181,male,2015/16,2015-10-14,2015-10-17,Galle International Stadium,,Sri Lanka,West Indies,Sri Lanka,bat,Sobers/Tissera Trophy,1,Sri Lanka,6,,,HMRKB Herath,6,M Erasmus,RK Illingworth
+915775,Test,2182,male,2015/16,2015-10-22,2015-10-26,P Sara Oval,Colombo,Sri Lanka,West Indies,Sri Lanka,bat,Sobers/Tissera Trophy,2,Sri Lanka,72,,,TAM Siriwardana,6,SD Fry,RJ Tucker
+936127,Test,2219,male,2016,2016-08-19,2016-08-23,Kingsmead,Durban,South Africa,New Zealand,South Africa,bat,New Zealand in South Africa Test Series,1,,,,draw,,6,IJ Gould,RK Illingworth
+936129,Test,2220,male,2016,2016-08-27,2016-08-30,SuperSport Park,Centurion,South Africa,New Zealand,New Zealand,field,New Zealand in South Africa Test Series,2,South Africa,204,,,Q de Kock,6,IJ Gould,PR Reiffel
+936147,Test,2243,male,2016/17,2016-12-26,2016-12-30,St George's Park,Port Elizabeth,South Africa,Sri Lanka,South Africa,bat,Sri Lanka in South Africa Test Series,1,South Africa,206,,,SC Cook,6,Aleem Dar,BNJ Oxenford
+936149,Test,2244,male,2016/17,2017-01-02,2017-01-05,Newlands,Cape Town,South Africa,Sri Lanka,Sri Lanka,field,Sri Lanka in South Africa Test Series,2,South Africa,282,,,K Rabada,6,Aleem Dar,RJ Tucker
+936151,Test,2247,male,2016/17,2017-01-12,2017-01-14,New Wanderers Stadium,Johannesburg,South Africa,Sri Lanka,South Africa,bat,Sri Lanka in South Africa Test Series,3,South Africa,118,,,JP Duminy,6,BNJ Oxenford,RJ Tucker
+995451,Test,2209,male,2016,2016-07-26,2016-07-30,Pallekele International Cricket Stadium,,Sri Lanka,Australia,Sri Lanka,bat,Warne-Muralitharan Trophy,1,Sri Lanka,106,,,BKG Mendis,6,RA Kettleborough,S Ravi
+995453,Test,2213,male,2016,2016-08-04,2016-08-06,Galle International Stadium,,Sri Lanka,Australia,Sri Lanka,bat,Warne-Muralitharan Trophy,2,Sri Lanka,229,,,MDK Perera,6,CB Gaffaney,RA Kettleborough
+995455,Test,2217,male,2016,2016-08-13,2016-08-17,Sinhalese Sports Club Ground,Colombo,Sri Lanka,Australia,Sri Lanka,bat,Warne-Muralitharan Trophy,3,Sri Lanka,163,,,HMRKB Herath,6,CB Gaffaney,S Ravi
