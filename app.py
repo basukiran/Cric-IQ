@@ -504,28 +504,7 @@ elif page == "Dataset Analyzer":
                 use_container_width=True
             )
 
-        # Correlation Heatmap
-        if len(numeric_cols) > 1:
-
-            st.markdown("---")
-            st.subheader("🔥 Correlation Analysis")
-
-            corr = df_upload[
-                numeric_cols
-            ].corr()
-
-            fig = px.imshow(
-                corr,
-                text_auto=True,
-                aspect="auto",
-                title="Correlation Matrix"
-            )
-
-            st.plotly_chart(
-                fig,
-                use_container_width=True
-            )
-
+        
         # AI-like Summary
         st.markdown("---")
         st.subheader("🤖 Dataset Insights")
@@ -548,7 +527,7 @@ elif page == "Live Scores":
 
     import requests
 
-    API_KEY = "c7573d34-0187-4b84-89fe-24314ab59685"
+    API_KEY = "YOUR_API_KEY"
 
     try:
         url = f"https://api.cricapi.com/v1/currentMatches?apikey={API_KEY}&offset=0"
