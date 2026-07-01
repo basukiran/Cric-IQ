@@ -527,7 +527,7 @@ elif page == "Live Scores":
 
     import requests
 
-    API_KEY = "YOUR_API_KEY"
+    API_KEY = st.secrets["api_key"]
 
     try:
         url = f"https://api.cricapi.com/v1/currentMatches?apikey={API_KEY}&offset=0"
