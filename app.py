@@ -2600,9 +2600,9 @@ elif page == "🏟️ Venue Analysis":
 
     st.subheader("🗺️ Interactive Cricket Venue Map")
     st.caption(
-        "Each marker represents one mapped IPL ground. Marker size shows matches "
-        "in the selected format; color shows average total runs per match. Hover "
-        "over a marker for its match count and highest match total."
+        "Each marker represents a mapped IPL ground. Marker size shows matches "
+        "in the selected format; color shows average total runs per match. The "
+        "venue table below keeps the ground names and statistics visible without hovering."
     )
 
     venue_locations = pd.DataFrame({
@@ -2663,10 +2663,18 @@ elif page == "🏟️ Venue Analysis":
         if map_points.empty:
             st.info("No matches in this format are recorded at the grounds currently mapped.")
         else:
+            map_points["Map_Label"] = map_points["Venue"].replace({
+                "M Chinnaswamy Stadium": "Chinnaswamy",
+                "MA Chidambaram Stadium, Chepauk": "Chepauk",
+                "Rajiv Gandhi International Stadium, Uppal": "Rajiv Gandhi",
+                "Arun Jaitley Stadium": "Arun Jaitley",
+                "Narendra Modi Stadium": "Narendra Modi"
+            })
             map_fig = px.scatter_map(
                 map_points,
                 lat="lat",
                 lon="lon",
+                text="Map_Label",
                 hover_name="Venue",
                 hover_data={
                     "Matches": True,
@@ -2690,8 +2698,30 @@ elif page == "🏟️ Venue Analysis":
                 }
             )
             map_fig.update_layout(margin=dict(l=0, r=0, t=20, b=0))
-            map_fig.update_traces(marker={"opacity": 0.85})
+            map_fig.update_traces(
+                marker={"opacity": 0.85},
+                textposition="top center",
+                textfont={"size": 11, "color": "#111827"}
+            )
             st.plotly_chart(map_fig, use_container_width=True)
+            st.markdown("**Mapped venue details**")
+            visible_venue_stats = map_points[[
+                "Venue", "Matches", "Average_Runs", "Highest_Score"
+            ]].sort_values("Matches", ascending=False).rename(columns={
+                "Venue": "Stadium",
+                "Matches": "Matches in selected format",
+                "Average_Runs": "Average runs per match",
+                "Highest_Score": "Highest match total"
+            })
+            st.dataframe(
+                visible_venue_stats,
+                hide_index=True,
+                use_container_width=True,
+                column_config={
+                    "Average runs per match": st.column_config.NumberColumn(format="%.1f"),
+                    "Highest match total": st.column_config.NumberColumn(format="%.0f")
+                }
+            )
     else:
         st.info("Venue data is unavailable, so the venue map cannot be drawn for this format.")
 
