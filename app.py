@@ -164,21 +164,23 @@ matches = pd.read_csv(matches_files[format_selected])
 
 st.markdown("""
 <style>
-:root { --cric-bg:#0b1220; --cric-panel:#131f32; --cric-border:#293952; --cric-gold:#e8bd65; --cric-text:#edf2f8; --cric-muted:#9cabc0; }
-[data-testid="stAppViewContainer"] { background:linear-gradient(125deg,#24152d 0%,#18233e 48%,#102d4b 100%); color:var(--cric-text); }
+:root { --cric-bg:#fff8fc; --cric-panel:#ffffff; --cric-border:#dce5f2; --cric-gold:#98631d; --cric-text:#202b3c; --cric-muted:#58677b; }
+[data-testid="stAppViewContainer"] { background:linear-gradient(125deg,#fff0f6 0%,#f5f2ff 48%,#eaf5ff 100%); color:var(--cric-text); }
 [data-testid="stHeader"] { background:transparent; }
-[data-testid="stSidebar"] { background:linear-gradient(160deg,#26182f 0%,#17233d 52%,#10273e 100%); border-right:1px solid var(--cric-border); }
+[data-testid="stSidebar"] { background:linear-gradient(160deg,#fdeaf2 0%,#f2efff 52%,#e5f2ff 100%); border-right:1px solid #dce4f1; }
 [data-testid="stMainBlockContainer"] { padding-top:2rem; }
 h1,h2,h3 { color:var(--cric-text); letter-spacing:-0.02em; }
 p,label,[data-testid="stCaptionContainer"] { color:var(--cric-muted); }
 a { color:var(--cric-gold) !important; }
-div[data-testid="stMetric"] { background:linear-gradient(145deg,#18263b,#111c2d); border:1px solid var(--cric-border); border-radius:14px; padding:1rem 1.1rem; box-shadow:0 8px 24px rgba(0,0,0,.16); }
+div[data-testid="stMetric"] { background:rgba(255,255,255,.88); border:1px solid var(--cric-border); border-radius:14px; padding:1rem 1.1rem; box-shadow:0 8px 24px rgba(47,67,104,.08); }
 div[data-testid="stMetric"] label { color:var(--cric-muted); }
 div[data-testid="stMetric"] [data-testid="stMetricValue"] { color:var(--cric-text); }
-div.stButton > button,div[data-testid="stDownloadButton"] > button { border:1px solid #c99c45; border-radius:10px; background:linear-gradient(135deg,#e8bd65,#cf9f48); color:#111827; font-weight:650; transition:transform 120ms ease,box-shadow 120ms ease; }
-div.stButton > button:hover,div[data-testid="stDownloadButton"] > button:hover { border-color:#f2d48e; color:#111827; box-shadow:0 5px 18px rgba(232,189,101,.2); transform:translateY(-1px); }
+div.stButton > button,div[data-testid="stDownloadButton"] > button { border:1px solid #9fb4d7; border-radius:10px; background:linear-gradient(135deg,#e5dafa,#dcecff); color:#263650; font-weight:650; transition:transform 120ms ease,box-shadow 120ms ease; }
+div.stButton > button:hover,div[data-testid="stDownloadButton"] > button:hover { border-color:#ad8dd7; color:#202b3c; box-shadow:0 5px 18px rgba(100,125,180,.18); transform:translateY(-1px); }
 [data-testid="stDataFrame"],[data-testid="stTable"] { border:1px solid var(--cric-border); border-radius:12px; overflow:hidden; }
-[data-testid="stSelectbox"] [data-baseweb="select"] > div,[data-testid="stMultiSelect"] [data-baseweb="select"] > div { background-color:#131f32; border-color:var(--cric-border); border-radius:9px; }
+[data-testid="stSelectbox"] [data-baseweb="select"] > div,[data-testid="stMultiSelect"] [data-baseweb="select"] > div { background-color:#ffffff; border-color:var(--cric-border); border-radius:9px; }
+[data-baseweb="input"] > div,[data-baseweb="textarea"] { background-color:#ffffff; }
+[data-testid="stSidebar"] p,[data-testid="stSidebar"] label,[data-testid="stSidebar"] span { color:#33435a; }
 [data-testid="stAlert"] { border-radius:12px; }
 hr { border-color:var(--cric-border); }
 </style>
@@ -684,29 +686,29 @@ elif page == "📡 Live Scores":
 
                 st.markdown(f"""
                 <div style="
-                background:#0f172a;
+                background:#ffffff;
                 padding:18px;
                 border-radius:15px;
-                border:1px solid #22c55e;
+                border:1px solid #dce5f2;
                 margin-bottom:15px;">
 
-                <h3 style="color:white;">
+                <h3 style="color:#202b3c;">
                 🏏 {match.get('name','Match')}
                 </h3>
 
-                <p style="color:#22c55e;">
+                <p style="color:#7656a6;">
                 <b>{match.get('status','')}</b>
                 </p>
 
-                <p style="color:white;">
+                <p style="color:#58677b;">
                 📍 {match.get('venue','Unknown')}
                 </p>
 
-                <p style="color:white;">
+                <p style="color:#58677b;">
                 🏆 {match.get('series','N/A')}
                 </p>
 
-                <p style="color:white;">
+                <p style="color:#58677b;">
                 🎯 {match.get('matchType','N/A').upper()}
                 </p>
 
@@ -1140,11 +1142,11 @@ elif page=="⚔️ Head to Head":
 
         st.markdown(f"""
         <div style="
-        background:#1E293B;
+        background:#fff0f6;
         padding:20px;
         border-radius:18px;
         text-align:center;
-        border:2px solid #22c55e;
+        border:2px solid #e9bfd5;
         ">
 
         <h2>{p1}</h2>
@@ -1156,11 +1158,11 @@ elif page=="⚔️ Head to Head":
 
         st.markdown(f"""
         <div style="
-        background:#1E293B;
+        background:#edf5ff;
         padding:20px;
         border-radius:18px;
         text-align:center;
-        border:2px solid #3b82f6;
+        border:2px solid #bfd4f1;
         ">
 
         <h2>{p2}</h2>
@@ -2095,13 +2097,13 @@ elif page == "🏟️ Venue Analysis":
 
     st.markdown(f"""
     <div style="
-    background:#0F172A;
+    background:#ffffff;
     padding:25px;
     border-radius:18px;
-    border:1px solid #334155;
+    border:1px solid #dce5f2;
     ">
 
-    <h2 style="color:#38BDF8;">
+    <h2 style="color:#5575b8;">
     🏟 {venue_search}
     </h2>
 
