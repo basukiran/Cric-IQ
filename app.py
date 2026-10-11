@@ -2595,121 +2595,104 @@ elif page == "🏟️ Venue Analysis":
     f"🏆 Most successful team at {venue2}: {v2['Best Team']}"
 )
     # ==========================================================
-# 🗺️ Interactive Venue Map
-# ==========================================================
+    # 🗺️ Interactive Venue Map
+    # ==========================================================
 
-    
     st.subheader("🗺️ Interactive Cricket Venue Map")
-
-# Stadium locations
-    venue_locations = pd.DataFrame({
-    "Venue": [
-        "Wankhede Stadium",
-        "Eden Gardens",
-        "M Chinnaswamy Stadium",
-        "MA Chidambaram Stadium",
-        "Arun Jaitley Stadium",
-        "Rajiv Gandhi Stadium",
-        "Narendra Modi Stadium"
-    ],
-    "City": [
-        "Mumbai",
-        "Kolkata",
-        "Bangalore",
-        "Chennai",
-        "Delhi",
-        "Hyderabad",
-        "Ahmedabad"
-    ],
-    "lat": [
-        19.0176,
-        22.5646,
-        12.9788,
-        13.0627,
-        28.6379,
-        17.4065,
-        23.0910
-    ],
-    "lon": [
-        72.8562,
-        88.3433,
-        77.5996,
-        80.2794,
-        77.2433,
-        78.5500,
-        72.5970
-    ]
-})
-
-# Calculate venue statistics
-    venue_runs = (
-    df.groupby("match_id")["runs_total"]
-      .sum()
-      .reset_index()
-)
-
-    venue_runs = venue_runs.merge(
-    matches[["match_id", "venue"]],
-    on="match_id",
-    how="left"
-)
-
-    venue_stats = (
-    venue_runs.groupby("venue")
-    .agg(
-        Matches=("match_id", "count"),
-        Average_Runs=("runs_total", "mean"),
-        Highest_Score=("runs_total", "max")
+    st.caption(
+        "Each marker represents one mapped IPL ground. Marker size shows matches "
+        "in the selected format; color shows average total runs per match. Hover "
+        "over a marker for its match count and highest match total."
     )
-    .reset_index()
-)
 
-# Merge statistics with locations
-    venue_locations = venue_locations.merge(
-    venue_stats,
-    left_on="Venue",
-    right_on="venue",
-    how="left"
-)
+    venue_locations = pd.DataFrame({
+        "Venue": [
+            "Wankhede Stadium", "Eden Gardens", "M Chinnaswamy Stadium",
+            "MA Chidambaram Stadium, Chepauk", "Arun Jaitley Stadium",
+            "Rajiv Gandhi International Stadium, Uppal", "Narendra Modi Stadium"
+        ],
+        "lat": [19.0176, 22.5646, 12.9788, 13.0627, 28.6379, 17.4065, 23.0910],
+        "lon": [72.8562, 88.3433, 77.5996, 80.2794, 77.2433, 78.5500, 72.5970]
+    })
 
-# Replace missing values
-    venue_locations["Matches"] = venue_locations["Matches"].fillna(1)
-    venue_locations["Average_Runs"] = venue_locations["Average_Runs"].fillna(0)
-    venue_locations["Highest_Score"] = venue_locations["Highest_Score"].fillna(0)
+    def map_venue_name(name):
+        normalized = str(name).lower().replace(".", "")
+        if "wankhede" in normalized:
+            return "Wankhede Stadium"
+        if "eden gardens" in normalized:
+            return "Eden Gardens"
+        if "chinnaswamy" in normalized:
+            return "M Chinnaswamy Stadium"
+        if "chidambaram" in normalized or "chepauk" in normalized:
+            return "MA Chidambaram Stadium, Chepauk"
+        if "feroz shah kotla" in normalized or "arun jaitley" in normalized:
+            return "Arun Jaitley Stadium"
+        if "rajiv gandhi" in normalized:
+            return "Rajiv Gandhi International Stadium, Uppal"
+        if "narendra modi" in normalized or "sardar patel" in normalized:
+            return "Narendra Modi Stadium"
+        return None
 
-# Draw map
-    fig = px.scatter_mapbox(
-    venue_locations,
-    lat="lat",
-    lon="lon",
-    hover_name="Venue",
-    hover_data={
-        "City": True,
-        "Matches": True,
-        "Average_Runs": ":.1f",
-        "Highest_Score": True
-    },
-    size="Matches",
-    color="Average_Runs",
-    zoom=4,
-    height=650,
-    color_continuous_scale="Turbo",
-    text="Venue"
-)
+    if "venue" in matches.columns:
+        map_runs = (
+            df.groupby("match_id")["runs_total"]
+            .sum()
+            .rename("Match_Runs")
+            .reset_index()
+            .merge(matches[["match_id", "venue"]], on="match_id", how="inner")
+            .dropna(subset=["venue"])
+        )
+        map_runs["Mapped_Venue"] = map_runs["venue"].map(map_venue_name)
+        map_runs = map_runs.dropna(subset=["Mapped_Venue"])
+        map_venue_stats = (
+            map_runs.groupby("Mapped_Venue")
+            .agg(
+                Matches=("match_id", "nunique"),
+                Average_Runs=("Match_Runs", "mean"),
+                Highest_Score=("Match_Runs", "max")
+            )
+            .reset_index()
+        )
+        map_points = venue_locations.merge(
+            map_venue_stats,
+            left_on="Venue",
+            right_on="Mapped_Venue",
+            how="inner"
+        )
 
-    fig.update_traces(
-    mode="markers+text",
-    text=venue_locations["Venue"],
-    textposition="top center",
-    marker=dict(size=0)
-)
-
-    fig.update_layout(
-    mapbox_style="open-street-map",
-    margin=dict(l=0, r=0, t=20, b=0)
-)
-
-    st.plotly_chart(fig, use_container_width=True)
+        if map_points.empty:
+            st.info("No matches in this format are recorded at the grounds currently mapped.")
+        else:
+            map_fig = px.scatter_map(
+                map_points,
+                lat="lat",
+                lon="lon",
+                hover_name="Venue",
+                hover_data={
+                    "Matches": True,
+                    "Average_Runs": ":.1f",
+                    "Highest_Score": ":.0f",
+                    "lat": False,
+                    "lon": False
+                },
+                size="Matches",
+                size_max=32,
+                color="Average_Runs",
+                zoom=3,
+                height=600,
+                color_continuous_scale="Turbo",
+                map_style="open-street-map",
+                labels={
+                    "Matches": "Matches",
+                    "Average_Runs": "Average runs per match",
+                    "Highest_Score": "Highest match total"
+                }
+            )
+            map_fig.update_layout(margin=dict(l=0, r=0, t=20, b=0))
+            map_fig.update_traces(marker={"opacity": 0.85})
+            st.plotly_chart(map_fig, use_container_width=True)
+    else:
+        st.info("Venue data is unavailable, so the venue map cannot be drawn for this format.")
 
     st.subheader("🎯 Venue Rating")
 
