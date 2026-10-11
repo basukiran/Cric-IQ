@@ -37,6 +37,62 @@ def load_data(format_name):
     return df
 
 
+def numeric_column(frame, column):
+    """Return a numeric column, treating missing or unavailable extras as zero."""
+    if column not in frame.columns:
+        return pd.Series(0, index=frame.index, dtype="float64")
+    return pd.to_numeric(frame[column], errors="coerce").fillna(0)
+
+
+def summarize_bowling(deliveries):
+    """Summarize bowler-credit wickets, legal balls and runs charged to bowlers."""
+    events = deliveries.copy()
+    wides = numeric_column(events, "extras_wides")
+    no_balls = numeric_column(events, "extras_noballs")
+    events["Legal Balls"] = (wides.eq(0) & no_balls.eq(0)).astype(int)
+
+    runs_charged = numeric_column(events, "runs_total")
+    for extra in ("extras_byes", "extras_legbyes", "extras_penalty"):
+        runs_charged = runs_charged - numeric_column(events, extra)
+    events["Runs"] = runs_charged.clip(lower=0)
+
+    if "player_out" in events.columns:
+        dismissed = events["player_out"].notna()
+    else:
+        dismissed = pd.Series(False, index=events.index)
+    if "dismissal_type" in events.columns:
+        dismissal_type = (
+            events["dismissal_type"].fillna("").astype(str).str.lower()
+            .str.replace("_", " ", regex=False)
+        )
+    else:
+        dismissal_type = pd.Series("", index=events.index)
+    not_bowler_wickets = {
+        "run out", "retired hurt", "retired out",
+        "obstructing the field", "timed out"
+    }
+    events["Wickets"] = (
+        dismissed & ~dismissal_type.isin(not_bowler_wickets)
+    ).astype(int)
+
+    summary = (
+        events.groupby("bowler")
+        .agg(
+            Balls=("Legal Balls", "sum"),
+            Runs=("Runs", "sum"),
+            Wickets=("Wickets", "sum")
+        )
+        .reset_index()
+    )
+    summary["Overs"] = summary["Balls"].apply(
+        lambda balls: f"{int(balls) // 6}.{int(balls) % 6}"
+    )
+    summary["Economy"] = (
+        summary["Runs"] * 6 / summary["Balls"].replace(0, 1)
+    ).round(2)
+    return summary
+
+
 # -------------------------------
 # SIDEBAR
 # -------------------------------
@@ -216,12 +272,18 @@ h1,h2,h3,h4,h5,h6,p,label,span{
             </div>
 
             <div class="hero-text">
-            AI Powered Cricket Analytics Platform
+            Data-driven Cricket Analytics Platform
             <br>
             Analyze player performance, venue trends,
             team strategies and live cricket insights.
             </div>
             """, unsafe_allow_html=True)
+
+    st.caption(
+        "Purpose: compare scoring pace and volume, team results, and venue scoring "
+        "patterns across IPL, ODI, T20I, and Test data. These pages describe the "
+        "historical datasets; they do not predict match outcomes."
+    )
 
     
 
@@ -329,6 +391,70 @@ h1,h2,h3,h4,h5,h6,p,label,span{
 
             st.bar_chart(winners)
 
+    top_run_scorer = top.index[0]
+    top_run_count = int(top.iloc[0])
+    leading_winner = (
+        winners.index[0] if winner_col and not winners.empty else "unavailable"
+    )
+    leader_wins = int(winners.iloc[0]) if winner_col and not winners.empty else 0
+    st.info(
+        f"**What this shows:** {top_run_scorer} leads this format with "
+        f"{top_run_count:,} batter runs across the loaded delivery data. "
+        + (
+            f"{leading_winner} has the most recorded match wins ({leader_wins}). "
+            "These are cumulative totals, so they reflect career length and "
+            "match volume as well as performance."
+            if winner_col and not winners.empty
+            else "Match winner data is not available for this format."
+        )
+    )
+
+    if "season" in matches.columns:
+        match_scores = (
+            df.groupby("match_id")["runs_total"]
+            .sum()
+            .rename("Match Runs")
+            .reset_index()
+            .merge(matches[["match_id", "season"]], on="match_id", how="inner")
+        )
+        season_trend = (
+            match_scores.groupby("season")
+            .agg(
+                Average_Match_Runs=("Match Runs", "mean"),
+                Matches=("match_id", "nunique")
+            )
+            .reset_index()
+            .sort_values("season")
+        )
+        if len(season_trend) > 1:
+            st.subheader("📈 Scoring Trend by Season")
+            trend_fig = px.line(
+                season_trend,
+                x="season",
+                y="Average_Match_Runs",
+                markers=True,
+                hover_data={"Matches": True},
+                labels={
+                    "season": "Season",
+                    "Average_Match_Runs": "Average total runs per match"
+                }
+            )
+            st.plotly_chart(trend_fig, use_container_width=True)
+            first_season = season_trend.iloc[0]
+            last_season = season_trend.iloc[-1]
+            run_change = (
+                last_season["Average_Match_Runs"]
+                - first_season["Average_Match_Runs"]
+            )
+            st.caption(
+                f"Average match total changed from {first_season['Average_Match_Runs']:.1f} "
+                f"runs in {first_season['season']} ({int(first_season['Matches'])} matches) "
+                f"to {last_season['Average_Match_Runs']:.1f} in {last_season['season']} "
+                f"({int(last_season['Matches'])} matches), a difference of "
+                f"{run_change:+.1f}. Season totals can be affected by match format, "
+                "rules, and the number of matches in the sample."
+            )
+
     ############################################
     # RECENT MATCHES
     ############################################
@@ -351,7 +477,7 @@ h1,h2,h3,h4,h5,h6,p,label,span{
 
     <p style="font-size:18px;color:#d1d5db;">
 
-    CricIQ is an AI-powered cricket analytics platform
+    CricIQ is a data-driven cricket analytics platform
     built using Streamlit and Python.
 
     It supports IPL, ODI, T20I and Test datasets,
@@ -396,6 +522,10 @@ h1,h2,h3,h4,h5,h6,p,label,span{
 elif page == "📂 Dataset Analyzer":
 
     st.title("📂 Smart Cricket Dataset Analyzer")
+    st.caption(
+        "Upload a CSV to inspect its structure and distributions. The charts are "
+        "descriptive: they show patterns in your file and do not infer causes."
+    )
 
     uploaded_file = st.file_uploader(
         "Upload Cricket CSV Dataset",
@@ -452,6 +582,17 @@ elif page == "📂 Dataset Analyzer":
                 fig,
                 use_container_width=True
             )
+            selected_values = pd.to_numeric(
+                df_upload[selected_num], errors="coerce"
+            ).dropna()
+            if not selected_values.empty:
+                st.caption(
+                    f"{selected_num}: median {selected_values.median():,.2f}, "
+                    f"mean {selected_values.mean():,.2f}, and "
+                    f"{selected_values.nunique():,} distinct observed values. "
+                    "A long tail or separated peaks in the histogram may indicate "
+                    "outliers or different subgroups worth investigating."
+                )
 
         # Categorical Columns
         categorical_cols = df_upload.select_dtypes(
@@ -491,9 +632,33 @@ elif page == "📂 Dataset Analyzer":
                 fig,
                 use_container_width=True
             )
+            if not cat_data.empty:
+                leading_category = cat_data.iloc[0]
+                leading_share = (
+                    leading_category["Count"] / len(df_upload) * 100
+                    if len(df_upload) else 0
+                )
+                st.caption(
+                    f"{leading_category[selected_cat]} is the most common value "
+                    f"({int(leading_category['Count']):,} rows, {leading_share:.1f}% "
+                    "of the file). A dominant category can make averages or model "
+                    "results less representative of smaller groups."
+                )
+
+        missing_by_column = (
+            df_upload.isna().sum().rename("Missing values")
+            .loc[lambda counts: counts > 0]
+            .sort_values(ascending=False)
+        )
+        if not missing_by_column.empty:
+            st.subheader("🧩 Missing values by column")
+            st.dataframe(
+                missing_by_column.to_frame(),
+                use_container_width=True
+            )
 
         
-        # AI-like Summary
+        # Dataset Summary
         st.markdown("---")
         st.subheader("🤖 Dataset Insights")
 
@@ -515,6 +680,10 @@ elif page == "📡 Live Scores":
     from datetime import datetime
 
     st.title("🏏 Live Cricket Dashboard")
+    st.caption(
+        "This page is a live snapshot from the match feed. Scores can change during play; "
+        "they describe current matches and are separate from the historical CSV analysis."
+    )
 
     API_KEY = "c7573d34-0187-4b84-89fe-24314ab59685"
 
@@ -615,11 +784,15 @@ elif page == "📡 Live Scores":
 elif page == "🏏 Batting Analytics":
     st.title("🏏 Batting Analytics Dashboard")
 
+    batting_events = df.copy()
+    batting_events["Ball Faced"] = numeric_column(
+        batting_events, "extras_wides"
+    ).eq(0).astype(int)
     batting = (
-        df.groupby("batter")
+        batting_events.groupby("batter")
         .agg(
             Runs=("runs_batter", "sum"),
-            Balls=("ball", "count")
+            Balls=("Ball Faced", "sum")
         )
         .reset_index()
     )
@@ -666,6 +839,22 @@ elif page == "🏏 Batting Analytics":
     c3.metric(
         "⚡ Strike Rate",
         pdata["Strike Rate"]
+    )
+
+    player_rank = int(
+        batting["Runs"].rank(method="min", ascending=False)[
+            batting["batter"] == player
+        ].iloc[0]
+    )
+    median_strike_rate = batting["Strike Rate"].median()
+    strike_rate_difference = pdata["Strike Rate"] - median_strike_rate
+    st.info(
+        f"**Interpretation:** {player} ranks {player_rank} of {len(batting)} "
+        f"batters by total runs in {format_selected}. Their strike rate is "
+        f"{pdata['Strike Rate']:.2f}, {abs(strike_rate_difference):.2f} points "
+        f"{'above' if strike_rate_difference >= 0 else 'below'} the format "
+        f"median ({median_strike_rate:.2f}). Strike rate is runs per 100 balls; "
+        "the ranking is cumulative and does not adjust for matches played."
     )
 
     
@@ -721,6 +910,11 @@ elif page == "🏏 Batting Analytics":
         use_container_width=True
     )
 
+    st.caption(
+        "How to read it: each point is a batter. Further right means more balls "
+        "faced; higher means more runs. Bubble size is runs and color is strike rate."
+    )
+
     
 
     # ------------------------
@@ -742,6 +936,11 @@ elif page == "🏏 Batting Analytics":
     st.plotly_chart(
         fig2,
         use_container_width=True
+    )
+
+    st.caption(
+        "How to read it: the chart separates volume (runs) from scoring pace "
+        "(strike rate). Players high on both axes combine large run totals with fast scoring."
     )
 
     
@@ -823,26 +1022,11 @@ elif page == "🎯 Bowling Analytics":
 
     st.title("🎯 Bowling Analytics Dashboard")
 
-    if "player_out" not in df.columns:
+    if "bowler" not in df.columns or "player_out" not in df.columns:
         st.error("No wicket data available.")
         st.stop()
 
-    bowling = (
-        df.groupby("bowler")
-        .agg(
-            Balls=("ball","count"),
-            Runs=("runs_total","sum"),
-            Wickets=("player_out",lambda x:x.notna().sum())
-        )
-        .reset_index()
-    )
-
-    bowling["Overs"]=(bowling["Balls"]/6).round(1)
-
-    bowling["Economy"]=(
-        bowling["Runs"]/
-        bowling["Overs"].replace(0,1)
-    ).round(2)
+    bowling = summarize_bowling(df)
 
     player=st.selectbox(
         "🔍 Select Bowler",
@@ -859,6 +1043,20 @@ elif page == "🎯 Bowling Analytics":
     c2.metric("🏏 Overs",pdata["Overs"])
     c3.metric("📉 Economy",pdata["Economy"])
     c4.metric("⚾ Balls",int(pdata["Balls"]))
+
+    median_economy = bowling.loc[bowling["Balls"] > 0, "Economy"].median()
+    selected_wicket_rank = int(
+        bowling["Wickets"].rank(method="min", ascending=False)[
+            bowling["bowler"] == player
+        ].iloc[0]
+    )
+    st.info(
+        f"**Interpretation:** {player} ranks {selected_wicket_rank} of "
+        f"{len(bowling)} bowlers by credited wickets. Their economy is "
+        f"{pdata['Economy']:.2f} runs per six legal balls, compared with a "
+        f"bowler median of {median_economy:.2f}. Wides and no-balls do not count "
+        "as legal balls; byes and leg-byes are excluded from runs charged to the bowler."
+    )
 
 
     st.subheader("Economy Gauge")
@@ -897,6 +1095,11 @@ elif page == "🎯 Bowling Analytics":
 
     st.plotly_chart(fig,use_container_width=True)
 
+    st.caption(
+        "Each point is a bowler. Lower economy and higher credited wickets are "
+        "desirable together; bubble size shows legal balls bowled, so small samples need caution."
+    )
+
     st.markdown("---")
 
     st.subheader("🥧 Top 10 Wicket Share")
@@ -919,7 +1122,7 @@ elif page == "🎯 Bowling Analytics":
     st.subheader("🌳 Bowling Treemap")
 
     fig3=px.treemap(
-        bowling.head(30),
+        bowling.sort_values("Wickets", ascending=False).head(30),
         path=["bowler"],
         values="Wickets",
         color="Economy",
@@ -1029,11 +1232,15 @@ elif page=="⚔️ Head to Head":
 
     with tab1:
 
+        batting_events = df.copy()
+        batting_events["Ball Faced"] = numeric_column(
+            batting_events, "extras_wides"
+        ).eq(0).astype(int)
         batting = (
-            df.groupby("batter")
+            batting_events.groupby("batter")
             .agg(
                 Runs=("runs_batter","sum"),
-                Balls=("ball","count"),
+                Balls=("Ball Faced","sum"),
                 Fours=("runs_batter",lambda x:(x==4).sum()),
                 Sixes=("runs_batter",lambda x:(x==6).sum())
             )
@@ -1094,33 +1301,7 @@ elif page=="⚔️ Head to Head":
 
         with tab2:
 
-          bowling = (
-
-            df.groupby("bowler")
-
-            .agg(
-
-                Balls=("ball","count"),
-
-                Runs=("runs_total","sum"),
-
-                Wickets=("player_out",
-                lambda x:x.notna().sum())
-
-            )
-
-            .reset_index()
-
-        )
-
-          bowling["Overs"] = (
-            bowling["Balls"]/6
-        ).round(1)
-
-          bowling["Economy"] = (
-            bowling["Runs"] /
-            bowling["Overs"].replace(0,1)
-        ).round(2)
+          bowling = summarize_bowling(df)
 
           bowl = bowling[
             bowling["bowler"].isin([p1,p2])
@@ -1356,11 +1537,11 @@ elif page=="⚔️ Head to Head":
     
 
 # ============================================================
-# 🤖 AI Summary
+# Data-based Summary
 # ============================================================
 
     
-    st.subheader("🤖 AI Match Summary")
+    st.subheader("📊 Data-based Match-up Summary")
 
     summary=[]
 
@@ -1387,33 +1568,26 @@ elif page=="⚔️ Head to Head":
     for item in summary:
      st.success(item)
 
+    st.caption(
+        "These are career-to-date totals in the selected format, not a prediction "
+        "or a comparison adjusted for matches played. Economy uses legal balls and "
+        "bowler-charged runs; the summary above is descriptive and is not a trained model."
+    )
+
 # ============================================================
-# 🏆 Winner Prediction
+# Metric comparison
 # ============================================================
 
     
-    st.subheader("🏆 Overall Comparison")
-
-    score1 = (
-    b1["Runs"].iloc[0]
-    + b1["Strike Rate"].iloc[0]
-    + w1*25
-)
-
-    score2 = (
-    b2["Runs"].iloc[0]
-    + b2["Strike Rate"].iloc[0]
-    + w2*25
-)
-
-    if score1 > score2:
-     winner = p1
-    elif score2 > score1:
-     winner = p2
-    else:
-     winner = "Tie"
-
-    st.info(f"🏆 Overall Better Performer: **{winner}**")
+    st.subheader("📊 How to interpret this comparison")
+    st.info(
+        f"{p1}: {int(b1['Runs'].iloc[0]):,} runs at a strike rate of "
+        f"{b1['Strike Rate'].iloc[0]:.2f}, with {int(w1)} credited wickets. "
+        f"{p2}: {int(b2['Runs'].iloc[0]):,} runs at a strike rate of "
+        f"{b2['Strike Rate'].iloc[0]:.2f}, with {int(w2)} credited wickets. "
+        "Runs, strike rate and wickets measure different things, so the app shows "
+        "them separately instead of combining them into an arbitrary winner score."
+    )
 
 # ============================================================
 # 📥 Download Report
@@ -1729,18 +1903,32 @@ elif page == "🏆 Team Analysis":
 )
 
 # =====================================================
-# 🤖 AI Insights
+# Team insights
 # =====================================================
 
     
-    st.subheader("🤖 Team Insights")
+    st.subheader("📊 Team Insights")
 
     if s1["Win %"] > s2["Win %"]:
      better = team_a
-    else:
+    elif s2["Win %"] > s1["Win %"]:
      better = team_b
+    else:
+     better = None
 
-    st.success(f"🏆 {better} has the better overall win percentage.")
+    if better:
+     st.success(f"🏆 {better} has the higher recorded win percentage.")
+    else:
+     st.info("🏆 The teams have the same recorded win percentage.")
+
+    win_rate_gap = abs(s1["Win %"] - s2["Win %"])
+    st.info(
+        f"**Interpretation:** {team_a} has {s1['Win %']:.1f}% wins from "
+        f"{s1['Played']} matches; {team_b} has {s2['Win %']:.1f}% from "
+        f"{s2['Played']} matches. The gap is {win_rate_gap:.1f} percentage "
+        "points. A larger match sample gives a more stable comparison; seasons "
+        "and opponent strength are not adjusted here."
+    )
 
     if s1["Wins"] > s2["Wins"]:
      st.info(f"✅ {team_a} has won more matches.")
@@ -1918,6 +2106,20 @@ elif page == "🏟️ Venue Analysis":
     c4.metric(
         "🏆 Best Team",
         top_team
+    )
+
+    format_average = (
+        df.groupby("match_id")["runs_total"].sum().mean()
+        if not df.empty else 0
+    )
+    venue_difference = avg_runs - format_average
+    st.info(
+        f"**Interpretation:** this venue has {matches_played} matches in the "
+        f"selected data and averages {avg_runs:.1f} total runs per match, "
+        f"{abs(venue_difference):.1f} {'above' if venue_difference >= 0 else 'below'} "
+        f"the format-wide average of {format_average:.1f}. {top_team} is the "
+        "most frequent winner in this venue sample. This describes past results; "
+        "it does not establish that the venue caused the outcomes."
     )
 
 
@@ -2348,7 +2550,7 @@ elif page == "🏟️ Venue Analysis":
     use_container_width=True
 )
     
-    st.subheader("🤖 Venue Insights")
+    st.subheader("📊 Venue Insights")
 
     if v1["Average Runs"] > v2["Average Runs"]:
 
@@ -2356,11 +2558,13 @@ elif page == "🏟️ Venue Analysis":
         f"🔥 {venue1} is the higher scoring venue."
     )
 
-    else:
+    elif v2["Average Runs"] > v1["Average Runs"]:
 
      st.success(
         f"🔥 {venue2} is the higher scoring venue."
     )
+    else:
+     st.info("The two venues have the same average match total in this dataset.")
 
     if v1["Matches"] > v2["Matches"]:
 
@@ -2368,10 +2572,19 @@ elif page == "🏟️ Venue Analysis":
         f"📅 {venue1} has hosted more matches."
     )
 
-    else:
+    elif v2["Matches"] > v1["Matches"]:
 
      st.info(
         f"📅 {venue2} has hosted more matches."
+    )
+    else:
+     st.info("The two venues have the same number of matches in this dataset.")
+
+    st.caption(
+        f"Average match total: {venue1} {v1['Average Runs']:.1f} from "
+        f"{v1['Matches']} matches; {venue2} {v2['Average Runs']:.1f} from "
+        f"{v2['Matches']} matches. Differences may reflect different sample sizes "
+        "and seasons, so use match count alongside the averages."
     )
 
     st.warning(
@@ -2542,7 +2755,7 @@ elif page == "🏟️ Venue Analysis":
     
 
 
-    st.subheader("🤖 Smart Venue Insights")
+    st.subheader("📊 Venue Data Summary")
 
     highest = venue_stats.loc[
     venue_stats["Average_Runs"].idxmax()
@@ -2645,28 +2858,19 @@ elif page == "👤 Player Search":
     batting = df[df["batter"] == player]
 
     runs = batting["runs_batter"].sum()
-    balls = len(batting)
+    balls = int(numeric_column(batting, "extras_wides").eq(0).sum())
 
     sr = round((runs / balls) * 100, 2) if balls > 0 else 0
 
-    wickets = 0
-    economy = 0
-
-    bowling = pd.DataFrame()
-
-    if "bowler" in df.columns:
-        bowling = df[df["bowler"] == player]
-
-    if "player_out" in df.columns and not bowling.empty:
-        wickets = bowling["player_out"].notna().sum()
-
-    overs = len(bowling) / 6
-
-    if overs > 0:
-        economy = round(
-            bowling["runs_total"].sum() / overs,
-            2
-        )
+    bowling_summary = summarize_bowling(df)
+    player_bowling = bowling_summary[
+        bowling_summary["bowler"] == player
+    ]
+    wickets = int(player_bowling["Wickets"].sum())
+    economy = (
+        float(player_bowling["Economy"].iloc[0])
+        if not player_bowling.empty else 0
+    )
 
     st.subheader(f"🏏 {player}")
 
@@ -2678,6 +2882,24 @@ elif page == "👤 Player Search":
     c4.metric("Wickets", wickets)
     c5.metric("Economy", economy)
 
+    batter_totals = df.groupby("batter")["runs_batter"].sum().sort_values(ascending=False)
+    batter_rank = int(batter_totals.rank(method="min", ascending=False)[
+        batter_totals.index == player
+    ].iloc[0])
+    format_median_sr = (
+        (df.groupby("batter")["runs_batter"].sum()
+         / df.assign(_balls=numeric_column(df, "extras_wides").eq(0).astype(int))
+         .groupby("batter")["_balls"].sum().replace(0, 1) * 100)
+        .median()
+    )
+    st.info(
+        f"**Player profile:** {player} ranks {batter_rank} by runs among "
+        f"{len(batter_totals)} batters in {format_selected}. Their strike rate "
+        f"is {sr:.2f}, against a format median of {format_median_sr:.2f}; they "
+        f"have {wickets} credited wickets. These totals cover the loaded data "
+        "and are not adjusted for appearances or role."
+    )
+
     st.markdown("---")
 
     # =============================
@@ -2688,13 +2910,17 @@ elif page == "👤 Player Search":
 
     with col1:
 
-        st.subheader("🏏 Run Contribution")
+        st.subheader("🏏 Scoring vs Dot Deliveries")
 
-        dot_balls = max(balls - runs, 0)
+        dot_balls = int(
+            (batting["runs_batter"].eq(0)
+             & numeric_column(batting, "extras_wides").eq(0)).sum()
+        )
+        scoring_balls = max(balls - dot_balls, 0)
 
         fig = px.pie(
-            names=["Runs", "Dot Balls"],
-            values=[runs, dot_balls],
+            names=["Scoring Deliveries", "Dot Deliveries"],
+            values=[scoring_balls, dot_balls],
             hole=0.6,
             color_discrete_sequence=[
                 "#00CC96",
@@ -2870,34 +3096,25 @@ elif page == "👤 Player Search":
     
 
     # =============================
-    # AI Insights
+    # Data-based interpretation
     # =============================
 
-    st.subheader("🤖 AI Insights")
-
-    if sr >= 150:
-        st.success("🔥 Excellent strike rate. Highly aggressive batter.")
-
-    elif sr >= 130:
-        st.info("👍 Good strike rate with consistent scoring.")
-
+    st.subheader("📊 Data-based Interpretation")
+    boundary_runs = int(4 * fours + 6 * sixes)
+    boundary_share = boundary_runs / runs * 100 if runs else 0
+    dot_rate = dot_balls / balls * 100 if balls else 0
+    st.info(
+        f"In {format_selected}, boundaries account for {boundary_share:.1f}% "
+        f"of {player}'s runs ({fours} fours and {sixes} sixes). Dot deliveries "
+        f"make up {dot_rate:.1f}% of balls faced. Together, these show how the "
+        "player builds scoring output; they do not account for match conditions "
+        "or opposition quality."
+    )
+    if not player_bowling.empty:
+        st.caption(
+            f"Bowling context: {player} has {wickets} credited wickets at an "
+            f"economy of {economy:.2f} runs per six legal balls in this dataset."
+        )
     else:
-        st.warning("🛡️ Strike rate is relatively low.")
-
-    if wickets >= 50:
-        st.success("🎯 Strong all-round contribution with the ball.")
-
-    elif wickets > 0:
-        st.info("🏏 Contributes as a part-time bowler.")
-
-    if economy > 0:
-
-        if economy <= 7:
-            st.success("💪 Excellent bowling economy.")
-
-        elif economy <= 9:
-            st.info("👍 Average bowling economy.")
-
-        else:
-            st.warning("⚠️ Economy rate is on the higher side.")
+        st.caption("No bowling deliveries for this player appear in the selected format data.")
     
