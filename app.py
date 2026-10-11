@@ -2678,6 +2678,7 @@ elif page == "🏟️ Venue Analysis":
                 size="Matches",
                 size_max=32,
                 color="Average_Runs",
+                center={"lat": 22.5, "lon": 78.5},
                 zoom=3,
                 height=600,
                 color_continuous_scale="Turbo",
