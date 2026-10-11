@@ -165,9 +165,9 @@ matches = pd.read_csv(matches_files[format_selected])
 st.markdown("""
 <style>
 :root { --cric-bg:#0b1220; --cric-panel:#131f32; --cric-border:#293952; --cric-gold:#e8bd65; --cric-text:#edf2f8; --cric-muted:#9cabc0; }
-[data-testid="stAppViewContainer"] { background:radial-gradient(ellipse at 18% 0%,#172943 0%,#0b1220 58%,#090f1a 100%); color:var(--cric-text); }
+[data-testid="stAppViewContainer"] { background:linear-gradient(125deg,#24152d 0%,#18233e 48%,#102d4b 100%); color:var(--cric-text); }
 [data-testid="stHeader"] { background:transparent; }
-[data-testid="stSidebar"] { background:linear-gradient(180deg,#101b2d 0%,#0b1423 100%); border-right:1px solid var(--cric-border); }
+[data-testid="stSidebar"] { background:linear-gradient(160deg,#26182f 0%,#17233d 52%,#10273e 100%); border-right:1px solid var(--cric-border); }
 [data-testid="stMainBlockContainer"] { padding-top:2rem; }
 h1,h2,h3 { color:var(--cric-text); letter-spacing:-0.02em; }
 p,label,[data-testid="stCaptionContainer"] { color:var(--cric-muted); }
