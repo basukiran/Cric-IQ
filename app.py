@@ -2649,8 +2649,7 @@ elif page == "🏟️ Venue Analysis":
             map_fig.update_traces(
                 marker={
                     "color": "#D6A84F",
-                    "opacity": 0.92,
-                    "line": {"color": "#765A28", "width": 1}
+                    "opacity": 0.92
                 },
                 textposition="top center",
                 textfont={"size": 11, "color": "#182233"}
