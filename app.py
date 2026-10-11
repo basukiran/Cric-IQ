@@ -107,7 +107,7 @@ with st.sidebar:
 
     st.markdown("""
     <div style='text-align:center;padding:15px'>
-        <h1 style='color:#00D4FF;margin-bottom:0;'>🏏 CricIQ</h1>
+        <h1 style='color:#E8BD65;margin-bottom:0;'>🏏 CricIQ</h1>
         <p style='color:lightgray;font-size:14px;'>
             Cricket Analytics Dashboard
         </p>
@@ -162,6 +162,28 @@ matches_files = {
 
 matches = pd.read_csv(matches_files[format_selected])
 
+st.markdown("""
+<style>
+:root { --cric-bg:#0b1220; --cric-panel:#131f32; --cric-border:#293952; --cric-gold:#e8bd65; --cric-text:#edf2f8; --cric-muted:#9cabc0; }
+[data-testid="stAppViewContainer"] { background:radial-gradient(ellipse at 18% 0%,#172943 0%,#0b1220 58%,#090f1a 100%); color:var(--cric-text); }
+[data-testid="stHeader"] { background:transparent; }
+[data-testid="stSidebar"] { background:linear-gradient(180deg,#101b2d 0%,#0b1423 100%); border-right:1px solid var(--cric-border); }
+[data-testid="stMainBlockContainer"] { padding-top:2rem; }
+h1,h2,h3 { color:var(--cric-text); letter-spacing:-0.02em; }
+p,label,[data-testid="stCaptionContainer"] { color:var(--cric-muted); }
+a { color:var(--cric-gold) !important; }
+div[data-testid="stMetric"] { background:linear-gradient(145deg,#18263b,#111c2d); border:1px solid var(--cric-border); border-radius:14px; padding:1rem 1.1rem; box-shadow:0 8px 24px rgba(0,0,0,.16); }
+div[data-testid="stMetric"] label { color:var(--cric-muted); }
+div[data-testid="stMetric"] [data-testid="stMetricValue"] { color:var(--cric-text); }
+div.stButton > button,div[data-testid="stDownloadButton"] > button { border:1px solid #c99c45; border-radius:10px; background:linear-gradient(135deg,#e8bd65,#cf9f48); color:#111827; font-weight:650; transition:transform 120ms ease,box-shadow 120ms ease; }
+div.stButton > button:hover,div[data-testid="stDownloadButton"] > button:hover { border-color:#f2d48e; color:#111827; box-shadow:0 5px 18px rgba(232,189,101,.2); transform:translateY(-1px); }
+[data-testid="stDataFrame"],[data-testid="stTable"] { border:1px solid var(--cric-border); border-radius:12px; overflow:hidden; }
+[data-testid="stSelectbox"] [data-baseweb="select"] > div,[data-testid="stMultiSelect"] [data-baseweb="select"] > div { background-color:#131f32; border-color:var(--cric-border); border-radius:9px; }
+[data-testid="stAlert"] { border-radius:12px; }
+hr { border-color:var(--cric-border); }
+</style>
+""", unsafe_allow_html=True)
+
 winner_col = None
 if "winner" in matches.columns:
     winner_col = "winner"
@@ -174,78 +196,6 @@ deliveries = df
 # DASHBOARD
 # -------------------------------
 if page == "🏠 Dashboard":
-
-    st.markdown("""
-<style>
-
-/* Main App */
-[data-testid="stAppViewContainer"]{
-    background: linear-gradient(135deg,#06121f,#0b1d33,#102842);
-}
-
-/* Main Content */
-.main{
-    background: transparent;
-}
-
-/* Sidebar */
-[data-testid="stSidebar"]{
-    background:#08131f;
-}
-
-/* Header */
-[data-testid="stHeader"]{
-    background:transparent;
-}
-
-/* Toolbar */
-[data-testid="stToolbar"]{
-    background:transparent;
-}
-
-/* Metric Cards */
-div[data-testid="stMetric"]{
-    background:#122033;
-    border:1px solid #1dd75b;
-    border-radius:15px;
-    padding:15px;
-    box-shadow:0 0 15px rgba(29,215,91,0.2);
-}
-
-/* Buttons */
-div.stButton > button{
-    background:#122033;
-    color:white;
-    border:1px solid #1dd75b;
-    border-radius:12px;
-    height:60px;
-    font-weight:bold;
-}
-
-div.stButton > button:hover{
-    background:#1dd75b;
-    color:black;
-}
-
-/* Tables */
-[data-testid="stDataFrame"]{
-    background:#122033;
-    border-radius:15px;
-}
-
-/* Selectbox */
-.stSelectbox > div > div{
-    background:#122033;
-    color:white;
-}
-
-/* Text */
-h1,h2,h3,h4,h5,h6,p,label,span{
-    color:white;
-}
-
-</style>
-""", unsafe_allow_html=True)
 
     ############################################
     # HEADER
@@ -264,10 +214,10 @@ h1,h2,h3,h4,h5,h6,p,label,span{
 
             st.markdown("""
             <div class="hero-title">
-            CRIC<span class="hero-green">IQ</span>
+            CRIC<span style="color:#E8BD65;">IQ</span>
             </div>
 
-            <div style="font-size:30px;color:#57E25F;">
+            <div style="font-size:30px;color:#E8BD65;">
             Cricket Intelligence Quotient
             </div>
 
@@ -2600,9 +2550,9 @@ elif page == "🏟️ Venue Analysis":
 
     st.subheader("🗺️ Interactive Cricket Venue Map")
     st.caption(
-        "Each marker represents a mapped IPL ground. Marker size shows matches "
-        "in the selected format; color shows average total runs per match. The "
-        "venue table below keeps the ground names and statistics visible without hovering."
+        "Each stadium uses the same neutral marker color. Marker size represents "
+        "matches in the selected format, and the table below shows the venue "
+        "statistics without requiring hover."
     )
 
     venue_locations = pd.DataFrame({
@@ -2685,12 +2635,10 @@ elif page == "🏟️ Venue Analysis":
                 },
                 size="Matches",
                 size_max=32,
-                color="Average_Runs",
                 center={"lat": 22.5, "lon": 78.5},
                 zoom=3,
                 height=600,
-                color_continuous_scale="Turbo",
-                map_style="open-street-map",
+                map_style="carto-positron",
                 labels={
                     "Matches": "Matches",
                     "Average_Runs": "Average runs per match",
@@ -2699,9 +2647,13 @@ elif page == "🏟️ Venue Analysis":
             )
             map_fig.update_layout(margin=dict(l=0, r=0, t=20, b=0))
             map_fig.update_traces(
-                marker={"opacity": 0.85},
+                marker={
+                    "color": "#D6A84F",
+                    "opacity": 0.92,
+                    "line": {"color": "#765A28", "width": 1}
+                },
                 textposition="top center",
-                textfont={"size": 11, "color": "#111827"}
+                textfont={"size": 11, "color": "#182233"}
             )
             st.plotly_chart(map_fig, use_container_width=True)
             st.markdown("**Mapped venue details**")
