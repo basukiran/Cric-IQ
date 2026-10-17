@@ -1467,6 +1467,9 @@ elif page=="⚔️ Head to Head":
 # ============================================================
 
     
+    w1 = bowl.loc[bowl["bowler"]==p1,"Wickets"].sum()
+    w2 = bowl.loc[bowl["bowler"]==p2,"Wickets"].sum()
+
     st.subheader("📋 Player Comparison Data")
     comparison_report = pd.DataFrame({
         "Player": [p1, p2],
@@ -1483,9 +1486,6 @@ elif page=="⚔️ Head to Head":
         "side by side. These measures have different units, so they are not combined "
         "into an arbitrary single score."
     )
-
-    w1 = bowl.loc[bowl["bowler"]==p1,"Wickets"].sum()
-    w2 = bowl.loc[bowl["bowler"]==p2,"Wickets"].sum()
 
     parallel = pd.DataFrame({
         "ID":[1,2],
