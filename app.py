@@ -194,6 +194,27 @@ elif "outcome_winner" in matches.columns:
 
 deliveries = df
 
+date_column = next(
+    (column for column in ("date", "date_start") if column in matches.columns),
+    None
+)
+if date_column:
+    observed_dates = pd.to_datetime(matches[date_column], errors="coerce").dropna()
+    dataset_period = (
+        f"{observed_dates.min():%Y}–{observed_dates.max():%Y}"
+        if not observed_dates.empty else "date range unavailable"
+    )
+elif "season" in matches.columns and matches["season"].notna().any():
+    dataset_period = f"seasons {matches['season'].min()}–{matches['season'].max()}"
+else:
+    dataset_period = "date range unavailable"
+
+st.sidebar.caption(
+    f"Historical {format_selected} dataset · "
+    f"{matches['match_id'].nunique():,} matches · "
+    f"{len(df):,} delivery records · {dataset_period}"
+)
+
 # -------------------------------
 # DASHBOARD
 # -------------------------------
@@ -239,14 +260,12 @@ if page == "🏠 Dashboard":
 
     
 
-    ############################################
-
-    st.image(
-        "dashboard.jpg",
-        use_container_width=True
+    st.subheader(f"📊 {format_selected} Dataset at a Glance")
+    st.caption(
+        f"The analysis below uses {matches['match_id'].nunique():,} historical "
+        f"matches and {len(df):,} delivery records from {dataset_period}. "
+        "All displayed rankings and trends are calculated from these local CSV files."
     )
-
-    ############################################
     # KPI ROW
     ############################################
 
@@ -291,24 +310,13 @@ if page == "🏠 Dashboard":
     # QUICK NAVIGATION
     ############################################
 
-    st.markdown("## 🚀 Quick Navigation")
+    st.markdown("## 🚀 Explore the analysis pages")
 
-    q1,q2,q3,q4,q5 = st.columns(5)
-
-    with q1:
-        st.button("👤 Player Analysis")
-
-    with q2:
-        st.button("🏆 Team Analysis")
-
-    with q3:
-        st.button("🏟 Venue Insights")
-
-    with q4:
-        st.button("⚔ Head to Head")
-
-    with q5:
-        st.button("📄 Reports")
+    st.caption(
+        "Choose Player Search, Batting Analytics, Bowling Analytics, Head to Head, "
+        "Team Analysis, or Venue Analysis from the sidebar to explore the same "
+        "selected-format match and delivery data."
+    )
 
     ############################################
     # CHARTS
@@ -608,6 +616,18 @@ elif page == "📂 Dataset Analyzer":
                 missing_by_column.to_frame(),
                 use_container_width=True
             )
+            most_missing_column = missing_by_column.index[0]
+            missing_share = (
+                missing_by_column.iloc[0] / len(df_upload) * 100
+                if len(df_upload) else 0
+            )
+            st.caption(
+                f"{most_missing_column} has the most missing values: "
+                f"{int(missing_by_column.iloc[0]):,} rows ({missing_share:.1f}% of the file). "
+                "Check this before using that field in comparisons or calculations."
+            )
+        else:
+            st.success("No missing values were found in the uploaded dataset.")
 
         
         # Dataset Summary
@@ -815,27 +835,24 @@ elif page == "🏏 Batting Analytics":
     # Gauge Chart
     # ------------------------
 
-    st.subheader("⚡ Strike Rate Gauge")
-
-    gauge = go.Figure(go.Indicator(
-        mode="gauge+number",
-        value=pdata["Strike Rate"],
-        title={"text":"Strike Rate"},
-        gauge={
-            "axis":{"range":[0,200]},
-            "bar":{"color":"lime"},
-            "steps":[
-                {"range":[0,100],"color":"red"},
-                {"range":[100,130],"color":"orange"},
-                {"range":[130,160],"color":"yellow"},
-                {"range":[160,200],"color":"green"}
-            ]
-        }
-    ))
-
-    st.plotly_chart(
-        gauge,
-        use_container_width=True
+    st.subheader("⚡ Strike Rate vs Format Median")
+    strike_rate_context = pd.DataFrame({
+        "Comparison": [player, "Median batter"],
+        "Strike Rate": [pdata["Strike Rate"], median_strike_rate]
+    })
+    context_fig = px.bar(
+        strike_rate_context,
+        x="Comparison",
+        y="Strike Rate",
+        text_auto=".1f",
+        color_discrete_sequence=["#7188c7"]
+    )
+    context_fig.update_layout(showlegend=False)
+    st.plotly_chart(context_fig, use_container_width=True)
+    st.caption(
+        "The comparison uses the selected batter's total runs per 100 balls and "
+        "the median of batter-level rates in this format. A higher rate means "
+        "faster scoring, but does not by itself measure consistency or risk."
     )
 
     
@@ -844,7 +861,7 @@ elif page == "🏏 Batting Analytics":
     # Bubble Chart
     # ------------------------
 
-    st.subheader("🟢 Bubble Chart")
+    st.subheader("🟢 Top 100 Batters: Runs vs Balls Faced")
 
     fig = px.scatter(
         batting.head(100),
@@ -854,7 +871,7 @@ elif page == "🏏 Batting Analytics":
         color="Strike Rate",
         hover_name="batter",
         title="Runs vs Balls",
-        template="plotly_dark"
+        template="plotly"
     )
 
     st.plotly_chart(
@@ -873,7 +890,7 @@ elif page == "🏏 Batting Analytics":
     # Interactive Scatter Plot
     # ------------------------
 
-    st.subheader("📈 Strike Rate Analysis")
+    st.subheader("📈 Top 150 Batters: Strike Rate vs Runs")
 
     fig2 = px.scatter(
         batting.head(150),
@@ -882,7 +899,7 @@ elif page == "🏏 Batting Analytics":
         color="Runs",
         size="Balls",
         hover_name="batter",
-        template="plotly_dark"
+        template="plotly"
     )
 
     st.plotly_chart(
@@ -910,12 +927,19 @@ elif page == "🏏 Batting Analytics":
         values="Runs",
         names="batter",
         hole=0.55,
-        template="plotly_dark"
+        template="plotly"
     )
 
     st.plotly_chart(
         fig3,
         use_container_width=True
+    )
+
+    top10_run_share = top10["Runs"].sum() / batting["Runs"].sum() * 100
+    st.caption(
+        f"These ten batters account for {top10_run_share:.1f}% of all batter runs "
+        f"in the selected {format_selected} data. Shares are calculated within "
+        "this loaded dataset, not across every match ever played."
     )
 
     
@@ -938,6 +962,11 @@ elif page == "🏏 Batting Analytics":
         fig4,
         use_container_width=True
     )
+    st.caption(
+        "Each tile is one of the top 30 batters by cumulative runs. Tile area is "
+        "run volume and its color encodes strike rate; use the table below for "
+        "the exact totals and ball counts."
+    )
 
 
 
@@ -950,6 +979,10 @@ elif page == "🏏 Batting Analytics":
     st.dataframe(
         batting.head(20),
         use_container_width=True
+    )
+    st.caption(
+        "The table ranks batters by total runs in this format. Balls faced and "
+        "strike rate are included so high totals can be read alongside scoring pace."
     )
 
     # ------------------------
@@ -1011,25 +1044,25 @@ elif page == "🎯 Bowling Analytics":
     )
 
 
-    st.subheader("Economy Gauge")
-
-    gauge=go.Figure(go.Indicator(
-        mode="gauge+number",
-        value=pdata["Economy"],
-        title={"text":"Economy"},
-        gauge={
-            "axis":{"range":[0,12]},
-            "bar":{"color":"cyan"},
-            "steps":[
-                {"range":[0,4],"color":"green"},
-                {"range":[4,6],"color":"yellow"},
-                {"range":[6,8],"color":"orange"},
-                {"range":[8,12],"color":"red"}
-            ]
-        }
-    ))
-
-    st.plotly_chart(gauge,use_container_width=True)
+    st.subheader("Economy vs Format Median")
+    economy_context = pd.DataFrame({
+        "Comparison": [player, "Median bowler"],
+        "Economy": [pdata["Economy"], median_economy]
+    })
+    economy_fig = px.bar(
+        economy_context,
+        x="Comparison",
+        y="Economy",
+        text_auto=".2f",
+        color_discrete_sequence=["#7188c7"]
+    )
+    economy_fig.update_layout(showlegend=False)
+    st.plotly_chart(economy_fig, use_container_width=True)
+    st.caption(
+        "Economy is bowler-charged runs per six legal balls. Lower economy means "
+        "fewer runs conceded, but wickets and workload also matter when assessing "
+        "a bowler's contribution."
+    )
 
 
 
@@ -1042,7 +1075,7 @@ elif page == "🎯 Bowling Analytics":
         size="Balls",
         color="Wickets",
         hover_name="bowler",
-        template="plotly_dark"
+        template="plotly"
     )
 
     st.plotly_chart(fig,use_container_width=True)
@@ -1064,10 +1097,20 @@ elif page == "🎯 Bowling Analytics":
         values="Wickets",
         names="bowler",
         hole=0.55,
-        template="plotly_dark"
+        template="plotly"
     )
 
     st.plotly_chart(fig2,use_container_width=True)
+    top10_bowling = bowling.sort_values("Wickets", ascending=False).head(10)
+    top10_wicket_share = (
+        top10_bowling["Wickets"].sum() / bowling["Wickets"].sum() * 100
+        if bowling["Wickets"].sum() else 0
+    )
+    st.caption(
+        f"The ten leading wicket-takers account for {top10_wicket_share:.1f}% of "
+        "credited wickets in this dataset. The pie shows their share among these "
+        "leaders; it is not a measure of bowling quality per match."
+    )
 
     
 
@@ -1082,6 +1125,11 @@ elif page == "🎯 Bowling Analytics":
     )
 
     st.plotly_chart(fig3,use_container_width=True)
+    st.caption(
+        "Tile area shows credited wickets for the top 30 bowlers. Color represents "
+        "economy rate (lower means fewer bowler-charged runs per six legal balls); "
+        "always consider balls bowled as a sample-size check."
+    )
 
     
 
@@ -1093,6 +1141,10 @@ elif page == "🎯 Bowling Analytics":
             ascending=False
         ).head(20),
         use_container_width=True
+    )
+    st.caption(
+        "Ranked by credited wickets. The accompanying balls and economy columns "
+        "help distinguish a large workload from wicket-taking rate."
     )
 
     csv=bowling.to_csv(index=False).encode()
@@ -1243,6 +1295,13 @@ elif page=="⚔️ Head to Head":
         st.subheader("Comparison Table")
 
         st.dataframe(compare,use_container_width=True)
+        st.caption(
+            f"In {format_selected}, {p1} has {int(b1['Runs'].iloc[0]):,} runs "
+            f"from {int(b1['Balls'].iloc[0]):,} balls; {p2} has "
+            f"{int(b2['Runs'].iloc[0]):,} from {int(b2['Balls'].iloc[0]):,}. "
+            "Strike rate compares scoring pace, while the totals reflect different "
+            "career workloads in this dataset."
+        )
 
         
 
@@ -1251,19 +1310,24 @@ elif page=="⚔️ Head to Head":
     # Bowling
     # -------------------------------
 
-        with tab2:
+    with tab2:
 
-          bowling = summarize_bowling(df)
+        bowling = summarize_bowling(df)
 
-          bowl = bowling[
+        bowl = bowling[
             bowling["bowler"].isin([p1,p2])
         ]
 
-          st.subheader("Bowling Comparison")
+        st.subheader("Bowling Comparison")
 
-          st.dataframe(
+        st.dataframe(
             bowl,
             use_container_width=True
+        )
+        st.caption(
+            "Only players with bowling records appear here. Wickets are bowler-"
+            "credited dismissals; economy uses legal balls and excludes byes and "
+            "leg-byes from runs charged to the bowler."
         )
 
           
@@ -1323,6 +1387,13 @@ elif page=="⚔️ Head to Head":
 )
 
     st.plotly_chart(fig,use_container_width=True)
+    st.caption(
+        f"{p1} is at ({b1['Strike Rate'].iloc[0]:.1f} strike rate, "
+        f"{int(b1['Runs'].iloc[0]):,} runs); {p2} is at "
+        f"({b2['Strike Rate'].iloc[0]:.1f}, {int(b2['Runs'].iloc[0]):,}). "
+        "Further right means faster scoring, higher means more runs, and bubble "
+        "size represents balls faced."
+    )
 
 # ============================================================
 # 🍩 Donut Charts
@@ -1352,6 +1423,10 @@ elif page=="⚔️ Head to Head":
         use_container_width=True,
         key="runs_share"
     )
+     st.caption(
+        "This donut compares the selected players' cumulative batter runs in the "
+        "loaded format. It does not adjust for innings or balls faced."
+     )
 
 # ==========================
 # Wickets Share
@@ -1368,109 +1443,46 @@ elif page=="⚔️ Head to Head":
         ]
     })
 
-     fig2 = px.pie(
-        wicket_df,
-        names="Player",
-        values="Wickets",
-        hole=0.65
-    )
-
-     fig2.update_traces(textinfo="percent+label")
-
-     st.plotly_chart(
-        fig2,
-        use_container_width=True,
-        key="wickets_share"
-    )
+     if wicket_df["Wickets"].sum() > 0:
+        fig2 = px.pie(
+            wicket_df,
+            names="Player",
+            values="Wickets",
+            hole=0.65
+        )
+        fig2.update_traces(textinfo="percent+label")
+        st.plotly_chart(
+            fig2,
+            use_container_width=True,
+            key="wickets_share"
+        )
+        st.caption(
+            "This donut compares the credited wickets taken by these two players "
+            "in the selected dataset; a zero-wicket bowler has no share."
+        )
+     else:
+        st.info("Neither selected player has a credited wicket in this format dataset.")
 # ============================================================
 # 🌳 Treemap
 # ============================================================
 
     
-    st.subheader("🌳 Overall Statistics Treemap")
-
-    tree = pd.DataFrame({
-
-    "Player":[
-
-        p1,p1,p1,p1,
-
-        p2,p2,p2,p2
-
-    ],
-
-    "Metric":[
-
-        "Runs",
-
-        "Strike Rate",
-
-        "Fours",
-
-        "Sixes",
-
-        "Runs",
-
-        "Strike Rate",
-
-        "Fours",
-
-        "Sixes"
-
-    ],
-
-    "Value":[
-
-        b1["Runs"].iloc[0],
-
-        b1["Strike Rate"].iloc[0],
-
-        b1["Fours"].iloc[0],
-
-        b1["Sixes"].iloc[0],
-
-        b2["Runs"].iloc[0],
-
-        b2["Strike Rate"].iloc[0],
-
-        b2["Fours"].iloc[0],
-
-        b2["Sixes"].iloc[0]
-
-    ]
-
-})
-
-    fig = px.treemap(
-
-    tree,
-
-    path=["Player","Metric"],
-
-    values="Value",
-
-    color="Value",
-
-    color_continuous_scale="Viridis"
-
-)
-
-    st.plotly_chart(
-    fig,
-    use_container_width=True
-)
-# ============================================================
-# ☀️ Sunburst Chart
-# ============================================================
-
-    
-
-# ============================================================
-# 🎛 Parallel Coordinates
-# ============================================================
-
-    
-    st.subheader("🎛 Parallel Coordinates Comparison")
+    st.subheader("📋 Player Comparison Data")
+    comparison_report = pd.DataFrame({
+        "Player": [p1, p2],
+        "Runs": [b1["Runs"].iloc[0], b2["Runs"].iloc[0]],
+        "Balls": [b1["Balls"].iloc[0], b2["Balls"].iloc[0]],
+        "Strike Rate": [b1["Strike Rate"].iloc[0], b2["Strike Rate"].iloc[0]],
+        "Fours": [b1["Fours"].iloc[0], b2["Fours"].iloc[0]],
+        "Sixes": [b1["Sixes"].iloc[0], b2["Sixes"].iloc[0]],
+        "Credited Wickets": [w1, w2]
+    })
+    st.dataframe(comparison_report, use_container_width=True, hide_index=True)
+    st.caption(
+        "This table puts runs, balls, strike rate, boundaries and credited wickets "
+        "side by side. These measures have different units, so they are not combined "
+        "into an arbitrary single score."
+    )
 
     w1 = bowl.loc[bowl["bowler"]==p1,"Wickets"].sum()
     w2 = bowl.loc[bowl["bowler"]==p2,"Wickets"].sum()
@@ -1499,13 +1511,17 @@ elif page=="⚔️ Head to Head":
 
     if b1["Runs"].iloc[0] > b2["Runs"].iloc[0]:
      summary.append(f"🏏 {p1} has scored more runs.")
-    else:
+    elif b2["Runs"].iloc[0] > b1["Runs"].iloc[0]:
      summary.append(f"🏏 {p2} has scored more runs.")
+    else:
+     summary.append("🏏 Both players have the same total runs.")
 
     if b1["Strike Rate"].iloc[0] > b2["Strike Rate"].iloc[0]:
      summary.append(f"⚡ {p1} has a better strike rate.")
-    else:
+    elif b2["Strike Rate"].iloc[0] > b1["Strike Rate"].iloc[0]:
      summary.append(f"⚡ {p2} has a better strike rate.")
+    else:
+     summary.append("⚡ Both players have the same strike rate.")
 
     w1 = bowl.loc[bowl["bowler"]==p1,"Wickets"].sum()
     w2 = bowl.loc[bowl["bowler"]==p2,"Wickets"].sum()
@@ -1567,6 +1583,11 @@ elif page=="⚔️ Head to Head":
 elif page == "🏆 Team Analysis":
 
     st.title("🏆 Team Analysis Dashboard")
+    st.caption(
+        f"Team results are calculated from {matches['match_id'].nunique():,} "
+        f"{format_selected} matches in the selected historical dataset. Team names "
+        "are kept as recorded in the source files, so era-specific names may appear separately."
+    )
 
     # ----------------------------
     # Prepare Data
@@ -1593,7 +1614,7 @@ elif page == "🏆 Team Analysis":
 
     c1.metric("🏏 Teams", total_teams)
     c2.metric("📅 Matches", total_matches)
-    c3.metric("🥇 Top Team", top_team)
+    c3.metric("📊 Most Appearances", top_team)
 
     
 
@@ -1614,6 +1635,11 @@ elif page == "🏆 Team Analysis":
     st.plotly_chart(
         fig_tree,
         use_container_width=True
+    )
+    st.caption(
+        f"{top_team} has appeared in the most matches ({int(team_df.iloc[0]['Matches'])}). "
+        "Tile area and color both encode appearances, so this is participation "
+        "volume rather than a ranking of team quality."
     )
 
     # ----------------------------
@@ -1641,6 +1667,12 @@ elif page == "🏆 Team Analysis":
             fig_pie,
             use_container_width=True
         )
+        top10_team_matches = int(team_df.head(10)["Matches"].sum())
+        st.caption(
+            f"The donut shows how match appearances are distributed among the "
+            f"10 most active teams ({top10_team_matches:,} appearances combined). "
+            "Percentages are within this displayed top-ten group."
+        )
 
     with col2:
 
@@ -1663,6 +1695,10 @@ elif page == "🏆 Team Analysis":
         st.plotly_chart(
             fig_bar,
             use_container_width=True
+        )
+        st.caption(
+            "The bars rank the ten teams with the most match appearances. "
+            "Appearances count both teams in every match and do not represent wins."
         )
 
     
@@ -1703,12 +1739,15 @@ elif page == "🏆 Team Analysis":
         (matches["team2"] == team)
     ]
 
-     wins = 0
-
      if winner_col:
-        wins = (
-            played[winner_col] == team
-        ).sum()
+        decided = played[played[winner_col].notna()]
+        wins = int((decided[winner_col] == team).sum())
+        losses = int((decided[winner_col] != team).sum())
+        no_result = len(played) - len(decided)
+     else:
+        wins = 0
+        losses = 0
+        no_result = len(played)
 
      return {
 
@@ -1718,12 +1757,14 @@ elif page == "🏆 Team Analysis":
 
         "Wins": wins,
 
-        "Losses": len(played)-wins,
+        "Losses": losses,
+
+        "No Result": no_result,
 
         "Win %": round(
-            wins/len(played)*100,
+            wins/(wins+losses)*100,
             2
-        ) if len(played)>0 else 0
+        ) if wins+losses>0 else 0
 
     }
 
@@ -1734,22 +1775,28 @@ elif page == "🏆 Team Analysis":
 
     "Metric":[
         "Played",
+        "Decided",
         "Wins",
         "Losses",
+        "No Result",
         "Win %"
     ],
 
     team_a:[
         s1["Played"],
+        s1["Wins"] + s1["Losses"],
         s1["Wins"],
         s1["Losses"],
+        s1["No Result"],
         s1["Win %"]
     ],
 
     team_b:[
         s2["Played"],
+        s2["Wins"] + s2["Losses"],
         s2["Wins"],
         s2["Losses"],
+        s2["No Result"],
         s2["Win %"]
     ]
 
@@ -1759,6 +1806,12 @@ elif page == "🏆 Team Analysis":
     use_container_width=True,
     hide_index=True
 )
+    st.caption(
+        f"{team_a}: {s1['Wins']} wins, {s1['Losses']} losses and "
+        f"{s1['No Result']} no-results; {team_b}: {s2['Wins']} wins, "
+        f"{s2['Losses']} losses and {s2['No Result']} no-results. The comparison "
+        "excludes no-results from win percentage."
+    )
 
     
 
@@ -1813,6 +1866,13 @@ elif page == "🏆 Team Analysis":
     fig,
     use_container_width=True
 )
+    if not venue_team.empty:
+        favourite = venue_team.iloc[0]
+        st.caption(
+            f"{team_a} has played most often at {favourite['venue']} "
+            f"({int(favourite['Matches'])} matches in this dataset). This reflects "
+            "the schedule and does not imply a home advantage."
+        )
 
 # =====================================================
 # 🏆 Win Percentage Gauge
@@ -1853,6 +1913,12 @@ elif page == "🏆 Team Analysis":
     fig,
     use_container_width=True
 )
+    st.caption(
+        f"The gauges compare recorded win rates: {team_a} {s1['Win %']:.1f}% "
+        f"({s1['Wins']}/{s1['Played']}) and {team_b} {s2['Win %']:.1f}% "
+        f"({s2['Wins']}/{s2['Played']}). Match counts matter because a small "
+        "sample can produce an unstable percentage."
+    )
 
 # =====================================================
 # Team insights
@@ -1876,9 +1942,10 @@ elif page == "🏆 Team Analysis":
     win_rate_gap = abs(s1["Win %"] - s2["Win %"])
     st.info(
         f"**Interpretation:** {team_a} has {s1['Win %']:.1f}% wins from "
-        f"{s1['Played']} matches; {team_b} has {s2['Win %']:.1f}% from "
-        f"{s2['Played']} matches. The gap is {win_rate_gap:.1f} percentage "
-        "points. A larger match sample gives a more stable comparison; seasons "
+        f"{s1['Wins'] + s1['Losses']} decided matches; {team_b} has "
+        f"{s2['Win %']:.1f}% from {s2['Wins'] + s2['Losses']} decided matches. "
+        f"The gap is {win_rate_gap:.1f} percentage points. No-results are excluded; "
+        "a larger decided-match sample gives a more stable comparison. Seasons "
         "and opponent strength are not adjusted here."
     )
 
@@ -1905,10 +1972,10 @@ elif page == "🏆 Team Analysis":
         (matches["team2"]==team)
     ]
 
-     wins = (
-        (played[winner_col]==team).sum()
-        if winner_col else 0
-    )
+     decided = played[played[winner_col].notna()] if winner_col else played.iloc[0:0]
+     wins = int((decided[winner_col] == team).sum()) if winner_col else 0
+     losses = int((decided[winner_col] != team).sum()) if winner_col else 0
+     no_result = len(played) - len(decided)
 
      ranking.append({
 
@@ -1918,10 +1985,14 @@ elif page == "🏆 Team Analysis":
 
         "Wins":wins,
 
+        "Losses":losses,
+
+        "No Result":no_result,
+
         "Win %":round(
-            wins/len(played)*100,
+            wins/(wins+losses)*100,
             2
-        ) if len(played)>0 else 0
+        ) if wins+losses>0 else 0
 
     })
 
@@ -1937,6 +2008,11 @@ elif page == "🏆 Team Analysis":
     use_container_width=True,
     hide_index=True
 )
+    st.caption(
+        "Ranked by wins divided by decided matches; no-results are excluded from "
+        "the win-rate denominator and displayed separately. Played and wins are "
+        "shown beside the rate, so sample sizes can be compared cautiously."
+    )
 
 
 # =====================================================
@@ -2178,6 +2254,17 @@ elif page == "🏟️ Venue Analysis":
     fig.update_layout(height=650)
 
     st.plotly_chart(fig, use_container_width=True)
+    highest_average_venue = venue_stats.loc[venue_stats["Average_Runs"].idxmax()]
+    busiest_venue = venue_stats.loc[venue_stats["Matches"].idxmax()]
+    st.caption(
+        f"Across {len(venue_stats)} venue names in this format, "
+        f"{highest_average_venue['venue']} has the highest average total "
+        f"({highest_average_venue['Average_Runs']:.1f} runs from "
+        f"{int(highest_average_venue['Matches'])} matches), while "
+        f"{busiest_venue['venue']} has the largest sample "
+        f"({int(busiest_venue['Matches'])} matches). X is average total, Y is "
+        "match count, and bubble size is the highest match total."
+    )
 
 
 
@@ -2218,10 +2305,18 @@ elif page == "🏟️ Venue Analysis":
         fig1,
         use_container_width=True
     )
+     top10_venue_matches = int(
+        venue_stats.sort_values("Matches", ascending=False).head(10)["Matches"].sum()
+     )
+     st.caption(
+        f"This shows the share of matches among the ten most-used venue names "
+        f"({top10_venue_matches:,} match records combined). Percentages are only "
+        "within these ten venues."
+     )
 
     with col2:
 
-     st.subheader("🥇 Highest Scoring Venues")
+     st.subheader("🥇 Highest Average Match Totals")
 
      fig2 = px.bar(
 
@@ -2259,6 +2354,13 @@ elif page == "🏟️ Venue Analysis":
         fig2,
         use_container_width=True
     )
+     top_scoring_venue = venue_stats.loc[venue_stats["Average_Runs"].idxmax()]
+     st.caption(
+        f"{top_scoring_venue['venue']} leads with an average total of "
+        f"{top_scoring_venue['Average_Runs']:.1f} runs across "
+        f"{int(top_scoring_venue['Matches'])} matches. Averages with fewer "
+        "matches are less stable than those from larger samples."
+     )
     
 
 # ==========================================================
@@ -2290,6 +2392,11 @@ elif page == "🏟️ Venue Analysis":
     fig,
     use_container_width=True
 )
+    st.caption(
+        "Tile area represents matches hosted and color represents average total "
+        "runs. This view combines venue activity with scoring context; it does not "
+        "rank grounds by quality."
+    )
 
 # ==========================================================
 # 📦 Runs Distribution (Box Plot)
@@ -2345,6 +2452,16 @@ elif page == "🏟️ Venue Analysis":
     fig,
     use_container_width=True
 )
+    median_total = runs_box["runs_total"].median()
+    highest_median_venue = (
+        runs_box.groupby("venue")["runs_total"].median().idxmax()
+    )
+    st.caption(
+        f"Each box summarizes match totals at one of the ten busiest venues; "
+        f"points are individual matches. The overall median in this chart is "
+        f"{median_total:.1f} runs, and {highest_median_venue} has the highest "
+        "venue median. Wider boxes indicate more variation between matches."
+    )
     # ==========================================================
 # ⚔️ Venue Comparison Dashboard
 # ==========================================================
@@ -2428,10 +2545,10 @@ elif page == "🏟️ Venue Analysis":
     
     compare = pd.DataFrame({
 
-    "Metric":[
+        "Metric":[
         "Matches",
         "Average Runs",
-        "Highest Score",
+        "Highest Match Total",
         "Best Team"
     ],
 
@@ -2468,7 +2585,7 @@ elif page == "🏟️ Venue Analysis":
         v2["Average Runs"]
     ],
 
-    "Highest Score":[
+    "Highest Match Total":[
         v1["Highest Score"],
         v2["Highest Score"]
     ]
@@ -2476,31 +2593,26 @@ elif page == "🏟️ Venue Analysis":
 })
 
     fig = px.bar(
-
-    chart,
-
-    x="Venue",
-
-    y=[
-        "Average Runs",
-        "Highest Score"
-    ],
-
-    barmode="group",
-
-    text_auto=True,
-
-    color_discrete_sequence=[
-        "#00C9A7",
-        "#FF8066"
-    ]
-
-)
+        chart,
+        x="Venue",
+        y="Average Runs",
+        text_auto=".1f",
+        color_discrete_sequence=["#6685c2"],
+        hover_data={"Highest Match Total": True}
+    )
 
     st.plotly_chart(
     fig,
     use_container_width=True
 )
+    average_gap = v1["Average Runs"] - v2["Average Runs"]
+    st.caption(
+        f"Average match total: {venue1} {v1['Average Runs']:.1f} from "
+        f"{v1['Matches']} matches; {venue2} {v2['Average Runs']:.1f} from "
+        f"{v2['Matches']}. The difference is {average_gap:+.1f} runs per match. "
+        "Bar height compares averages; the table retains highest totals and "
+        "match counts for context."
+    )
     
     st.subheader("📊 Venue Insights")
 
@@ -2553,8 +2665,8 @@ elif page == "🏟️ Venue Analysis":
     st.subheader("🗺️ Interactive Cricket Venue Map")
     st.caption(
         "Each stadium uses the same neutral marker color. Marker size represents "
-        "matches in the selected format, and the table below shows the venue "
-        "statistics without requiring hover."
+        "matches in the selected format. The map currently covers seven mapped "
+        "grounds; the table below shows their statistics without requiring hover."
     )
 
     venue_locations = pd.DataFrame({
@@ -2678,47 +2790,20 @@ elif page == "🏟️ Venue Analysis":
     else:
         st.info("Venue data is unavailable, so the venue map cannot be drawn for this format.")
 
-    st.subheader("🎯 Venue Rating")
-
-    rating = min(
-
-    100,
-
-    round(avg_runs/4)
-
-)
-
-    fig = go.Figure(go.Indicator(
-
-    mode="gauge+number",
-
-    value=rating,
-
-    title={"text":"Batting Friendly Rating"},
-
-    gauge={
-
-        "axis":{"range":[0,100]},
-
-        "bar":{"color":"limegreen"},
-
-        "steps":[
-
-            {"range":[0,40],"color":"red"},
-
-            {"range":[40,70],"color":"orange"},
-
-            {"range":[70,100],"color":"green"}
-
-        ]
-
-    }
-
-))
-
-    fig.update_layout(height=350)
-
-    st.plotly_chart(fig,use_container_width=True)
+    st.subheader("📌 Venue Scoring Context")
+    score_col, sample_col = st.columns(2)
+    score_col.metric(
+        "Average total runs at selected venue",
+        f"{avg_runs:.1f}",
+        delta=f"{venue_difference:+.1f} vs format average",
+        delta_color="off"
+    )
+    sample_col.metric("Matches in selected venue sample", matches_played)
+    st.caption(
+        "This is a direct comparison with the selected format's observed average, "
+        "not a made-up venue rating. Match totals vary with format, season, and "
+        "the number of innings recorded."
+    )
     
 
 
@@ -2742,7 +2827,7 @@ f"""
 
 {highest['venue']}
 
-Average Runs : {highest['Average_Runs']:.1f}
+Average Runs : {highest['Average_Runs']:.1f} across {int(highest['Matches'])} matches
 """
 )
 
@@ -2762,7 +2847,7 @@ f"""
 
 {lowest['venue']}
 
-Average Runs : {lowest['Average_Runs']:.1f}
+Average Runs : {lowest['Average_Runs']:.1f} across {int(lowest['Matches'])} matches
 """
 )
     
@@ -2808,7 +2893,7 @@ Average Runs : {lowest['Average_Runs']:.1f}
 
 🔥 Average Runs : **{row['Average_Runs']:.1f}**
 
-🏆 Highest Score : **{int(row['Highest_Score'])}**
+🏆 Highest Match Total : **{int(row['Highest_Score'])}**
 
 ---
 """)
@@ -2903,6 +2988,11 @@ elif page == "👤 Player Search":
             fig,
             use_container_width=True
         )
+        st.caption(
+            f"{player} has {dot_balls:,} dot deliveries and {scoring_balls:,} "
+            f"deliveries with batter runs out of {balls:,} balls faced. This "
+            "separates scoring frequency from the size of the runs scored."
+        )
 
     with col2:
 
@@ -2945,6 +3035,11 @@ elif page == "👤 Player Search":
             fig,
             use_container_width=True
         )
+        st.caption(
+            f"{player} has hit {int(fours):,} fours and {int(sixes):,} sixes in "
+            f"the loaded data. Boundary counts show scoring style; they do not "
+            "include runs taken between the wickets."
+        )
 
     
 
@@ -2954,21 +3049,27 @@ elif page == "👤 Player Search":
 
     st.subheader("📈 Match-wise Runs")
 
-    player_runs = (
-
-        batting.groupby("match_id")["runs_batter"]
-
-        .sum()
-
-        .reset_index()
-
-    )
+    player_runs = batting.groupby("match_id")["runs_batter"].sum().reset_index()
+    if date_column:
+        player_runs = player_runs.merge(
+            matches[["match_id", date_column]].drop_duplicates("match_id"),
+            on="match_id",
+            how="left"
+        )
+        player_runs["Match Date"] = pd.to_datetime(
+            player_runs[date_column], errors="coerce"
+        )
+        player_runs = player_runs.sort_values("Match Date")
+        match_axis = "Match Date"
+    else:
+        player_runs = player_runs.sort_values("match_id")
+        match_axis = "match_id"
 
     fig = px.area(
 
         player_runs,
 
-        x="match_id",
+        x=match_axis,
 
         y="runs_batter",
 
@@ -2986,6 +3087,13 @@ elif page == "👤 Player Search":
     st.plotly_chart(
         fig,
         use_container_width=True
+    )
+    best_match = player_runs.loc[player_runs["runs_batter"].idxmax()]
+    st.caption(
+        f"This series shows {player}'s batter runs in each match over time. "
+        f"Their highest match total in this dataset is "
+        f"{int(best_match['runs_batter'])} runs. Match totals are not innings "
+        "averages and can include more than one innings in multi-innings formats."
     )
 
     st.markdown("---")
@@ -3017,6 +3125,11 @@ elif page == "👤 Player Search":
         fig1,
         use_container_width=True
     )
+     most_common_outcome = int(batting["runs_batter"].mode().iloc[0])
+     st.caption(
+        f"The most frequent outcome on a batter delivery is {most_common_outcome} "
+        "runs. This histogram counts delivery outcomes, not completed innings scores."
+     )
 
 # =============================
 # Scoring Pattern
@@ -3025,25 +3138,14 @@ elif page == "👤 Player Search":
 
      st.subheader("🏏 Scoring Pattern")
 
+     score_counts = batting["runs_batter"].value_counts().sort_index()
      score_df = pd.DataFrame({
-
         "Runs": [
-            "1 Run",
-            "2 Runs",
-            "3 Runs",
-            "Four",
-            "Six"
+            "Dot (0)" if value == 0 else f"{int(value)} runs"
+            for value in score_counts.index
         ],
-
-        "Count": [
-            (batting["runs_batter"] == 1).sum(),
-            (batting["runs_batter"] == 2).sum(),
-            (batting["runs_batter"] == 3).sum(),
-            (batting["runs_batter"] == 4).sum(),
-            (batting["runs_batter"] == 6).sum()
-        ]
-
-    })
+        "Count": score_counts.values
+     })
 
      fig2 = px.pie(
         score_df,
@@ -3059,6 +3161,11 @@ elif page == "👤 Player Search":
         fig2,
         use_container_width=True
     )
+     st.caption(
+        "This share includes every observed batter-run outcome, including dots "
+        "and uncommon run values; the earlier donut compares scoring deliveries "
+        "with dots only."
+     )
 
     
 
