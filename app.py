@@ -164,13 +164,15 @@ matches = pd.read_csv(matches_files[format_selected])
 
 st.markdown("""
 <style>
-:root { --cric-bg:#fff8fc; --cric-panel:#ffffff; --cric-border:#dce5f2; --cric-gold:#98631d; --cric-text:#202b3c; --cric-muted:#58677b; }
+:root { --cric-bg:#fff8fc; --cric-panel:#ffffff; --cric-border:#dce5f2; --cric-gold:#98631d; --cric-text:#202b3c; --cric-muted:#344256; }
 [data-testid="stAppViewContainer"] { background:linear-gradient(125deg,#fff0f6 0%,#f5f2ff 48%,#eaf5ff 100%); color:var(--cric-text); }
 [data-testid="stHeader"] { background:transparent; }
 [data-testid="stSidebar"] { background:linear-gradient(160deg,#fdeaf2 0%,#f2efff 52%,#e5f2ff 100%); border-right:1px solid #dce4f1; }
 [data-testid="stMainBlockContainer"] { padding-top:2rem; }
 h1,h2,h3 { color:var(--cric-text); letter-spacing:-0.02em; }
 p,label,[data-testid="stCaptionContainer"] { color:var(--cric-muted); }
+[data-testid="stMain"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stMain"] [data-testid="stCaptionContainer"] { color:#26354a !important; font-size:0.96rem; line-height:1.55; }
 a { color:var(--cric-gold) !important; }
 div[data-testid="stMetric"] { background:rgba(255,255,255,.88); border:1px solid var(--cric-border); border-radius:14px; padding:1rem 1.1rem; box-shadow:0 8px 24px rgba(47,67,104,.08); }
 div[data-testid="stMetric"] label { color:var(--cric-muted); }
