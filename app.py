@@ -172,7 +172,9 @@ st.markdown("""
 h1,h2,h3 { color:var(--cric-text); letter-spacing:-0.02em; }
 p,label,[data-testid="stCaptionContainer"] { color:var(--cric-muted); }
 [data-testid="stMarkdownContainer"] p,
-[data-testid="stCaptionContainer"] { color:#26354a !important; font-size:0.96rem; line-height:1.55; }
+[data-testid="stMarkdownContainer"] p *,
+[data-testid="stCaptionContainer"],
+[data-testid="stCaptionContainer"] * { color:#26354a !important; font-size:0.96rem; line-height:1.55; }
 a { color:var(--cric-gold) !important; }
 div[data-testid="stMetric"] { background:rgba(255,255,255,.88); border:1px solid var(--cric-border); border-radius:14px; padding:1rem 1.1rem; box-shadow:0 8px 24px rgba(47,67,104,.08); }
 div[data-testid="stMetric"] label { color:var(--cric-muted); }
